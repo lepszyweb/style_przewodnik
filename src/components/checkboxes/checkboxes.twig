@@ -1,0 +1,35 @@
+<section class="checkboxes-section">
+  <h3>Opcja #1: Stosowanie zestawu pól do grupowania opcji</h3>
+  <fieldset>
+    <legend>Kto jest twoim ulubionym XIX-wiecznym naukowcem?</legend>
+    <div class="checkbox column">
+      <input id="bell" type="checkbox" name="scientist" value="bell"/>
+      <label for="bell">Alexander Graham Bell</label>
+      <input id="curry" type="checkbox" name="scientist" value="curry"/>
+      <label for="curry">Marie Curie</label>
+      <input id="lovelace" type="checkbox" name="scientist" value="lovelace"/>
+      <label for="lovelace">Ada Lovelace</label>
+      <input id="nobel" type="checkbox" name="scientist" value="nobel"/>
+      <label for="nobel">Alfred Nobel</label>
+      <input id="pasteur" type="checkbox" name="scientist" value="pasteur"/>
+      <label for="pasteur">Louis Pasteur</label>
+      <input id="tesla" type="checkbox" name="scientist" value="tesla"/>
+      <label for="tesla">Nikola Tesla</label>
+    </div>
+  </fieldset>
+  <div class="break"></div>
+  <h3>Opcja #2: Stosowanie ARIA do grupowania opcji</h3>
+  <div role="group" aria-labelledby="beatle_head">
+    <h4 id="beatle_head" class="bold">Kto jest najlepszym Beatlesem?</h4>
+    <div class="checkbox row">
+      <input id="beatle_john" type="checkbox" name="beatle" value="beatle_john"/>
+      <label for="beatle_john">John Lennon</label>
+      <input id="beatle_paul" type="checkbox" name="beatle" value="beatle_paul"/>
+      <label for="beatle_paul">Paul McCartney</label>
+      <input id="beatle_george" type="checkbox" name="beatle" value="beatle_george"/>
+      <label for="beatle_george">George Harrison</label>
+      <input id="beatle_ringo" type="checkbox" name="beatle" value="beatle_ringo"/>
+      <label for="beatle_ringo">Ringo Starr</label>
+    </div>
+  </div>
+</section>

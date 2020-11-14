@@ -1,0 +1,67 @@
+// Typografia
+//
+// - Unikaj małych rozmiarów fontów.
+// - Użyj jednostek względnych dla rozmiaru czcionki, takich jak ems lub rems.
+// Chociaż nowoczesne przeglądarki internetowe mogą płynnie powiększać układy oparte na pikselach, stosowanie jednostek względnych zapewnia skalowanie całego układu w górę lub w dół poprzez prostą aktualizację rozmiaru czcionki elementu body.
+// - Projekt powinien umożliwiać powiększenie typografii nawet do 200% przez użytkownika bez przycinania lub zniekształcania treści.
+// - Wybieraj podstawowe, proste, łatwe do odczytania czcionki i używaj ograniczonej liczby czcionek.
+// - Unikaj małych rozmiarów czcionek i używaj względnych jednostek rozmiarów czcionek (ems lub rems).
+// - Ograniczaj stosowanie odmian czcionek, takich jak pogrubiona czcionka, kursywa i WSZYSTKIE WIELKIE LITERY (stosowanie CAPS jest podobne do krzyków czytników ekranu).
+// - Nie polegaj tylko na wyglądzie czcionki (kolor, kształt, odmiana czcionki, lokalizacja, itp.), aby przekazać znaczenie.
+// - Unikaj mrugania i przesuwania tekstu. 
+// - W grafice używaj prawdziwego tekstu, a nie tekstu.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#type_guide">Wytyczne WCAG 2.1</a></h3><div id="type_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" target="_blank">1.4.1. Użycie koloru</a> - Kolor nie jest wykorzystywany jako jedyny wizualny sposób przekazywania informacji, wskazywania czynności do wykonania lub oczekiwania na odpowiedź, czy też wyróżniania elementów wizualnych. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl//#visual-audio-contrast-contrast" target="_blank">1.4.3 Kontrast (Minimum)</a> - Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1, poza kilkoma wyjątkami. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" target="_blank">1.4.4 Zmiana rozmiaru tekstu</a> - Oprócz napisów rozszerzonych oraz obrazów tekstu, rozmiar tekstu może zostać powiększony do 200% bez użycia technologii wspomagających oraz bez utraty treści lub funkcjonalności. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Obrazy tekstu</a> - Jeśli wykorzystywane technologie mogą przedstawiać treść wizualnie, do przekazywania informacji wykorzystuje się tekst, a nie obraz tekstu, z kilkoma wyjątkiem. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-visual-presentation" target="_blank">1.4.8 Prezentacja wizualna</a> - Dla wizualnego przedstawienia bloków tekstu, istnieje mechanizm, za pomocą którego można osiągnąć, co następuje... (szczegóły zobacz w WCAG). (Poziom AAA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup:
+// <h2>Family: Open Sans</h2>
+// <div style="font: 20px/2 'Open Sans'">Regular</div>
+// <div style="font: italic 20px/2 'Open Sans'">Italic</div>
+// <div style="font: bold 20px/2 'Open Sans'">Bold</div>
+// <div style="font: bold italic 20px/2 'Open Sans'">Bold Italic</div>
+// <div class="break"></div>
+// <h2 style="font: 20px/2 'Verdana'">Family: Verdana </h2>
+// <div style="font: 20px/2 'Verdana'">Regular</div>
+// <div style="font: italic 20px/2 'Verdana'">Italic</div>
+// <div style="font: bold 20px/2 'Verdana'">Bold</div>
+// <div style="font: bold italic 20px/2 'Verdana'">Bold Italic</div>
+// <div class="break"></div>
+// <h2 style="font: 20px/2 'Tahoma'">Family: Tahoma </h2>
+// <div style="font: 20px/2 'Tahoma'">Regular</div>
+// <div style="font: italic 20px/2 'Tahoma'">Italic</div>
+// <div style="font: bold 20px/2 'Tahoma'">Bold</div>
+// <div style="font: bold italic 20px/2 'Tahoma'">Bold Italic</div>
+// <div class="break"></div>
+// <h2 style="font: 20px/2 'Georgia'">Family: Georgia </h2>
+// <div style="font: 20px/2 'Georgia'">Regular</div>
+// <div style="font: italic 20px/2 'Georgia'">Italic</div>
+// <div style="font: bold 20px/2 'Georgia'">Bold</div>
+// <div style="font: bold italic 20px/2 'Georgia'">Bold Italic</div>
+//
+//
+// Weight: 999
+//
+// Style guide: Ogólne.typography
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@mixin font-stack-base {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+@mixin font-stack-second {
+  font-family: 'Verdana', 'Arial', sans-serif;
+}
+
+@mixin font-stack-third {
+  font-family: 'Tahoma', 'Arial', sans-serif;
+}
+
+@mixin font-stack-forth {
+  font-family: 'Georgia', serif;
+}
+
+$font-weight-bold: bold;
+$font-italic: italic;

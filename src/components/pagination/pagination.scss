@@ -1,0 +1,225 @@
+// Paginacja
+//
+//  - Umieść paginację w elemencie `<nav>` , jeśli możesz.
+//  - Jeśli musisz użyć bardziej ogólnego elementu, takiego jak `<div>`, dodaj `role="navigation"` do każdego paska nawigacyjnego, aby wyraźnie zidentyfikować go jako punkt orientacyjny dla użytkowników technologii wspomagających.
+//  - Znacznik zawiera `aria-label="pagination"` do opisania typu nawigacji.
+//  - Dodaj `aria-current="page"` do łącza, które wskazuje na bieżącą stronę. To powie AT, że zaznaczone łącze wskazuje na bieżącą stronę.
+//  - Dodaj `aria-disabled="true"` do łącza, gdy łącze jest wyłączone.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_res">Zasoby</a></h3><div id="pagination_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_guide">Wytyczne WCAG 2.1</a></h3><div id="pagination_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik (Poziom AAA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: pagination.twig
+//
+// Style guide: Nawigacja.pagination
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  padding-left: 0;
+  position: relative;
+}
+
+.pagination__item {
+  background-color: $color-alabaster;
+  border: 1px solid $color-silver;
+  border-right-width: 0;
+  list-style: none;
+  overflow: hidden;
+
+  &:last-child {
+    border-right-width: 1px;
+  }
+}
+
+.pagination__link {
+  color: $color-midnight;
+  display: block;
+  height: 40px;
+  padding: 8px 16px;
+  min-width: 40px;
+
+  &:hover {
+    background-color: $color-alto;
+  }
+}
+
+.pagination__link--is-disabled {
+  background-color: $color-white;
+}
+
+$group-link-width: 64px;
+
+@mixin pagination-triangle {
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 12px solid $color-midnight;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+}
+
+.pagination__item--previous-group {
+  border-top-left-radius: $border-rd-sm;
+  border-bottom-left-radius: $border-rd-sm;
+
+  @include breakpoint(screen and max-width $bp-sm) {
+    /* screen readers only */
+    position: absolute;
+    top: -50px;
+    left: -10px;
+  }
+
+  .pagination__link {
+    position: relative;
+    width: $group-link-width;
+
+    &::before {
+      @include pagination-triangle;
+      left: 18px;
+    }
+
+    &::after {
+      @include pagination-triangle;
+      left: 34px;
+    }
+  }
+
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      border-right-color: $color-silver;
+    }
+  }
+}
+
+.pagination__item--next-group {
+  border-top-right-radius: $border-rd-sm;
+  border-bottom-right-radius: $border-rd-sm;
+
+  @include breakpoint(screen and max-width $bp-sm) {
+    /* screen readers only */
+    position: absolute;
+    top: -50px;
+    left: -10px;
+  }
+
+  .pagination__link {
+    position: relative;
+    width: $group-link-width;
+
+    &::before {
+      @include pagination-triangle;
+      left: 18px;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      @include pagination-triangle;
+      left: 34px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      border-right-color: $color-silver;
+    }
+  }
+}
+
+.pagination__item--previous-page {
+
+  @include breakpoint(screen and max-width $bp-sm) {
+    border-top-left-radius: $border-rd-sm;
+    border-bottom-left-radius: $border-rd-sm;
+  }
+
+  &:first-child {
+    border-top-left-radius: $border-rd-sm;
+    border-bottom-left-radius: $border-rd-sm;
+  }
+
+  .pagination__link {
+    position: relative;
+
+    &::before {
+      @include pagination-triangle;
+      left: 12px;
+    }
+  }
+
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before {
+      border-right-color: $color-silver;
+    }
+  }
+}
+
+.pagination__item--next-page {
+
+  @include breakpoint(screen and max-width $bp-sm) {
+    border-top-right-radius: $border-rd-sm;
+    border-bottom-right-radius: $border-rd-sm;
+    border-right-width: 1px;
+  }
+
+  &:last-child {
+    border-top-right-radius: $border-rd-sm;
+    border-bottom-right-radius: $border-rd-sm;
+  }
+
+  .pagination__link {
+    position: relative;
+
+    &::before {
+      @include pagination-triangle;
+      right: 12px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before {
+      border-right-color: $color-silver;
+    }
+  }
+}
+
+.pagination__item--is-active {
+  background-color: $color-cherry;
+  color: $color-white;
+
+  .pagination__link {
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-ruby;
+    }
+
+    &::before,
+    &::after {
+      border-right-color: $color-white;
+    }
+  }
+}

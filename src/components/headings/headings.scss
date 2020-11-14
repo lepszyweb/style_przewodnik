@@ -1,0 +1,20 @@
+// Nagłówki
+//
+//  - Nawigowanie po `<h1>` i `<h2>` daje użytkownikowi wgląd w stronę i jej strukturę. Elementy od `<h3>` do `<h6>` zapewniają szybkie zrozumienie szczegółów w każdej sekcji. 
+//  - Znaczniki nagłówków powinny być uporządkowane. To znaczy, że po `<h1>` powinien następować `<h2>`, po `<h2>` powinien być `<h2>` lub `<h3>` i tak dalej. *Można pominąć* poziomy nagłówków, gdy przechodzi się do nadrzednej sekcji treści (np. z `<h4>` do `<h1>`).
+//  - Znaczniki nagłówków powinny być spójne. Niekonsekwentne wdrażanie nagłówków może powodować dezorientację i frustrację użytkowników korzystających z technologii wspomagających.
+//  - Nie stylizuj tekstu, aby nadać nagłówkom wizualny wygląd - używaj rzeczywistych znaczników nagłówków.
+// - Nagłówki tytułują treść. Po nagłówku musi więc występować jakaś treść. Jeśli pod tekstem, który zamierzasz oznaczyć jako nagłówek, nie ma treści, oznacz go jako zwykły tekst albo inaczej, np. łącze. 
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#lists_guide">Wytyczne WCAG 2.1</a></h3><div id="lists_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl/#headings-and-labels" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#section-headings" target="_blank">2.4.8 Nagłówki sekcji</a> - Nagłówki sekcji są używane do porządkowania treści. (Poziom AAA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: headings.twig
+//
+// Style guide: Struktury.headings
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+// Style list są zdefiniowane w pliku _base.scss

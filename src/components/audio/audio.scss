@@ -1,0 +1,24 @@
+// Audio
+//
+//  - Zbuduj swoje media z myślą o dostępności! O wiele łatwiej jest pracować z dostępnością na początku, niż próbować włączyć ją później. Odnosi się to do wszystkich komponentów, ale szczególnie do komponentów multimedialnych.
+//  - Upewnij się, że twój odtwarzacz jest dostępny i zawiera kontrolki do wstrzymywania, zatrzymywania i odtwarzania mediów.
+//  - Nie odtwarzaj automatycznie plików multimedialnych. Może to powodować zarówno zamieszanie, jak i irytację.
+//  - Upewnij się, że media mają alternatywne metody dotarcia do treści. Na przykład, dodaj transkrypcje plików audio.
+// <blockquote>Nie bez powodu jest mnóstwo wytycznych WCAG dotyczących mediów na stronach internetowych... jest wiele czynników, które należy wziąć pod uwagę. Nie daj się jednak przestraszyć, jest też kilka łatwych zwycięstw. Samo uwzględnienie alternatyw dla prezentowanych mediów (np. transkrypcja filmu) to połowa sukcesu.</blockquote>
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#audio_res">Zasoby</a></h3><div id="audio_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#audio_guide">Wytyczne WCAG 2.1</a></h3><div id="audio_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-av-only-alt" target="_blank">1.2.1 Tylko audio lub tylko wideo (nagranie)</a> - Alternatywa dla audio: Zapewniona jest alternatywa tekstowa dla nagrań dźwiękowych przedstawiająca tę samą treść, co nagranie audio. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-captions" target="_blank">1.2.2 Napisy rozszerzone</a> - Do wszystkich nagrań audio w multimediach zsynchronizowanych (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one alternatywami dla tekstu i w taki sposób są oznaczone, zapewnione są napisy rozszerzone. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-audio-desc" target="_blank">1.2.3 Audiodeskrypcja lub alternatywa tekstowa dla mediów (nagranie)</a> - Zapewniona jest alternatywa dla multimediów lub audiodeskrypcja dla nagrań wideo w multimediach zsynchronizowanych (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one alternatywami dla tekstu i w taki sposób są oznaczone. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-sign" target="_blank">1.2.6 Język migowy (nagranie)</a> - Zapewnione jest tłumaczenie w języku migowym wszystkich nagrań audio w multimediach zsynchronizowanych (dźwięk i obraz). (Poziom AAA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: audio.twig
+//
+// Style guide: Media.audio
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+// to-do

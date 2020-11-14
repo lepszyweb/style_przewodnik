@@ -1,0 +1,56 @@
+// Karty (cards) podstawowe
+//
+//  - Upewnij się, że wszystkie wskaźnik fokusu jest widoczny na wszystkich elementach, które muszą być podświetlone (otrzymują fokus).
+//  - Każdy `<img> `, który dodasz do swojej strony musi mieć atrybut `alt`. Jeśli obrazek jest informacyjny, wpisz w `alt` tekst z treścią równoważną obrazowi.
+//  - Jeśli obrazek jest dekoracyjny lub zbędny w stosunku do ilustrowanego tekstu, ustaw `alt=""`, aby przekazać użytkownikom technologii wspomagającej, że obrazek nie jest potrzebny do zrozumienia strony.
+//  - Unikaj używania ogólnych słów, takich jak &bdquo;zdjęcie&rdquo;, &bdquo;obrazek&rdquo; lub &bdquo;ikona&rdquo; jako fragmentu wartości `alt`, ponieważ nie przekazują one użytkownikowi cennych treści. Bądź możliwie jak najbardziej opisowy.
+//  - Możesz dodać  `class="visuallyhidden"` z tekstem opisowym, aby nadać więcej kontekstu przyciskowi lub celowi łącza.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#cards_res">Zasoby</a></h3><div id="cards_res" class="atblock__panel"><ul><li><a href="http://callmenick.com/post/css-transitions-transforms-animations-flipping-card" target="_blank">CSS Transitions, Transforms & Animations – Flipping Card</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#cards_guide">Wytyczne WCAG 2.1</a></h3><div id="cards_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><strong>Uwaga:</strong> Jeśli zawartość nietekstowa jest czystą dekoracją, jest używana tylko do formatowania wizualnego, lub nie jest prezentowana użytkownikom, to nie potrzebuje alternatyw tekstowych.<br><br><a href="https://wcag.lepszyweb.pl#visual-audio-contrast-contrast" target="_blank">1.4.3 Kontrast (minimalny)</a> - Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1, poza kilkoma wyjątkami (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Obrazy tekstu</a> - Jeśli wykorzystywane technologie mogą przedstawiać treść wizualnie, do przekazywania informacji wykorzystuje się tekst, a nie obraz tekstu, z kilkoma wyjątkami (Poziom AA)</p><p><a href="https://wcag.lepszyweb.pl#navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: cards-basic.twig
+//
+// Style guide: Karty.basic
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.card {
+  position: relative;
+  max-width: 300px;
+  display: inline-block;
+}
+
+.card__image {
+
+  img {
+    max-width: 100%;
+    border-radius: $border-rd-sm;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.card__title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $padding-md;
+  background: rgba($color-black, 0.65);
+  margin-bottom: 6px;
+  border-radius: 0 0 $border-rd-sm $border-rd-sm;
+  text-align: center;
+
+  a {
+    color: $color-white;
+  }
+}

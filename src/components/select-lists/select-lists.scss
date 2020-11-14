@@ -1,0 +1,68 @@
+// Lista wyboru
+//
+// - Element `<fieldset > ` otacza całe zgrupowanie pól wyboru lub przycisków radiowych. `<legend > ` zapewnia opis grupy pól.
+// - Niektóre technologie wspomagające odczytują tekst legendy dla każdego zestawu pól, więc legendy powinny być krótkie i opisowe. Pomaga to osobie korzystającej z technologii wspomagającej zrozumieć pytanie, na które odpowiada, za pomocą grupy pól wyboru.
+//  - W przypadku wyboru elementów z grupami opcji, do wskazania takich grup można użyć elementu `optgroup`. Atrybut `label` elementu `optgroup` jest używany do określenia etykiety grupy. Jest to szczególnie przydatne w przypadku list z wieloma powiązanymi opcjami.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#select_guide">Wytyczne WCAG 2.1</a></h3><div id="select_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: select-lists.twig
+//
+// Style guide: Formularze.select-lists
+// Import site utilities.
+@import '../../global/utils/init';
+
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+  margin-left: -2px;
+}
+
+.select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 15px;
+  border: 0;
+  background: $color-gallery;
+  color: $color-cherry;
+  appearance: none;
+  font-size: $padding-sm;
+  border-radius: $border-rd-sm;
+
+  &:hover,
+  &:focus {
+    color: $color-midnight;
+    background: $color-gallery;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover ~ .select__arrow,
+  &:focus ~ .select__arrow {
+    border-top-color: $color-midnight;
+  }
+
+  &:disabled ~ .select__arrow {
+    border-top-color: $color-gallery;
+  }
+}
+
+.select__arrow {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 10px 8px 0;
+  border-color: $color-cherry transparent transparent;
+}

@@ -1,0 +1,10 @@
+{
+  "photo": "<img src='../assets/gus-grissom.jpg' alt='Portret astronauty Gusa Grissoma'>",
+  "name": "Gus Grissom",
+  "title": "Astronaut, NASA",
+  "email": "email@email.com",
+  "phone": "555-555-1212",
+  "address": "<div><strong>Adres biura</strong></div><div>123 Maple St.</div><div>West Lafayette, IN</div>",
+  "external_link": "<a href=\"#\">https://pl.wikipedia.org/wiki/Virgil_Grissom</a>",
+  "brief_description": "<p>Virgil Ivan „Gus” Grissom (ur. 3 kwietnia 1926 w Mitchell, zginął 27 stycznia 1967 na przylądku Canaveral w pożarze kabiny statku Apollo 1) – amerykański astronauta, podpułkownik United States Air Force.</p>"
+}

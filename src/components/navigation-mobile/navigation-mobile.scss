@@ -1,0 +1,99 @@
+// Nawigacja mobilna
+//
+//  - Użyj elementu `<button>` dla swojej ikony nawigacji mobilnej.
+//  - Jeśli używasz ikony, która jest wyłącznie dekoracją, zgłoś `alt=""`, ponieważ nie są potrzebne żadne dodatkowe informacje. Jeśli używasz ikony, która jest ważna dla funkcjonalności, podaj dodatkową informację`alt="_tutaj opisowy _tekst_"`.
+//  - Jest to pomocne dla wszystkich użytkowników podczas dodawania tekstu opisowego podczas wyświetlania ikony telefonu komórkowego, aby nadać więcej kontekstu przeznaczeniu przycisku.
+//  - Umieść przyciski otwierania/zamykania telefonu komórkowego w elemencie `<nav>` i użyj ich do przełączania stanu innego opakowania z nawigacją. Zapewni to, że punkt orientacyjny nawigacji jest nadal wykrywany przez czytniki ekranu, nawet jeśli znajduje się on w stanie zamkniętym/ukrytym.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_res">Zasoby</a></h3><div id="navbaricon_res" class="atblock__panel"><ul><li><a href="http://codepen.io/samikeijonen/pen/jqvxdL" target="_blank">Simple and accessible SVG menu hamburger animation</a> (Prosta i dostępna animacja hamburgera z menu SVG)</li></ul></div></section>
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_guide">Wytyczne WCAG 2.1</a></h3><div id="navbaricon_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Kolejność fokusu</a> - Jeśli strona internetowa może być nawigowana sekwencyjnie, a kolejność nawigacji wpływa na zrozumienie lub funkcjonalność strony, komponenty przyjmują fokus w kolejności, dzięki której zachowany jest sens i funkcjonalność treści. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Wiele dróg</a> - Istnieje więcej niż jeden sposób umożliwiający zlokalizowanie strony internetowej w zestawie stron internetowych, z wyjątkiem sytuacji, kiedy dana strona jest wynikiem jakiejś procedury lub jednym z jej etapów. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik. (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: navigation-mobile.twig
+//
+// Style guide: Nawigacja.navigation-mobile
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.navbar-mobile-icon {
+
+  button,
+  input[type='button'] {
+    border: 0;
+    background: $color-midnight;
+    color: $color-white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 1.5em;
+    text-transform: uppercase;
+    border-radius: $border-rd-sm;
+  }
+
+  .menu-toggle {
+    padding: $padding-sm $padding-sm 0.65rem;
+    height: auto;
+    text-decoration: none;
+  }
+
+  .icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+    position: relative;
+    top: -0.0625rem;
+  }
+
+  /* Menu toggle styles. */
+
+  .icon-menu-toggle {
+    width: 2rem;
+    height: 2rem;
+    top: -3px;
+  }
+
+  .svg-menu-toggle .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1rem 1em;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  }
+
+  .svg-menu-toggle .line-1 {
+    transform-origin: 1rem 2.5rem;
+  }
+
+  .svg-menu-toggle .line-3 {
+    transform-origin: 1rem 4rem;
+  }
+
+  .menu-toggle.opened svg {
+    left: -1px;
+  }
+
+  .menu-toggle.opened .svg-menu-toggle .line-1 {
+    transform: rotate(45deg) translateY(0) translateX(0);
+  }
+
+  .menu-toggle.opened .svg-menu-toggle .line-2 {
+    opacity: 0;
+  }
+
+  .menu-toggle.opened .svg-menu-toggle .line-3 {
+    transform: rotate(-45deg) translateY(0) translateX(0);
+  }
+
+  /* Text meant only for screen readers. */
+  .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+}

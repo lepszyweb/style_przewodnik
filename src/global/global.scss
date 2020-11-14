@@ -1,0 +1,14 @@
+// Użytkowe
+//
+// Importuj zmienne i wstawki
+// Powinien zawierać wyjście NIE css.
+// Tylko zmienne / wstawki / ustawienia.
+// ========================================
+@import 'utils/init';
+
+// Base
+//
+// Zwykła stylizacja elementów html. Nie powinna wymagać 
+// żadnych klas.
+// ========================================
+@import 'base/base';

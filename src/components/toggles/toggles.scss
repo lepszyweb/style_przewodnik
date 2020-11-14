@@ -1,0 +1,217 @@
+// Przełączniki
+//
+//  - Jeśli możesz, użyj elementu `<button> ` i dołącz `aria-pressed` lub `role="switch"` dla swoich przełączników.
+//  - Możesz dodać opcjonalne etykiety do swoich przełączników, po prostu upewnij się, że element etykiety zawiera `id`, a przycisk przełącznika zawiera znacznik z `aria-labelledby` z pasującą etykietą.
+//  - Upewnij się, że istnieje `aria-checked` na przełącznikach, z JavaScriptem zmieniającym stan po kliknięciu z `true` na `false` (lub odwrotnie).
+//  - Upewnij się, że kontrast tekstu przełącznika na tle jest wystarczający (jeśli tekst jest używany).
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_res">Zasoby</a></h3><div id="toggle_res" class="atblock__panel"><ul><li><a href="https://github.com/scottaohara/aria-switch-button" target="_blank">ARIA Switch Button</a></li><li><a href="https://inclusive-components.design/toggle-button/" target="_blank">Inclusive Components - Toggle Buttons</a></li><li><a href="https://www.w3.org/TR/wai-aria-1.1/#switch" target="_blank">Switch Role (WAI-ARIA)</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_guide">Wytyczne WCAG 2.1</a></h3><div id="toggle_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><strong>Uwaga:</strong> Jeśli zawartość nietekstowa jest czystą dekoracją, jest używana tylko do formatowania wizualnego, lub nie jest prezentowana użytkownikom, to nie potrzebuje alternatyw tekstowych.<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: toggles.twig
+//
+// Style guide: Formularze.toggles
+// Import site utilities.
+@import '../../global/utils/init';
+
+[data-action='aria-switch'] {
+  background: $color-gallery;
+  border-radius: $border-rd-lg;
+  display: inline-block;
+  position: relative;
+  transition: background 0.1s ease-in-out;
+  border: 0;
+  width: 75px;
+  min-height: 34px;
+  overflow: hidden;
+  clear: both;
+  float: left;
+
+  &:focus {
+    background: $color-gallery;
+  }
+
+  &:hover {
+    background-color: $color-gallery;
+  }
+
+  &:not([disabled]):hover,
+  &:not([disabled]):focus {
+    border: 0;
+  }
+
+  span {
+    border-radius: $border-rd-lg;
+    display: inline-block;
+    font-weight: bold;
+    pointer-events: none;
+    text-transform: uppercase;
+    position: absolute;
+  }
+
+  &[aria-checked='false'] {
+
+    span {
+      background: $color-white;
+      border: 1px solid $color-alto;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      top: 2px;
+      left: 2px;
+      transition: 0.4s;
+    }
+  }
+
+  &[aria-checked='true'] span {
+    background: $color-white;
+    border: 1px solid $color-alto;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    top: 2px;
+    left: 43px;
+    transition: 0.4s;
+  }
+
+  &[aria-checked='true'] {
+    background: $color-grass;
+  }
+
+  &.text[aria-checked='false'] span::after {
+    content: 'NIE';
+    display: block;
+    color: $color-midnight;
+    position: absolute;
+    right: -36px;
+    top: 7px;
+  }
+
+  &.text[aria-checked='true'] span::before {
+    content: 'TAK';
+    display: block;
+    color: $color-midnight;
+    position: absolute;
+    left: -32px;
+    top: 7px;
+  }
+
+  &.reverse[aria-checked='false'] {
+    background: $color-white;
+
+    span {
+      background: $color-alto;
+      border: 1px solid $color-alto;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      top: 2px;
+      left: 2px;
+      transition: 0.4s;
+    }
+  }
+
+  &.reverse[aria-checked='true'] {
+    background: $color-white;
+
+    span {
+      background: $color-grass;
+      border: 1px solid $color-alto;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      top: 2px;
+      left: 43px;
+      transition: 0.4s;
+    }
+  }
+
+  &.flip {
+    background: $color-gallery;
+    border-radius: 0;
+    display: inline-block;
+    position: relative;
+    transition: background 0.1s ease-in-out;
+    border: 0;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    clear: both;
+    float: left;
+
+    &:hover {
+      background: $color-gallery;
+    }
+
+    span {
+      border: 1px solid;
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transition: 0.4s;
+
+      &::after,
+      &::before {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: $padding-xsm;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &.flip[aria-checked='false'] {
+    background: $color-white;
+
+    span {
+      background: $color-cherry;
+      border-color: $color-alto;
+    }
+  }
+
+  &.flip[aria-checked='true'] {
+    background: $color-white;
+
+    span {
+      background: $color-grass;
+      border-color: $color-alto;
+    }
+  }
+
+  &.flip[aria-checked='false'] span::after {
+    content: 'To nie tak!';
+    color: $color-white;
+  }
+
+  &.flip[aria-checked='true'] span::before {
+    content: 'Dokładnie, tak!';
+    color: $color-midnight;
+  }
+}
+
+.optional-label {
+  display: inline-block;
+  padding: 12px 18px;
+}
+
+.no-js [data-action='aria-switch']:not([aria-checked]) span {
+  background: $color-white;
+  border: 1px solid $color-alto;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  top: 2px;
+  left: 43px;
+  transition: 0.4s;
+}

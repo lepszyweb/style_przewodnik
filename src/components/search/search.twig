@@ -1,0 +1,25 @@
+<section class="search-section">
+  <h3>Opcja #1: Pole wyszukiwania z widoczną etykietą</h3>
+  <div role="search">
+    <label for="search_1" style="display: block;">Szukaj w serwisie:</label>
+    <input type="search" name="search" id="search_1" class="search-form__input" />
+    <button type="submit"><span class="visuallyhidden">Wykonaj</span>Szukaj</button>
+  </div>
+
+  <div class="break"></div>
+
+  <h3>Opcja #2: Ukryta etykieta</h3>
+  <div role="search">
+    <label for="search_2" class="visuallyhidden">Szukaj w serwisie:</label>
+    <input type="search" name="search" id="search_2" class="search-form__input" placeholder="szukaj..." />
+    <button type="submit"><span class="visuallyhidden">Wykonaj</span>Szukaj</button>
+  </div>
+
+  <div class="break"></div>
+
+  <h3>Opcja #3: Zastosowanie aria-label</h3>
+  <div role="search">
+    <input type="search" name="search" aria-label="Szukaj">
+    <button type="submit"><span class="visuallyhidden">Wykonaj</span>Szukaj</button>
+  </div>
+</section>

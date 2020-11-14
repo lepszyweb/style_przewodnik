@@ -1,0 +1,18 @@
+<section class="text-inputs-section">
+  <form>
+    <label for="first-name">Imię</label>
+    <input id="first-name" type="text" name="textfield">
+    <label for="last-name" class="required-field">Nazwisko</label>
+    <input id="last-name" type="text" name="textfield" aria-describedby="required-message" required>
+    <div id="required-message" class="visuallyhidden">To pole jest wymagane.</div>
+    <label for="username">Nazwa użytkownika</label>
+    <input id="username" type="text" name="textfield" aria-describedby="username-help-text" aria-invalid="true">
+    <span id="username-help-text">W polu powyżej wystapił błąd</span>
+    <label for="city">Miasto</label>
+    <input id="city" type="text" name="textfield" aria-describedby="city-help-text" aria-invalid="false">
+    <span id="city-help-text">Dane powyżej zostały wprowadzone poprawnie.</span>
+    <label for="address">Wpisz nazwę ulicy</label>
+    <textarea id="address" name="addresstext"></textarea>
+    <input type="submit" value="Wyślij">
+  </form>
+</section>

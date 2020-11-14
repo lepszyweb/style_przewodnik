@@ -1,0 +1,13 @@
+//=======================================================
+// Funkcje
+//=======================================================
+
+// Funkcja zwracająca wartość z mapy na podstawie klucza.
+@function get-var($key, $map) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  }
+
+  @warn 'Nieznane `#{$key}` na mapie. Spróbuj "@include print($map);", żeby zobaczyć, co jest dostępne.';
+  @return null;
+}

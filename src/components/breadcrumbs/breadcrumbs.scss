@@ -1,0 +1,50 @@
+// Ścieżka powrotu (okruszki chleba)
+//
+//  - Umieść okruchy chleba w elemencie `<nav>`, jeśli możesz.
+//  - Jeśli nie używasz elementu `<nav>`, musisz dodać `role="navigation"` do znacznika. <strong>Uwaga:</strong> ta rola jest domyślna, gdy używasz elementu `<nav>`, więc jest to trochę zbędne, aby używać obu jednocześnie.
+//  - Znacznik zawiera `aria-label="breadcrumbs"`, aby opisać rodzaj nawigacji.
+//  - Dodaj `aria-current="page"` do linku, który wskazuje na bieżącą stronę. To powie technologiom wspomagającym, że łącze posiadające fokus wskazuje na bieżącą stronę.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_res">Zasoby</a></h3><div id="breadcrumbs_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">Wytyczne WCAG 2.1</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik (Poziom AAA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: breadcrumbs.twig
+//
+// Style guide: Nawigacja.breadcrumbs
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.breadcrumb {
+  padding: $padding-sm;
+  margin-bottom: $padding-sm;
+  clear: both;
+  list-style: none;
+
+  .breadcrumb-item {
+    float: left;
+    list-style: none;
+
+    &::after {
+      display: inline-block;
+      padding-right: $padding-xsm;
+      padding-left: $padding-xsm;
+      color: $color-midnight;
+      font-weight: normal;
+      content: ' / ';
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+
+    a[aria-current='page'] {
+      color: $color-midnight;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+<section class="videos-section">
+  <figure class="videos">
+    <div class="px-video-container" id="myvid">
+    	<div class="px-video-img-captions-container">
+    		<div class="px-video-captions hide"></div>
+    		<video width="640" height="360" poster="../assets/videos/read-more.png" controls>
+    			<!-- video files -->
+    			<source src="../assets/videos/read-more.mp4" type="video/mp4" />
+    			<source src="../assets/videos/read-more.webm" type="video/webm" />
+
+    			<!-- text track file -->
+    			<track kind="captions" label="Napisy angielskie" src="../assets/videos/read-more.vtt" srclang="en" default />
+
+    			<!-- fallback for browsers that don't support the video element -->
+    			<div>
+    				<a href="../assets/videos/read-more.mp4">
+    					<img src="../assets/videos/read-more.png" width="640" height="360" alt="Pobierz wideo" />
+    				</a>
+    			</div>
+    		</video>
+    	</div><!-- end container for captions and video -->
+    	<div class="px-video-controls"></div>
+    </div><!-- end video container -->
+
+    <p><a href="https://github.com/paypal/accessible-html5-video-player" target="_blank">Accessible HTML5 Video Player GitHub</a></p>
+
+    </div><!-- end page wrapper container -->
+    <script src="js/strings.js"></script>
+    <script src="js/px-video.js"></script>
+
+    <script>
+
+    // Initialize
+    new InitPxVideo({
+    	"videoId": "myvid",
+    	"captionsOnDefault": true,
+    	"seekInterval": 20,
+    	"videoTitle": "Demonstracyjny film wideo z sekcji Read More przy użyciu narzędzia Mac Voice Over",
+    	"debug": true
+    });
+
+    </script>
+    <figcaption>
+      <p class="videos__transcript">
+        <a href="../assets/videos/read-more.txt">Transkrypcja</a>
+      </p>
+      <p class="videos__alt-audio">
+        <a href="../assets/videos/read-more.m4a">Alternatywna ścieżka dźwiękowa</a>
+      </p>
+    </figcaption>
+  </figure>
+</section>

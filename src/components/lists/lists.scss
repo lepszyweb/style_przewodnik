@@ -1,0 +1,18 @@
+// Listy
+//
+//  - Tworzenie dostępnych list jest dość łatwe i proste, *jeśli* używasz odpowiedniego znakowania.
+//  - Użyj znacznika `ol` do grupowania list uporządkowanych; użyj znacznika `ul` do grupowania list nieuporządkowanych; i użyj znacznika `dl` do grupowania terminów z ich definicjami.
+//  - Proste listy oddzielone przecinkami mogą nie potrzebować znacznika listy, ale dłuższe listy lub grupy linków powinny go mieć.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#lists_guide">Wytyczne WCAG 2.1</a></h3><div id="lists_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: lists.twig
+//
+// Style guide: Struktury.lists
+
+// Importuj użytkowe dla witryny
+@import '../../global/utils/init';
+
+// Style list są zdefiniowane w pliku _base.scss

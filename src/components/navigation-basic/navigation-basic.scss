@@ -1,0 +1,73 @@
+// Podstawowa nawigacja
+//
+//  - Wszystkie elementy nawigacyjne powinny mieć znacznik `<nav>` tag.
+//  - Jeśli musisz użyć bardziej ogólnego elementu, takiego jak `<div>`, dodaj `role="navigation"` do każdego paska nawigacyjnego, aby wyraźnie zidentyfikować go jako punkt orientacyjny dla użytkowników technologii wspomagających.
+//  - Menu powinno być oznaczone zgodnie z ich indywidualną funkcją. Użyj `class="visuallyhidden">`, `aria-label=""`, lub `aria-labelledby=""`, aby łatwo dodać kontekst do różnych menu na Twojej stronie.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbar_guide">Wytyczne WCAG 2.1</a></h3><div id="navbar_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Kolejność fokusu</a> - Jeśli strona internetowa może być nawigowana sekwencyjnie, a kolejność nawigacji wpływa na zrozumienie lub funkcjonalność strony, komponenty przyjmują fokus w kolejności, dzięki której zachowany jest sens i funkcjonalność treści. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Wiele dróg</a> - Istnieje więcej niż jeden sposób umożliwiający zlokalizowanie strony internetowej w zestawie stron internetowych, z wyjątkiem sytuacji, kiedy dana strona jest wynikiem jakiejś procedury lub jednym z jej etapów. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik. (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: navigation-basic.twig
+//
+// Style guide: Nawigacja.navigation-basic
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.navbar {
+  position: relative;
+  margin-bottom: $padding-sm;
+  border-radius: $border-rd-sm;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+
+  .menu3 a {
+    color: $color-midnight;
+    padding: 10px 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:last-child {
+      border-right: 0;
+
+      &:hover,
+      &:active {
+        border-right: 0;
+        border-top-right-radius: $border-rd-sm;
+        border-bottom-right-radius: $border-rd-sm;
+      }
+    }
+
+    &:first-child {
+      border-left: 0;
+
+      &:hover,
+      &:active {
+        border-left: 0;
+        border-top-left-radius: $border-rd-sm;
+        border-bottom-left-radius: $border-rd-sm;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background: $color-cherry;
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      padding-bottom: 0;
+    }
+  }
+
+  .nav-item {
+    display: table-cell;
+  }
+}

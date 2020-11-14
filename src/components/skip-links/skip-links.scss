@@ -1,0 +1,18 @@
+// Łącza pomijające
+//
+//  - Zapewnij użytkownikom możliwość przejścia do ważnych sekcji Twojej strony. Pomoże to użytkownikom korzystającym z czytników ekranu i osobom, które nie mogą posłużyć się myszą łatwiej i efektywniej poruszać się po Twojej stronie.
+//  - Nie ma prawdziwej reguły tematycznej, jeśli chodzi o stylizację linków do stron, ponieważ wiele stron internetowych ma tendencję do ukrywania ich za pomocą <code>class=&quot;visuallyhidden&quot;</code> (lub podobnej) ze specjalnym atrybutem `focus`, tak aby widzieli je tylko użytkownicy widzący.
+//  - Ważne jest, aby zobaczyć, że łącze wskazuje na poprawne ID elementu HTML, ponieważ często jest to pomijane w implementacji.
+//  - Na tej stronie zastosowaliśmy 'Przejdź do treści głównej', ale inne ważne przykłady "łączy pomijania" obejmują:
+//  <pre>Przejdź do treści<br>Przejdź do głównej treści<br>Przejdź do wyszukiwania<br>Przejdź do dolnej nawigacji<br>Przejdź do głównej nawigacji</pre>
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#skip_guide">Wytyczne WCAG 2.1</a></h3><div id="skip_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip" target="_blank">2.4.1 Możliwość pominięcia bloków</a> - Istnieje mechanizm, który umożliwia pominięcie bloków treści powtarzanych na wielu stronach internetowych. (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: skip-links.twig
+//
+// Style guide: Ogólne.skip-links
+
+// Import site utilities.
+@import '../../global/utils/init';

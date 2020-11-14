@@ -1,0 +1,125 @@
+// Nawigacja rozwijana
+//
+//  - Wszystkie elementy nawigacyjne powinny mieć znacznik `<nav>`.
+//  - Jeśli musisz użyć bardziej ogólnego elementu, takiego jak `<div>`, dodaj `role="navigation"` do każdego paska nawigacyjnego, aby wyraźnie zidentyfikować go jako punkt orientacyjny dla użytkowników technologii wspomagających.
+//  - Menu powinno być oznaczone zgodnie z ich indywidualną funkcją. Użyj `class="visuallyhidden">`, `aria-label=""`, lub `aria-labelledby=""`, aby łatwo dodać kontekst do różnych menu na Twojej stronie.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navdrop_res">Zasoby</a></h3><div id="navdrop_res" class="atblock__panel"><ul><li><a href="https://codepen.io/grayghostvisuals/pen/ltjDa" target="_blank">Accessible Dropdown Menu</a> - CodePen that shows the base skeleton of an accessible menu</li><li><a href="http://www.washington.edu" target="_blank">University of Washington</a> - great example of a live site using accessible (and beautiful) menus</li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navdrop_guide">Wytyczne WCAG 2.1</a></h3><div id="navdrop_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Kolejność fokusu</a> - Jeśli strona internetowa może być nawigowana sekwencyjnie, a kolejność nawigacji wpływa na zrozumienie lub funkcjonalność strony, komponenty przyjmują fokus w kolejności, dzięki której zachowany jest sens i funkcjonalność treści. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Wiele dróg</a> - Istnieje więcej niż jeden sposób umożliwiający zlokalizowanie strony internetowej w zestawie stron internetowych, z wyjątkiem sytuacji, kiedy dana strona jest wynikiem jakiejś procedury lub jednym z jej etapów. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik. (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: navigation-dropdown.twig
+//
+// Style guide: Nawigacja.navigation-dropdown
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.nav,
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  float: left;
+  background: $color-gallery;
+  border-radius: $border-rd-sm;
+}
+
+.nav ul {
+  position: absolute;
+  top: 2.5em;
+  left: -9999px;
+  opacity: 0;
+  transition: 0.1s linear opacity;
+  min-width: 150px;
+  background: $color-midnight;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.nav li {
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+/* Top level nav items */
+.nav li > a {
+  float: left;
+  padding: 10px 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  color: $color-midnight;
+  text-decoration: none;
+}
+
+.nav li > a:hover,
+.nav li > a:focus,
+.nav li:focus > a,
+.nav li:hover > a {
+  background: $color-cherry;
+  color: $color-white;
+}
+
+.nav > li:first-child > a {
+  border-left: 0;
+  border-top-left-radius: $border-rd-sm;
+  border-bottom-left-radius: $border-rd-sm;
+}
+
+.nav > li:last-child > a {
+  border-right: 0;
+  border-top-right-radius: $border-rd-sm;
+  border-bottom-right-radius: $border-rd-sm;
+}
+
+.nav li:hover ul,
+.nav li:focus ul,
+ul.show-menu { // sass-lint:disable-line no-qualifying-elements
+  left: 0;
+  opacity: 0.95;
+  margin-top: 4px;
+}
+
+.nav ul li {
+  float: none;
+  position: static;
+}
+
+.nav ul a {
+  float: none;
+  display: block;
+  color: $color-white;
+  font-size: 12px;
+  border: 1px solid $color-midnight;
+  border-width: 0 0 1px;
+  transition: 0.1s linear all; // sass-lint:disable-line no-transition-all
+}
+
+.nav ul,
+.nav ul li:last-child a {
+  border: 0;
+  border-bottom-left-radius: $border-rd-sm;
+  border-bottom-right-radius: $border-rd-sm;
+}
+
+.nav ul a:hover,
+.nav ul a:focus {
+  background: $color-cherry;
+  color: $color-white;
+  text-shadow: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

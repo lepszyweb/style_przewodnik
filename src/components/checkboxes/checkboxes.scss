@@ -1,0 +1,86 @@
+// Pola wyboru
+//
+// - Element `<fieldset >` otacza grupę pól wyboru lub przycisków radiowych. `<legend >` zapewnia opis grupy pól.
+// - Niektóre technologie wspomagające odczytują tekst legendy dla każdego zestawu pól, więc legendy powinny być krótkie i opisowe. Pomaga to osobie korzystającej z technologii wspomagającej zrozumieć pytanie, na które odpowiada, za pomocą grupy pól wyboru.
+// - WAI-ARIA zapewnia `role=group`, która działa podobnie do `fieldset` i `legend`. W opcji nr 2 element `div` musi mieć `role=group`, aby wskazywać, że zawarte w nim elementy należą do grupy, a atrybut `aria-labelledby` odwołuje się do id tekstu, który będzie służył jako etykieta dla grupy. <strong> Uwaga:</strong> Ta metoda nie jest obsługiwana przez wszystkie przeglądarki/technologie wspomagające.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#check_guide">Wytyczne WCAG 2.1</a></h3><div id="check_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: checkboxes.twig
+//
+// Style guide: Formularze.checkboxes
+// Import site utilities.
+@import '../../global/utils/init';
+
+.checkbox {
+
+  &.row label {
+    display: block;
+    float: left;
+    padding-bottom: $padding-sm;
+    clear: none;
+  }
+
+  &.column {
+    margin-top: -1.5rem;
+    padding: 0 $padding-sm $padding-sm;
+
+    label {
+      display: block;
+    }
+  }
+}
+
+.checkbox input[type='checkbox'] {
+  opacity: 0;
+}
+
+.checkbox label {
+  position: relative;
+  padding: 0 $padding-md-lg 0 $padding-md;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+}
+
+.checkbox label::before {
+  height: 22px;
+  width: 22px;
+  left: 0;
+  top: 1px;
+  background: $color-gallery;
+  border: 1px solid $color-silver;
+}
+
+.checkbox label::after {
+  left: 7px;
+  top: 3px;
+  width: 8px;
+  height: 14px;
+  border: solid $color-white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input[type='checkbox'] + label::after {
+  content: none;
+}
+
+.checkbox input[type='checkbox']:checked + label::after {
+  content: '';
+}
+
+.checkbox input[type='checkbox']:checked + label::before {
+  background: $color-cherry;
+}
+
+.checkbox input[type='checkbox']:focus + label::before {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color; // sass-lint:disable-line no-vendor-prefixes no-duplicate-properties
+}

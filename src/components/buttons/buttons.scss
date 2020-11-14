@@ -1,0 +1,157 @@
+// Przyciski
+//
+//  - Znacznik `<button>` nie potrzebuje niczego specjalnego do pracy. Użyj `<button>`, kiedy możesz, ale możliwe jest użycie innych elementów pod warunkiem, że dodasz im atrybut `role="button"`oraz JavaScript, aby odtworzyć funkcjonalność przycisku.
+//  - Tak jak w przypadku łączy, możesz dodać `class="visuallyhidden"` z tekstem opisowym, aby nadać przyciskowi więcej kontekstu o jego przeznaczeniu.
+//  - Jeśli przycisk zawiera element <code>&lt;img&gt;</code>, upewnij się, że ustawiłeś jego atrybut `alt`. Jeśli zawiera ikonę, użyj `aria-label`, aby ją opisać.
+//  - Możesz użyć <code>&lt;input type=&quot;image&quot;&gt;</code> aby utworzyć przycisk graficzny. Przyjmuje on atrybut `src` i `alt`, tak jak tradycyjne obrazki.
+//  - Ważne są także stany, nie tylko stylizacja przycisków! Jeśli przełączasz klasy tylko do wizualnego zarządzania stanem swoich komponentów, prawdopodobnie nie przekazujesz tego stanu odpowiednio użytkownikom technologii wspomagających.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Zasoby</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/accessible-aria-buttons" lang="en" hreflang="en" target="_blank">Building Accessible Buttons with ARIA</a>(Tworzenie dostępnych przycisków z ARIA)</li><li><a href="https://css-tricks.com/user-facing-state/" lang="en" hreflang="en" target="_blank">User Facing State</a> (Powiadamianie użytkownika o stanie)</li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank" lang="en" hreflang="en">Using the button role</a> (stosowanie roli przycisku)</li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" lang="en" hreflang="en" target="_blank">W3C Button Examples</a> (W3C: Przykłady przycisków)</li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_guide">Wytyczne WCAG 2.1</a></h3><div id="button_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><strong>Uwaga:</strong> Jeśli zawartość nietekstowa jest czystą dekoracją, jest używana tylko do formatowania wizualnego, lub nie jest prezentowana użytkownikom, to nie potrzebuje alternatyw tekstowych.<br><br><a href="https://wcag.lepszyweb.pl/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: buttons.twig
+//
+// Style guide: Ogólne.buttons
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+button {
+  @include button;
+  -webkit-appearance: inherit; // sass-lint:disable-line no-vendor-prefixes
+
+  [role='button'][aria-pressed='true'] {
+    color: $color-white;
+    background: $color-manatee;
+  }
+}
+
+[type='submit'],
+[role='button'] {
+  @include button;
+  min-height: inherit;
+}
+
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: inherit; // sass-lint:disable-line no-vendor-prefixes
+}
+
+.button {
+  @include button;
+  line-height: 0.9;
+}
+
+.button--outline {
+  @include button-outline;
+
+  &.magnifyingglass {
+    vertical-align: middle;
+  }
+}
+
+.buttons--center {
+  text-align: center;
+  clear: both;
+}
+
+.buttons--right {
+  text-align: right;
+  clear: both;
+}
+
+.buttons--left {
+  text-align: left;
+  clear: both;
+}
+
+.button-icon {
+  @include button;
+  line-height: 1.2;
+  padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
+  height: 48px;
+
+  &::before {
+    float: left;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: -0.25rem $padding-xsm $padding-xsm (-$padding-sm);
+    padding: 0 0.2rem;
+    pointer-events: none;
+  }
+
+  &.button--outline {
+    @include button-outline;
+    line-height: 1.3;
+    padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
+  }
+
+  &.heart {
+
+    &::before {
+      content: '\2764';
+      color: $color-ballet-slipper;
+    }
+
+    &:hover::before {
+      color: $color-sea-glass;
+    }
+  }
+
+  &.wheelchair {
+
+    &::before {
+      content: '\267F';
+      color: $color-midnight;
+    }
+  }
+}
+
+.magnifyingglass {
+  margin: -$padding-xsm $padding-sm;
+  width: 28px;
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.button[aria-pressed='true'],
+.button-icon[aria-pressed='true'] {
+  background: $color-grass;
+  color: $color-midnight;
+
+  &:focus {
+    background: $color-grass;
+    color: $color-midnight;
+  }
+}
+
+.button-hover {
+  background-color: $color-ruby;
+  border: 3px solid $color-ruby;
+  text-decoration: underline;
+}
+
+.button-active,
+.button-focus {
+  background-color: $color-blood;
+  border: 3px solid $color-blood;
+  text-decoration: underline;
+}
+
+.button-disabled,
+button[disabled],
+:disabled {
+  background-color: $color-manatee;
+  border: 3px solid $color-manatee;
+  pointer-events: none;
+}

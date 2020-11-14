@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "https://pl.wikipedia.org/wiki/Mae_Jemison",
+      "photo": "<a href=\"#\"><img src=\"../assets/mae-jemison.jpg\" alt=\"Mae Carol Jemison w pomarańczowym kombinezonie kosmicznym, trzymająca kask na boku.\"></a>",
+      "name": "Mae Carol Jemison",
+      "title": "Astronautka, NASA",
+      "email": "email@email.com"
+    },
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "https://pl.wikipedia.org/wiki/Virgil_Grissom",
+      "photo": "<a href=\"#\"><img src=\"../assets/gus-grissom.jpg\" alt=\"Gus Grissom trzymający replikę rakiety kosmicznej z amerykańską flagą w tle\"></a>",
+      "name": "Gus Grissom",
+      "title": "Astronauta, NASA",
+      "email": "email@email.com"
+    },
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "https://pl.wikipedia.org/wiki/Tracy_Caldwell_Dyson",
+      "photo": "<a href=\"#\"><img src=\"../assets/tracy-caldwell.jpg\" alt=\"Tracy Caldwell w pomarańczowym kombinezonie kosmicznym ze swoim sterem przed nimi\"></a>",
+      "name": "Tracy Caldwell Dyson",
+      "title": "Astronautka, NASA",
+      "email": "email@email.com"
+    }
+  ]
+}

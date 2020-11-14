@@ -1,0 +1,24 @@
+// SVG
+//
+// SVG są skalowalną grafiką wektorową i mogą być wykorzystywane do tworzenia ikon, obrazów, logotypów itp. Zawartość SVG jest skalowalna i skalowana bez obniżenia jakości wizualnej.
+//
+//  - Najlepszym sposobem na uczynienie SVG dostępnymi dla technologii wspomagajacych, takich jak czytniki ekranu i narzędzia do rozpoznawania mowy, jest umieszczenie ich bezpośrednio w HTML za pomocą znacznika `<svg>`
+//  - Unikaj używania elementów `<embed>`, `<object>`, lub `<img>`, ponieważ nie są one tak wspierane przez przeglądarki jak SVG śródliniowe.
+//  - Dodaj `<title>` i `<description>` do znacznika SVG
+//  - Użyj `aria-labelledby=""`  i odwołaj się do wartości id elementów tytułu i opisu
+//  - Daj swoim SVG-om pracę z atrybutem `role=""`
+//  - Aby &bdquo;ukryć&rdquo; elementy przed czytnikiem ekranu w SVG dodaj`role="presentation"`
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#svg_res">Zasoby</a></h3><div id="svg_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/tips-accessible-svg" target="_blank">Tips for Creating Accessible SVG</a></li><li><a href="https://css-tricks.com/accessible-svgs" target="_blank">Accessible SVGs</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#svg_guide">Wytyczne WCAG 2.1</a></h3><div id="svg_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><strong>Uwaga:</strong> Jeśli zawartość nietekstowa jest czystą dekoracją, jest używana tylko do formatowania wizualnego, lub nie jest prezentowana użytkownikom, to nie potrzebuje alternatyw tekstowych.<br><br><a href="https://wcag.lepszyweb.pl#visual-audio-contrast-contrast" target="_blank">1.4.3 Kontrast (minimalny)</a> - Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1, poza kilkoma wyjątkami (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Obrazy tekstu</a> - Jeśli wykorzystywane technologie mogą przedstawiać treść wizualnie, do przekazywania informacji wykorzystuje się tekst, a nie obraz tekstu, z kilkoma wyjątkami (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#non-text-contrast" target="_blank">1.4.11 Kontrast elementów nietekstowych</a> - Wizualna prezentacja następujących elementów ma współczynnik kontrastu co najmniej 3:1 względem sąsiednich kolorów (Poziom AA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: svgs.twig
+//
+// Style guide: Media.svgs
+// Import site utilities.
+@import '../../global/utils/init';

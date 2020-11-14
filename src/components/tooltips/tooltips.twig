@@ -1,0 +1,49 @@
+<section class="tooltips">
+  <h3>Opcja #1: Prosta podpowiedź bez JS</h3>
+    <form action="#" class="no-js-tooltip">
+    <fieldset>
+      <legend>Logowanie</legend>
+      <div>
+        <label for="username">Użytkownik</label>
+  	  <input type="text" id="username" aria-describedby="username-tip" required />
+  	  <div role="tooltip" id="username-tip">Wypróbuj swój adres e-mail</div>
+  	</div>
+  	<div>
+  	  <label for="password">Hasło</label>
+  	  <input type="text" id="password" aria-describedby="password-tip" required />
+  	  <div role="tooltip" id="password-tip">Jest to najprawdopodobniej 1234</div>
+  	</div>
+    </fieldset>
+  </form>
+  <div class="break"></div>
+  <h3>Opcja #2: Podpowiedź z łączem</h3>
+  <span class="a11y-tip a11y-tip--no-delay">
+  	<a href="#" class="a11y-tip__trigger">
+  		Jaki jest ulubiony owoc Beethovena?
+  	</a>
+  	<span role="tooltip" class="a11y-tip__help a11y-tip__help--top">
+  		A ba-na-na-na.
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Opcja #3: Podpowiedź z przyciskiem</h3>
+  <span class="a11y-tip">
+  	<button type="button" class="a11y-tip__trigger" aria-describedby="tt_id">
+  		Nie ufaj atomom
+  	</button>
+  	<span id="tt_id" role="tooltip" class="a11y-tip__help a11y-tip__help--bottom">
+  		Składają się one na wszystko.!
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Opcja #4: Pole z podpowiedzią po prawej</h3>
+  <label for="test">
+  	Dlaczego niewidzialny człowiek odrzucił ofertę pracy?
+  </label>
+  <span class="a11y-tip">
+  	<input id="test" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
+  	<span id="test_desc" role="tooltip" class="a11y-tip__help a11y-tip__help--right">
+  		Nie mógł zobaczyć, jak to robi.
+  	</span>
+  </span>
+</section>

@@ -1,0 +1,90 @@
+// Pole tekstowe i obszar tekstowy
+//
+//  - Zachowaj prostotę - nie wszystkie przeglądarki poprawnie eksponują wiele etykiet, które są powiązane z tym samym elementem formularza.
+//  - Użyj etykiet dla każdego pola i sprawdź, czy wartości `for=""` i `id=""` są zgodne. Identyfikatory muszą być unikalne na każdej stronie, tylko jedna etykieta może być powiązana z każdym unikalnym elementem formularza.
+//  - Wymagane pola należy uwidocznić za pomocą wskaźnika - zmiana koloru obramowania, gwiazdka, tekst opisu, itp.
+//  - Pola z walidacją błędów powinny mieć `aria-describedby`, aby zapewnić, że powiązany komunikat o błędzie na poziomie pola jest odczytywany przez technologię wspomagającą. Jeżeli komunikat o błędzie ma `id="my-komunikat-bledu"`, wówczas pole danych powinno mieć `aria-describedby="my-komunikat-bledu"`.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#text_guide">Wytyczne WCAG 2.1</a></h3><div id="text_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: text-fields.twig
+//
+// Style guide: Formularze.text-fields
+// Import site utilities.
+@import '../../global/utils/init';
+
+[type='text'],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin: 8px -2px 20px;
+  box-sizing: border-box;
+  border-radius: $border-rd-sm;
+  border: 2px solid $color-gallery;
+  font-size: $padding-sm;
+  min-height: 49px;
+}
+
+input,
+textarea {
+
+  &[aria-invalid] {
+    outline-width: 5px;
+
+    & + span {
+      display: block;
+      font-weight: $font-weight-bold;
+      margin: -15px 0 20px;
+    }
+  }
+
+  &[aria-invalid='true'] {
+    border-color: $notification-color-error;
+
+    &:focus {
+      outline-color: $notification-color-error;
+    }
+
+    & + span {
+      color: $color-cherry;
+    }
+  }
+
+  &[aria-invalid='false'] {
+    border-color: $notification-color-success;
+
+    &:focus {
+      outline-color: $notification-color-success;
+    }
+
+    & + span {
+      color: $notification-color-success;
+    }
+  }
+}
+
+textarea {
+  min-height: $padding-xxl;
+}
+
+fieldset {
+  padding: 1.75rem 1.5rem;
+  border: 2px solid $color-gallery;
+  border-radius: $border-rd-sm;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.required-field {
+
+  &::after {
+    content: '*';
+    color: $color-cherry;
+    display: inline-block;
+  }
+}

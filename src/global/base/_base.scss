@@ -1,0 +1,499 @@
+//=======================================================
+// Base
+//
+// normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
+//
+// NOTE: While this uses normalize.css as a starting
+// point it has and will be updated as needed.
+// This should be ONLY plain html element styling.
+// There should be NO classes, IDs, etc.
+//=======================================================
+
+// Sass Lint needs to ignore some Normalize specific things:
+// sass-lint:disable no-duplicate-properties, no-vendor-prefixes
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Zmień domyślną rodzinę czcionek we wszystkich przeglądarkach (rozpatrywanych).
+ * 2. Skoryguj wysokość linii we wszystkich przeglądarkach.
+ * 3. Zapobiegaj zmianie rozmiaru czcionki po zmianie orientacji
+ *    w IE w Windows Phone oraz w iOS.
+ */
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Arial', sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+/* Sekcje
+   ========================================================================== */
+
+/**
+ * Usuń margines we wszystkich przeglądarkach (rozpatrywanych).
+ */
+body {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/**
+ * Dodaj prawidłowe wyświetlanie w IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Nagłówki są zawsze "tylko trochę większe" niż kopia body.
+ * Zobacz: http://csswizardry.com/2016/02/managing-typography-on-large-apps/
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+h4,
+body,
+p,
+li {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.85rem;
+}
+
+h6 {
+  font-size: 0.65rem;
+}
+
+// Headers
+h1 > a,
+h2 > a,
+h3 > a,
+a {
+  text-align: left;
+  margin-bottom: 0;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: normal;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+}
+
+/* Grupowanie treści
+   ========================================================================== */
+
+/**
+ * Dodaj prawidłowe wyświetlanie w IE 9-.
+ * 1. Dodaj prawidłowe wyświetlanie w IE.
+ */
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * 1. Dodaj prawidłowe  box sizing w Firefox.
+ * 2. Pokaż przelewanie (overflow) w Edge oraz IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Popraw dziedziczenie i skalowanie rozmiaru czcionki
+ *    we wszystkich przeglądarkach.
+ * 2. Skoryguj nieparzyste (odd) rozmiary czcionek `em` we wszystkich przeglądarkach.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1rem; /* 2 */
+}
+
+/* Semantyka na poziomie tekstu
+   ========================================================================== */
+
+/**
+ * 1. Usuń szare tło na aktywnych linkach w IE 10.
+ * 2. Usuń luki w  podkreślonych łączach w iOS 8+ oraz Safari 8+.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+/**
+ * 1. Usuń dolny kontur (border) w Firefox 39-.
+ * 2. Dodaj właściwą dekorację tekstu w Chrome, Edge, IE, Opera oraz Safari.
+ */
+abbr[title] {
+  border-bottom: 0; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * 1. Popraw dziedziczenie i skalowanie czcionek we wszystkich przeglądarkach.
+ * 2. Skoryguj nieparzyste rozmiary czcionek `em` we wszystkich przeglądarkach.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Dodaj prawidłowy styl czcionki w Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Dodaj prawidłowe tło i kolor w IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Dodaj prawidłowy rozmiar czcionki we wszystkich przeglądarkach.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Zapobieganie wpływowi `sub` i `sup` na wysokość linii 
+ * we wszystkich przeglądarkach.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Wbudowana treść
+   ========================================================================== */
+
+/**
+ * Dodaj prawidłowe wyświetlanie w IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Dodaj prawidłowe wyświetlanie w iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Usuń obramowanie na zdjęciach wewnątrz łączy in IE 10-.
+ */
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+/**
+ * Ukrycie wypływania w IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+  padding: 1px;
+}
+
+/* Formularze
+   ========================================================================== */
+
+/**
+ * 1. Zmiana stylów czcionki we wszystkich przeglądarkach (rozpatrywanych).
+ * 2. Usuń margines w Firefox i Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Open Sans', 'Arial', sans-serif; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Pokaż wypłynięcie w IE.
+ * 1. Pokaż wypłynięcie w Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Usuń dziedziczenie przekształcenia tekstu w Edge, Firefox, i IE.
+ * 1. Usuń dziedziczenie przekształcenia tekstu w Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Zapobiega błędom WebKit, gdy (2) niszczą natywną kontrolę audio` i `video`
+ *    w Android 4.
+ * 2. Skoryguj brak możliwości stylizowania klikalnych typów w iOS i Safari.
+ */
+button,
+html [type='button'], /* 1 */
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Usuń wewnętrzne obramowanie i wyśpełnienie w Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Przywrócenie stylów fokusu niezgodnych z poprzednią zasadą.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Zmiana obraowań, marginesu i wypełnienia we wszystkich przeglądarkach (rozpatrywanych).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+  position: relative;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Lists
+   ========================================================================== */
+
+/**
+ * Unset default list margin and padding because if not
+ * we'll have to unset it every. single. time.
+ */
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}

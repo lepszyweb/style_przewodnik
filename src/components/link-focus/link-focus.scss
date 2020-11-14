@@ -1,0 +1,27 @@
+// Łącza z fokusem
+//
+//  - Nie ustawiaj dla łączy stylu `outline: none`. Nigdy. Nigdzie.
+//  - Jeśli masz wiele pól formularza na swojej stronie lub widzisz okropny `outline: none` w kodzie podstawowym, możesz zresetować domyślne ustawienia przeglądarki poprzez dodanie kodu:
+//  <pre>
+//  a:focus {
+//    outline: auto 2px Highlight; // dla przeglądarek non-webkit
+//    outline: auto 5px -webkit-focus-ring-color; // dla przeglądarek webkit
+//  }</pre>
+//  - Oczywiście możesz tworzyć własne style fokusu, aby dopasować je do swojego motywu lub sprawić, że domyślne style przeglądarki będą bardziej widoczne, po prostu upewnij się, tabulując, że są one widoczne i oczywiste dla użytkowników.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#focus_guide">Wytyczne WCAG 2.1</a></h3><div id="focus_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: link-focus.twig
+//
+// Style guide: Ogólne.link-focus
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+a:focus,
+.button-icon:focus {
+  outline: auto 2px Highlight; // for non-webkit browsers
+  outline: auto 5px -webkit-focus-ring-color; // sass-lint:disable-line no-vendor-prefixes no-duplicate-properties
+}

@@ -1,0 +1,27 @@
+<section class="breadcrumbs-section">
+  <h3>Opcja #1: Lista stylizowana z elementem nav</h3>
+  <nav aria-label="Ścieżka powrotu">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Start</a></li>
+    </ol>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Start</a></li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Rodzic</a></li>
+    </ol>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Start</a></li>
+      <li class="breadcrumb-item"><a href="#">Rodzic</a></li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Dziecko</a></li>
+    </ol>
+  </nav>
+
+  <div class="break"></div>
+  <h3>Opcja #2: Stylizacja łączy bez elementu nav</h3>
+  <div role="navigation" aria-label="Ścieżka powrotu" class="breadcrumb">
+    <a class="breadcrumb-item" href="#">Start</a>
+    <a class="breadcrumb-item" href="#">Rodzic</a>
+    <a class="breadcrumb-item" href="#" aria-current="page">Dziecko</a>
+  </div>
+</section>

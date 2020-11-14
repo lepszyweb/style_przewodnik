@@ -1,0 +1,346 @@
+// Wideo
+//
+//  - Zbuduj swoje media z myślą o dostępności! O wiele łatwiej jest pracować z dostępnością na początku, niż próbować włączyć ją później. Odnosi się to do wszystkich komponentów, ale szczególnie do komponentów multimedialnych.
+//  - Upewnij się, że twój odtwarzacz jest dostępny i zawiera kontrolki do wstrzymywania, zatrzymywania i odtwarzania mediów.
+//  - Nie odtwarzaj automatycznie plików multimedialnych. Może to powodować zarówno zamieszanie, jak i irytację.
+//  - Upewnij się, że Twoje media mają alternatywne metody dotarcia do treści. Na przykład, dodaj napisy do swoich filmów i/lub przygotuj transkrypcję do przeczytania przez użytkowników.
+//  - Upewnij się, że twoje media nie powodują ataków! Przed dodaniem mediów do witryny internetowej należy skorzystać z fotoczułego narzędzia do analizy padaczki (Photosensitive Epilepsy Analysis Tool - PEAT), aby sprawdzić media.
+// <blockquote>Nie bez powodu jest mnóstwo wytycznych WCAG dotyczących mediów na stronach internetowych... jest wiele czynników, które należy wziąć pod uwagę. Nie daj się jednak przestraszyć, jest też kilka łatwych zwycięstw. Samo uwzględnienie alternatyw dla prezentowanych mediów (np. transkrypcja filmu) to połowa sukcesu.</blockquote>
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_res">Zasoby</a></h3><div id="video_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/accessible-video" target="_blank">8 Steps to Creating Accessible Video</a></li><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li><li><a href="http://trace.umd.edu/peat" target="_blank">Photosensitive Epilepsy Analysis Tool</a> - tests your visual media to see if it will trigger seizures or other light disorder issues in viewers</li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_guide">Wytyczne WCAG 2.1</a></h3><div id="video_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-av-only-alt" target="_blank">1.2.1 Tylko audio lub tylko wideo (nagranie)</a> - Alternatywa dla wideo: Zapewniona jest alternatywa tekstowa albo audiodeskrypcja dla nagrań zawierających tylko wideo przedstawiająca tę samą treść, co nagranie wideo. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-captions" target="_blank">1.2.2 Napisy rozszerzone</a> - Do wszystkich nagrań audio w multimediach zsynchronizowanych (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one alternatywami dla tekstu i w taki sposób są oznaczone, zapewnione są napisy rozszerzone. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-audio-desc" target="_blank">1.2.3 Audiodeskrypcja lub alternatywa tekstowa dla mediów (nagranie)</a> - Zapewniona jest alternatywa dla multimediów lub audiodeskrypcja dla nagrań wideo w multimediach zsynchronizowanych (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one alternatywami dla tekstu i w taki sposób są oznaczone. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-audio-desc-only" target="_blank">1.2.5 Audiodeskrypcja (nagranie)</a> - Zapewniona jest audiodeskrypcja dla wszystkich nagrań wideo w multimediach zsynchronizowanych (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-sign" target="_blank">1.2.6 Język migowy (nagranie)</a> - Zapewnione jest tłumaczenie w języku migowym wszystkich nagrań audio w multimediach zsynchronizowanych (dźwięk i obraz). (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-text-doc" target="_blank">1.2.8 Alternatywa dla mediów (nagranie)</a> - Zapewniona jest alternatywa dla wszystkich — nagrań w multimediach zsynchronizowanych (dźwięk i obraz) oraz dla wszystkich nagrań tylko wideo (sam obraz). (Poziom AAA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: videos.twig
+//
+// Style guide: Media.videos
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+// sass-lint:disable-all
+.videos {
+  margin: 0;
+}
+
+// Code from Accessible HTML5 Video Player
+// http://paypal.github.io/accessible-html5-video-player/css/px-video.css
+/* utilities */
+.pull-left {
+	float: left;
+}
+.sr-only {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+.hide {
+    display: none;
+}
+.show-inline {
+	display: inline-block;
+}
+
+/* containers */
+.px-video-img-captions-container * {
+	box-sizing: border-box;
+}
+
+.px-video-img-captions-container {
+	position: relative;
+}
+
+/* progress indicator */
+.px-video-progress {
+	width: 100%;
+	height: 10px;
+}
+.px-video-progress[value] {
+	/* Reset the default appearance */
+	-webkit-appearance: none;
+	border: none;
+}
+.px-video-progress[value]::-webkit-progress-bar {
+	background-color: #E6E6E6;
+}
+.px-video-progress[value]::-webkit-progress-value {
+	background-color: #009CDF;
+}
+
+/* time */
+.px-video-time {
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	float: right;
+	margin-top: 2px;
+	font-size: 14px;
+}
+
+/* caption area */
+.px-video-captions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: .5em;
+	min-height: 2.5em;
+	background-color: #000;
+	color: #fff;
+	font-size: 1.1em;
+	text-align: center;
+	opacity: 0.75;
+}
+
+/* buttons */
+.px-video-controls button {
+	border: 1px #fff solid;
+	background: transparent;
+	padding: 0;
+	margin: 0 5px;
+	width: 25px;
+	height: 20px;
+	overflow: hidden;
+	background: no-repeat url("#{$asset-path}/px-video-sprite.png");
+}
+.px-video-controls button:focus {
+	border: 1px #999 dotted;
+	outline: none;
+}
+.px-video-controls button {
+	cursor: pointer;
+}
+
+/* restart button */
+.px-video-controls button.px-video-restart {
+	background-position: -6px -333px;
+	margin-left: 0;
+}
+.px-video-controls button.px-video-restart:hover,
+.px-video-controls button.px-video-restart:focus {
+	background-position: -6px -297px;
+}
+
+/* rewind button */
+.px-video-controls button.px-video-rewind {
+	background-position: -6px -189px;
+}
+.px-video-controls button.px-video-rewind:hover,
+.px-video-controls button.px-video-rewind:focus {
+	background-position: -6px -153px;
+}
+
+/* play button */
+.px-video-controls button.px-video-play {
+	background-position: -6px -45px;
+}
+.px-video-controls button.px-video-play:hover,
+.px-video-controls button.px-video-play:focus {
+	background-position: -6px -9px;
+}
+
+/* pause button */
+.px-video-controls button.px-video-pause {
+	background-position: -6px -117px;
+}
+.px-video-controls button.px-video-pause:hover,
+.px-video-controls button.px-video-pause:focus {
+	background-position: -6px -81px;
+}
+
+/* forward button */
+.px-video-controls button.px-video-forward {
+	background-position: -6px -261px;
+}
+.px-video-controls button.px-video-forward:hover,
+.px-video-controls button.px-video-forward:focus {
+	background-position: -6px -225px;
+}
+
+.px-video-fullscreen-btn-container label {
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	margin-left: 10px;
+	background: no-repeat url("#{$asset-path}/px-video-sprite.png");
+	background-position: -6px -907px;
+}
+.px-video-fullscreen-btn-container input[type="checkbox"]:focus+label {
+	outline: 1px #999 dotted;
+	background-position: -6px -943px;
+}
+.px-video-fullscreen-btn-container input[type="checkbox"]:hover+label {
+	background-position: -6px -943px;
+	cursor: pointer;
+}
+.px-video-fullscreen-btn-container input[type="checkbox"]:focus+label {
+	outline: 1px #999 dotted;
+	background-position: -6px -943px;
+}
+.px-video-fullscreen-btn-container input[type="checkbox"]:checked+label {
+	background-position: -6px -979px;
+}
+.px-video-fullscreen-btn-container input[type="checkbox"]:checked:hover+label {
+	background-position: -6px -1015px;
+}
+
+/* captions button */
+.px-video-captions-btn-container label {
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	margin-left: 10px;
+	background: no-repeat url("#{$asset-path}/px-video-sprite.png");
+	background-position: -6px -835px;
+}
+.px-video-captions-btn-container input[type="checkbox"]:focus+label {
+	outline: 1px #999 dotted;
+	background-position: -6px -799px;
+}
+.px-video-captions-btn-container input[type="checkbox"]:hover+label {
+	background-position: -6px -799px;
+	cursor: pointer;
+}
+.px-video-captions-btn-container input[type="checkbox"]:focus+label {
+	outline: 1px #999 dotted;
+	background-position: -6px -799px;
+}
+.px-video-captions-btn-container input[type="checkbox"]:checked+label {
+	background-position: -6px -871px;
+}
+
+/* mute button */
+.px-video-mute-btn-container label {
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	margin-left: 240px;
+	margin-top: 2px;
+	background: no-repeat url("#{$asset-path}/px-video-sprite.png");
+	background-position: -6px -476px;
+}
+.px-video-mute-btn-container input[type="checkbox"]:focus+label {
+	outline: 1px #999 dotted;
+	background-position: -6px -440px;
+}
+.px-video-mute-btn-container input[type="checkbox"]:hover+label {
+	background-position: -6px -440px;
+	cursor: pointer;
+}
+.px-video-mute-btn-container input[type="checkbox"]:focus+label {
+	outline: 1px #999 dotted;
+	background-position: -6px -440px;
+}
+/* checked state of mute button */
+.px-video-mute-btn-container input[type="checkbox"]:checked+label {
+	background-position: -6px -692px;
+}
+.px-video-mute-btn-container input[type="checkbox"]:checked:hover+label,
+.px-video-mute-btn-container input[type="checkbox"]:checked:focus+label {
+	background-position: -6px -656px;
+}
+
+/* volume range input */
+.px-video-controls input[type='range'] {
+	-webkit-appearance: none;
+	height: 6px;
+	width: 100px;
+	margin-top: 8px;
+	background-color: #E6E6E6;
+	outline:none;
+}
+.px-video-controls input[type='range']:focus::-webkit-slider-thumb {
+	outline: 1px #999 dotted;
+}
+.px-video-controls input[type='range']::-moz-range-track {
+	-moz-appearance: none;
+	height: 6px;
+	background-color: #E6E6E6;
+	border: none;
+}
+.px-video-controls input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	height: 10px;
+	width: 6px;
+	background-color: #666;
+}
+.px-video-controls input[type='range']::-moz-range-thumb {
+	height: 12px;
+	width: 8px;
+	background-color: #666;
+}
+/* fixing display for IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.px-video-controls input[type='range'] {
+		position: relative;
+		padding: 0;
+		height: 8px;
+		top: -3px;
+	}
+	.px-video-time {
+		margin-top: 4px;
+	}
+	.px-video-captions {
+		padding: 8px;
+		min-height: 36px;
+	}
+}
+
+.px-video-container.fullscreen {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-cursor-visibility: auto-hide;
+}
+
+/* Fullscreen styles */
+
+/* style applied through js */
+.px-video-controls.js-fullscreen-controls {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 940;
+	background: white;
+}
+
+.px-video-captions.js-fullscreen-captions {
+	min-height: 3.5em;
+	font-size: 2.5em;
+	padding: 1em;
+}
+
+.px-timetip {
+	padding: 5px 10px;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	background: rgba(0,0,0,0.83);
+	border-radius: 3px;
+	color: #fff;
+	width: auto;
+}
+
+.px-timetip:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(43, 43, 43, 0);
+	border-top-color: #2b2b2b;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+// sass-lint:enable-all

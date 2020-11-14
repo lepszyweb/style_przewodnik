@@ -1,0 +1,110 @@
+// Kolory
+//
+//  - Unikaj używania koloru *tylko* do przekazywania informacji. W przypadku łączy użyj innego identyfikatora, takiego jak pogrubienie lub podkreślenie, aby wskazać tekst łącza za pomocą samego koloru.
+//  - Niektórzy użytkownicy mają trudności z odczytaniem tekstu, jeśli kontrast między pierwszym planem a tłem jest zbyt mały. Aby zachować zgodność z poziomem AA, tekst musi mieć współczynnik kontrastu co najmniej 4,5:1 (lub 3:1 w przypadku dużego tekstu). Aby spełnić wytyczne na bardziej rygorystycznym poziomie AAA, współczynnik kontrastu musi wynosić co najmniej 7:1 (lub 4,5:1 w przypadku dużego tekstu).
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#color_res">Zasoby</a></h3><div id="color_res" class="atblock__panel"><ul><li><a href="https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en" target="_blank">Dodatek do Chrome: Color Contrast Analyzer</a> - najlepszy sposób na identyfikację gradientów i obrazów tła w witrynie</li><li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator" target="_blank">Color Blindness Simulator</a> - zobacz, jak Twoja witryna wygląda dla osoby z jedną z różnych form ślepoty barw</li><li><a href="http://colorsafe.co" target="_blank">Color Safe</a> -  dostępne palety kolorów oparte na wytycznych WCAG </li><li><a href="http://contrastchecker.com" target="_blank">Contrast Checker</a> - przetestuj kombinacje kontrastu kolorów w oparciu o wytyczne WCAG</li><li><a href="https://addons.mozilla.org/en-us/firefox/addon/wcag-contrast-checker/" target="_blank">Dodatek do Firefoksa WCAG Contrast Checker</a> - najłatwiejszy sposób na szybkie przetestowanie witryny i wyświetlenie listy problemów CSS</li><li><a href="https://randoma11y.com" target="_blank">Losowe palety kolorów A11y</a> - spróbu wybrać piękną, losową paletę kolorów, które jest w pełni przyjazne</li><li><a href="http://kontrast.lepszyweb.pl/" target="_blank">Wyszukiwarka kolorów</a> - najlepszy sposób na znalezienie zbliżonych kolorów zgodnych z WCAG 2.1</li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#color_guide">Wytyczne WCAG 2.1</a></h3><div id="color_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" target="_blank">1.4.1. Użycie koloru</a> - Kolor nie jest wykorzystywany jako jedyny wizualny sposób przekazywania informacji, wskazywania czynności do wykonania lub oczekiwania na odpowiedź, czy też wyróżniania elementów wizualnych. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl//#visual-audio-contrast-contrast" target="_blank">1.4.3 Kontrast (Minimum)</a> - Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1, poza kilkoma wyjątkami. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#non-text-contrast" target="_blank">1.4.11 Kontrast elementów nietekstowych</a> - Wizualna prezentacja komponentów interfejsu użytkownika oraz części obiektów graficznych wymaganych do zrozumienia tresci ma współczynnik kontrastu co najmniej 3:1 względem sąsiednich kolorów. (Poziom AA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup:
+// <h3>Podstawowe</h3>
+// <div class="kss-swatch" style="background-color: #77408e">
+//   <div class="kss-swatch__hex">$color-primary<br>#77408e</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #df1465" >
+//   <div class="kss-swatch__hex">$color-secondary<br>#df1465</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #e00000">
+//   <div class="kss-swatch__hex">$color-cherry<br>#e00000</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #a51323">
+//   <div class="kss-swatch__hex">$color-ruby<br>#a51323</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #7fffd4">
+//   <div class="kss-swatch__hex">$color-sea-glass<br>#7fffd4</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #42dc42">
+//   <div class="kss-swatch__hex">$color-grass<br>#42dc42</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #4083ae">
+//   <div class="kss-swatch__hex">$color-cornflower<br>#4083ae</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #0a3055">
+//   <div class="kss-swatch__hex">$color-navy<br>#0a3055</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #ffa0e5">
+//   <div class="kss-swatch__hex">$color-ballet-slipper<br>#ffa0e5</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #550055">
+//   <div class="kss-swatch__hex">$color-eggplant<br>#550055</div>
+// </div>
+// <div class="break"></div>
+// <h3>Czarne, białe, szarości</h3>
+// <div class="kss-swatch" style="background-color: #000000">
+//   <div class="kss-swatch__hex">$color-black<br>#000000</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #464646">
+//   <div class="kss-swatch__hex">$color-midnight<br>#464646</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #888b8d">
+//   <div class="kss-swatch__hex">$color-manatee<br>#888b8d</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #bbbbbb">
+//   <div class="kss-swatch__hex">$color-silver<br>#bbbbbb</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #dddddd">
+//   <div class="kss-swatch__hex">$color-alto<br>#dddddd</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #f4f4f4">
+//   <div class="kss-swatch__hex">$color-gallery<br>#f4f4f4</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #f7f7f7">
+//   <div class="kss-swatch__hex">$color-alabaster<br>#f7f7f7</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #ffffff">
+//   <div class="kss-swatch__hex">$color-white<br>#ffffff</div>
+// </div>
+// <div class="break"></div>
+// <h3>Powiadomienia</h3>
+// <div class="kss-swatch" style="background-color: #e00000">
+//   <div class="kss-swatch__hex">$notification-color-error<br>#e00000</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #218003">
+//   <div class="kss-swatch__hex">$notification-color-success<br>#218003</div>
+// </div>
+//
+// Style guide: Ogólne.colors
+// Podstawowe
+$color-primary: #77408e;
+$color-primary-dark: #5f3372;
+$color-secondary: #df1465;
+$color-secondary-dark: #b21051;
+$color-cherry: #e00000;
+$color-ruby: #a51323;
+$color-blood: #7c0b18;
+$color-sea-glass: #7fffd4;
+$color-grass: #42dc42;
+$color-cornflower: #4083ae;
+$color-navy: #0a3055;
+$color-ballet-slipper: #ffa0e5;
+$color-eggplant: #550055;
+
+// Szarości
+$color-black: #000000;
+$color-charcoal: #222222;
+$color-midnight: #464646;
+$color-manatee: #888b8d;
+$color-silver: #bbbbbb;
+$color-alto: #dddddd;
+$color-gallery: #f4f4f4;
+$color-alabaster: #f7f7f7;
+$color-white: #ffffff;
+
+//Powiadomienia
+$notification-color-error: $color-secondary;
+$notification-color-success: #218003;

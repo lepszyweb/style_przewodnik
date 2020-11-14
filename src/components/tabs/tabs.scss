@@ -1,0 +1,78 @@
+// Panele z zakładkami - szkic
+//
+//  - Należy uważać na używanie paneli z zakładkami, ponieważ są one z założenia mniej widoczne.
+//  - Po ustawieniu fokusu na przycisku panelu (zakładce), pozostałe panele można wybrać za pomocą klawiszy strzałek.
+//  - Dostęp do treści w panelu można uzyskać za pomoca klawisza Tab (jeśli w panelu znajdują się elementy interaktywne) lub PgDn (jeśli w panelu nie ma elementów interaktywnych).
+//  - Upewnij się, że aktualizujesz wartości atrybutów `aria-posinset` i `aria-setsize`, jeśli masz więcej niż trzy panele.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tabs_res">Zasoby</a></h3><div id="tabs_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/a11y-support-series-part-1-aria-tab-panel-accessibility/" target="_blank">ARIA Tab Panel Accessibility</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tabs_guide">Wytyczne WCAG 2.1</a></h3><div id="tabs_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" target="_blank">2.1.1 Klawiatura</a> - Wszystkie funkcjonalności w treści są obsługiwane za pomocą interfejsu klawiatury, bez wymogu określonego czasu użycia poszczególnych klawiszy, z wyjątkiem sytuacji, kiedy dana funkcja wymaga wprowadzenia informacji przez użytkownika w oparciu o ścieżkę ruchów, a nie w oparciu o punkty końcowe wejścia. (Poziom A)</section>
+//
+//
+//
+// Markup: tabs.twig
+//
+// Style guide: Struktury.tabs
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+$width-border: 1px;
+$color-border: $color-alto;
+$border: $width-border solid $color-border;
+
+.tabs {
+
+  .tabs__navlist {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    margin-left: $padding-xsm;
+  }
+
+  .tabs__nav-item {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    font-size: $padding-sm;
+
+    &.is-active {
+
+      .tabs__nav-trigger {
+        background: $color-cherry;
+        color: $color-white;
+        font-weight: 600;
+        border-radius: $border-rd-sm $border-rd-sm 0 0;
+      }
+    }
+
+    .tabs__nav-trigger {
+      box-shadow: none;
+      line-height: normal;
+      border: $border;
+      border-bottom: 0;
+      background: $color-alabaster;
+      color: $color-midnight;
+      margin: 0 5px;
+      border-radius: $border-rd-sm $border-rd-sm 0 0;
+    }
+  }
+
+  .tabs__panels {
+    border: $border;
+    padding: $padding-xsm $padding-xsm $padding-sm;
+  }
+
+  .tabs__panel {
+    display: none;
+    padding: $padding-xsm;
+
+    &.is-current {
+      display: block;
+    }
+  }
+}

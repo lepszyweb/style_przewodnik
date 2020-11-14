@@ -1,0 +1,246 @@
+// Podpowiedzi
+//
+//  - Element podpowiedzi (Tooltips) nie powinien otrzymywać fokusu. Fokus powinien pozostać na polu, przycisku lub łączu, o którym mowa w etykiecie.
+//  - Podowiedzi  nie powinny być ujawniane przed upływem krótkiego czasu (~1-5 sekund).
+//  - Zależnie od wybranej opcji Tooltip, może istnieć dodatkowe oznakowanie ARIA, które należy zastosować. Dodaj `aria-describedby="przyklad1"` na polu danych i połącz je z powiązaną sekcją o odpowiadającym ID selektora `id="przyklad1"`.
+//  - Jeśli to możliwe, użyj opisowego tekstu na polach formularza, który musi być aktywowany przez zdarzenie `focus` lub `hover`. Podpowiedzi mogą być problematyczne dla niektórych urządzeń technologii wspomagających.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_res">Zasoby</a></h3><div id="tooltips_res" class="atblock__panel"><ul><li><a href="http://heydonworks.com/practical_aria_examples/#input-tooltip" target="_blank">ARIA Examples - Tooltips</a></li><li><a href="https://github.com/scottaohara/a11y_tooltips" target="_blank">ARIA Tooltips</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices/#tooltip" target="_blank">Tooltip Widget</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_guide">Wytyczne WCAG 2.1</a></h3><div id="tooltips_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: tooltips.twig
+//
+// Style guide: Formularze.tooltips
+// Import site utilities.
+@import '../../global/utils/init';
+
+.a11y-tip {
+  display: table;
+  position: relative;
+
+  &__trigger {
+
+    &[tabindex] {
+      border-bottom: $tip--trigger--border-bottom;
+    }
+
+    &[aria-describedby]:hover + ,
+    &[aria-describedby]:not(.a11y-tip__trigger--toggle):focus +,
+    &[aria-describedby][aria-expanded='true'] {
+
+      .a11y-tip__help,
+      .a11y-tip__help::after {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .a11y-tip__help {
+
+        &,
+        &::after {
+          transform: translate(-50%, 0);
+        }
+
+        @media screen and ( min-width: $bp-sm ) {
+
+          @if $tip--compile-left == true {
+            &--left,
+            &--left::after {
+              transform: translate(0, -50%);
+            }
+          }
+
+          @if $tip--compile-right == true {
+            &--right,
+            &--right::after {
+              transform: translate(0, -50%);
+            }
+          }
+        }
+      }
+    }
+
+    &[aria-describedby].a11y-tip__trigger--toggle:hover + {
+
+      .a11y-tip__help,
+      .a11y-tip__help::after {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+      }
+    }
+
+    &[aria-expanded='true'].a11y-tip__trigger--toggle:hover + {
+
+      .a11y-tip__help,
+      .a11y-tip__help::after {
+        opacity: 1 !important; // sass-lint:disable-line no-important
+        pointer-events: auto !important; // sass-lint:disable-line no-important
+        transition: opacity $tip--no-delay ease-in-out,
+        transform $tip--no-delay ease-in-out;
+        visibility: visible !important; // sass-lint:disable-line no-important
+      }
+    }
+  }
+
+  &--no-delay {
+
+    .a11y-tip__help,
+    .a11y-tip__help::after {
+      transition: opacity $tip--no-delay ease-in-out,
+      transform $tip--no-delay ease-in-out;
+    }
+  }
+}
+
+
+[role='tooltip'].a11y-tip__help {
+  background: $tip--bg;
+  border-radius: $border-rd-sm;
+  color: $tip--color-white;
+  font-size: $tip--base-size + 2;
+  left: 50%;
+  margin-top: 6px + $tip--arrow-size;
+  max-width: 400px;
+  opacity: 0;
+  padding: $padding-xsm $padding-sm;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  transform: translate(-50%, 10px);
+  transform-style: preserve-3d;
+  transition: opacity 0.2s $tip--delay ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10;
+
+  &::after {
+    @include triangle($tip--arrow-size, $tip--bg, bottom);
+    bottom: 100%;
+    content: '';
+    left: 50%;
+    margin-top: 6px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%, 10px);
+    transform-style: preserve-3d;
+    transition: opacity 0.2s $tip--delay ease-in-out;
+    visibility: hidden;
+    z-index: 10;
+  }
+
+  @if $tip--compile-bottom == true {
+    &--top {
+      bottom: 100%;
+      left: 50%;
+      margin-bottom: 6px + $tip--arrow-size;
+      margin-top: 0;
+      top: auto;
+      transform-origin: center top;
+      transform: translate(-50%, 10px);
+
+      &::after {
+        @include triangle($tip--arrow-size, $tip--bg, top);
+        left: 50%;
+        margin-bottom: 6px;
+        margin-top: 0;
+        top: 100%;
+        transform-origin: center top;
+        transform: translate(-50%, -10px);
+      }
+    }
+  }
+
+  @media screen and ( min-width: $bp-sm ) {
+
+    @if $tip--compile-left == true {
+      &--left {
+        left: auto;
+        margin-right: 5px + $tip--arrow-size;
+        margin-top: 0;
+        right: 100%;
+        top: 50%;
+        transform: translate(10px, -50%);
+
+        &::after {
+          @include triangle($tip--arrow-size, $tip--bg, left);
+          left: 100%;
+          margin-right: 5px;
+          margin-top: 0;
+          top: 50%;
+          transform: translate(-10px, -50%);
+        }
+      }
+    }
+
+    @if $tip--compile-right == true {
+      &--right {
+        left: 100%;
+        margin-left: 5px + $tip--arrow-size;
+        margin-top: 0; // cancel bottom default styling
+        top: 50%;
+        transform: translate(10px, -50%);
+
+        &::after {
+          @include triangle($tip--arrow-size, $tip--bg, right);
+          bottom: auto; // cancel bottom default styling
+          left: auto; // cancel bottom default styling
+          margin-left: 5px;
+          margin-top: 0;  // cancel bottom default styling
+          right: 100%;
+          top: 50%;
+          transform: translate(10px, -50%);
+        }
+      }
+    }
+  }
+}
+
+
+// hide tool tips if the ESC key is hit
+.a11y-tip--hide .a11y-tip__help {
+  display: none;
+}
+
+
+.no-js .a11y-tip__help:not([role]) {
+  font-size: 0.85em;
+
+  &::before {
+    content: '(';
+  }
+
+  &::after {
+    content: ')';
+  }
+}
+
+/* set up hidden tooltip */
+.no-js-tooltip {
+
+  [role='tooltip'] {
+    display: none;
+    padding: $padding-sm;
+    margin: 0;
+    color: $color-white;
+    background: $color-cherry;
+    width: 100%;
+    z-index: 2;
+  }
+
+  /* reveal associated tooltip on focus of preceeding input */
+  input:focus + [role='tooltip'] {
+    display: block;
+    position: relative;
+    margin-top: -19px;
+    margin-left: -2px;
+  }
+}

@@ -1,0 +1,29 @@
+// Obrazy
+//
+//  - Każdy `<img>`, który dodasz do swojej strony musi mieć atrybut alt. Jeśli obrazek jest informacyjny, wpisz w `alt` tekst z treścią równoważną obrazowi.
+//  - Jeśli obrazek jest dekoracyjny lub lub zbędny w stosunku do ilustrowanego tekstu, ustaw `alt=""`, aby przekazać użytkownikom technologii wspomagającej, że obrazek nie jest potrzebny do zrozumienia strony.
+//  - Unikaj używania ogólnych słów, takich jak &bdquo;zdjęcie&rdquo;, &bdquo;obrazek&rdquo; lub &bdquo;ikona&rdquo; jako fragmentu wartości `alt`, ponieważ nie przekazują one użytkownikowi cennych treści. Bądź możliwie jak najbardziej opisowy.
+//  - Upewnij się, że każdy tekst na obrazkach z tekstem ma co najmniej 14 punktów i ma dobry kontrast z tłem.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#images_guide">Wytyczne WCAG 2.1</a></h3><div id="images_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><strong>Uwaga:</strong> Jeśli zawartość nietekstowa jest czystą dekoracją, jest używana tylko do formatowania wizualnego, lub nie jest prezentowana użytkownikom, to nie potrzebuje alternatyw tekstowych.<br><br><a href="https://wcag.lepszyweb.pl#visual-audio-contrast-contrast" target="_blank">1.4.3 Kontrast (minimalny)</a> - Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1, poza kilkoma wyjątkami (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Obrazy tekstu</a> - Jeśli wykorzystywane technologie mogą przedstawiać treść wizualnie, do przekazywania informacji wykorzystuje się tekst, a nie obraz tekstu, z kilkoma wyjątkami (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#non-text-contrast" target="_blank">1.4.11 Kontrast elementów nietekstowych</a> - Wizualna prezentacja następujących elementów ma współczynnik kontrastu co najmniej 3:1 względem sąsiednich kolorów (Poziom AA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: images.twig
+//
+// Style guide: Media.images
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.images {
+  position: relative;
+  margin: 0 auto;
+  max-width: 650px;
+  max-height: 500px;
+  background-size: contain;
+
+  img {
+    border-radius: $border-rd-sm;
+  }
+}

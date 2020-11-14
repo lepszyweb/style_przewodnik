@@ -1,0 +1,73 @@
+// Akordeon (harmonijka)
+//
+// - Przyciski są używane jako akordeony, dzięki czemu mogą być nawigowane przez użytkowników klawiatury i dostępne dla czytników ekranowych.
+// - Każdy przycisk akordeonowy i rzeczywista treść ma unikalne `id` związane z nim `aria-controls`.
+// - Każdy przycisk posiada atrybut `aria-expanded`, który jest przełączany pomiędzy `true` i `false`. Jeśli `aria-expanded='true'`, powiązana z nim treść jest wyświetlana, a jeśli `aria-expanded='false'`, to treść jest ukryta.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#accordion_guide">Wytyczne WCAG 2.1</a></h3><div id="accordion_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Kolejność fokusu</a> - Jeśli strona internetowa może być nawigowana sekwencyjnie, a kolejność nawigacji wpływa na zrozumienie lub funkcjonalność strony, komponenty przyjmują fokus w kolejności, dzięki której zachowany jest sens i funkcjonalność treści. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Wiele dróg</a> - Istnieje więcej niż jeden sposób umożliwiający zlokalizowanie strony internetowej w zestawie stron internetowych, z wyjątkiem sytuacji, kiedy dana strona jest wynikiem jakiejś procedury lub jednym z jej etapów. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik. (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: accordion.twig
+//
+// Style guide: Nawigacja.accordion
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.accordion {
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__trigger {
+    background-repeat: no-repeat;
+    background-image: url('#{$asset-path}/plus_round_red.png'); // zamienia na plus
+    background-size: 28px;
+    background-position: 97% 50%;
+    box-shadow: none;
+    line-height: 1.5;
+    margin: $padding-xsm 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px 40px 10px 16px;
+    font-size: 1rem;
+    color: $color-charcoal;
+    background-color: $color-alabaster;
+    border: 1px solid $color-silver;
+    display: block;
+    text-decoration: none;
+    text-transform: none;
+
+    @include breakpoint($bp-sm) {
+      background-size: 32px;
+      background-position: 98% 50%;
+    }
+
+    &[aria-expanded='true'] {
+      content: '';
+      background: url('#{$asset-path}/minus_round_red.png'); // zamienia na minus
+      background-size: 28px;
+      background-repeat: no-repeat;
+      background-position: 97% 50%;
+      background-color: $color-alabaster;
+
+      @include breakpoint($bp-sm) {
+        background-size: 32px;
+        background-position: 98% 50%;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-cherry;
+      border: 1px solid $color-ruby;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 10px 16px;
+  }
+}

@@ -1,0 +1,154 @@
+//=======================================================
+// Wstawki
+//=======================================================
+
+// Clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// Sprawia, że element jest wizualnie ukryty, ale dostępny.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Wyłacza efekt element-invisible (element niewidoczny).
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Sprawia, że element jest domyślnie ukryty wizualnie, 
+// ale widoczny po otrzymaniu fokusu.
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+// Funkcja pomocnicza do pracy z mapami Sass.
+// Przykład: @include print($configuration);
+@mixin print($declarations) {
+  @each $property, $value in $declarations {
+    #{$property}: $value;
+  }
+}
+
+// Wstawka dla standardowych przycisków
+@mixin button($hover-color: $color-primary-dark, $background: $color-primary, $color: $color-white, $padding: 0.8rem $padding-sm, $corners: $border-rd-md) {
+  display: inline-block;
+  background-color: $background;
+  color: $color;
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  border: 3px solid $background;
+  border-radius: $border-rd-sm;
+  box-shadow: $shadow-sm;
+  font-size: $padding-sm;
+  min-height: 48px;
+  position: relative;
+  margin: $padding-xsm 0;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    color: $color-white;
+    border: 3px solid $hover-color;
+    text-decoration: underline;
+    @include box-shadow;
+  }
+
+  &:focus,
+  &:active,
+  .active {
+    background-color: $color-blood;
+    color: $color-white;
+    border: 3px solid $color-blood;
+    text-decoration: underline;
+    @include box-shadow;
+  }
+}
+
+// Wstawka dla obrysu przycisków
+@mixin button-outline($hover-color: $color-primary-dark, $color: $color-primary, $padding: 0.8rem $padding-sm, $corners: $border-rd-md) {
+  @include button;
+  height: 50px;
+  color: $color;
+  background-color: transparent;
+  border: 3px solid $color;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $hover-color;
+    @include box-shadow;
+  }
+}
+
+@mixin outline-shadow {
+  box-shadow: $shadow-sm,
+              inset $shadow-sm;
+}
+
+@mixin box-shadow {
+  box-shadow: $shadow-sm;
+}
+
+@mixin box-shadow-large {
+  box-shadow: $shadow-lg;
+}
+
+@mixin text-shadow {
+  text-shadow: $shadow-sm;
+}
+
+@mixin triangle($tri-size, $tri-color, $tri-direction) {
+	border: inset $tri-size;
+	content: '';
+	display: inline-block;
+	height: 0;
+	speak: none;
+	width: 0;
+
+	@if ($tri-direction == top) {
+		border-color: $tri-color transparent transparent transparent;
+		border-top-style: solid;
+	}
+
+	@if ($tri-direction == bottom) {
+		border-color: transparent transparent $tri-color transparent;
+		border-bottom-style: solid;
+	}
+
+	@if ($tri-direction == left) {
+		border-color: transparent transparent transparent $tri-color;
+		border-left-style: solid;
+	}
+
+	@if ($tri-direction == right) {
+		border-color: transparent $tri-color transparent transparent;
+		border-right-style: solid;
+	}
+}
+
+@mixin image-replace($indent: 99999999%) {
+  text-indent: $indent;
+  overflow: hidden;
+  white-space: nowrap;
+}

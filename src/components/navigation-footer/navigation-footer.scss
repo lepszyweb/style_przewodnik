@@ -1,0 +1,321 @@
+// Nawigacja w stopce
+//
+//  - Wszystkie elementy nawigacyjne powinny mieć znacznik `<nav>`.
+//  - Jeśli musisz użyć bardziej ogólnego elementu, takiego jak `<div>`, dodaj `role="navigation"` do każdego paska nawigacyjnego, aby wyraźnie zidentyfikować go jako punkt orientacyjny dla użytkowników technologii wspomagających.
+//  - Menu powinno być oznaczone zgodnie z ich indywidualną funkcją. Użyj `class="visuallyhidden">`, `aria-label=""`, lub `aria-labelledby=""`, aby łatwo dodać kontekst do różnych menu na Twojej stronie.
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbar-footer_guide">Wytyczne WCAG 2.1</a></h3><div id="navbar-footer_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Kolejność fokusu</a> - Jeśli strona internetowa może być nawigowana sekwencyjnie, a kolejność nawigacji wpływa na zrozumienie lub funkcjonalność strony, komponenty przyjmują fokus w kolejności, dzięki której zachowany jest sens i funkcjonalność treści. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Wiele dróg</a> - Istnieje więcej niż jeden sposób umożliwiający zlokalizowanie strony internetowej w zestawie stron internetowych, z wyjątkiem sytuacji, kiedy dana strona jest wynikiem jakiejś procedury lub jednym z jej etapów. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik. (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających (Poziom A)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: navigation-footer.twig
+//
+// Style guide: Nawigacja.navigation-footer
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.footer {
+  @include clearfix;
+  float: left;
+  clear: both;
+  width: 100%;
+  background: $color-midnight;
+  position: relative;
+
+  input[type='search'] {
+    max-width: 60%;
+    width: 100%;
+
+    @include breakpoint($bp-md) {
+      max-width: 60%;
+      width: 100%;
+    }
+  }
+
+  h2 {
+    text-align: left;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $color-cherry;
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    margin: 0 -18px 10px;
+    list-style: none;
+    color: $color-white;
+  }
+
+  .buttons {
+    text-align: center;
+
+    @include breakpoint($bp-md) {
+      text-align: left;
+    }
+  }
+
+  .button {
+    @include button;
+    width: 175px;
+  }
+
+  /* Navigation */
+  .navigation {
+    display: block;
+    float: left;
+    text-align: left;
+  }
+
+  .navigation__link {
+    display: block;
+    padding-right: $padding-md;
+    line-height: 1;
+    padding-bottom: 5px;
+  }
+
+  .navigation--social {
+    display: block;
+    float: none;
+    margin: 0 auto 2rem;
+    width: 100%;
+    text-align: center;
+
+    @include breakpoint($bp-md) {
+      float: left;
+      margin: 0 auto;
+    }
+
+    .navigation__link {
+      padding: $padding-sm 0 $padding-sm $padding-xsm;
+      margin: 0;
+      display: inline-block;
+    }
+
+    .navigation__menu {
+      @include clearfix;
+      margin: 0 auto;
+      float: none;
+
+      @include breakpoint($bp-md) {
+        float: left;
+        padding-left: 0;
+      }
+    }
+  }
+
+  /* Social Icons */
+  .icon {
+    background-position: center;
+    background-size: inherit;
+    margin-top: -$padding-sm;
+  }
+
+  .first {
+    margin-left: 0;
+  }
+
+  .last {
+    margin-right: 0;
+  }
+}
+
+/* submit input */
+.footer__submit {
+  text-align: left;
+  padding-bottom: $padding-md;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+
+  .form-float-label {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .submit-block-form {
+    position: relative;
+    margin: auto;
+    border-radius: $border-rd-sm;
+    overflow: hidden;
+
+    @include breakpoint($bp-md) {
+      margin: 0;
+    }
+  }
+
+  .form-text {
+    width: 100%;
+    padding-right: 11rem;
+    border: 1px solid $color-silver;
+  }
+
+  .form-actions {
+    float: right;
+  }
+
+  .form-submit {
+    background: $color-cherry;
+    color: $color-white;
+    border: 0;
+    border-radius: 0 $border-rd-sm $border-rd-sm 0;
+    position: relative;
+    margin-top: -72px;
+    float: right;
+    margin-right: -10px;
+    padding: 1.5rem $padding-md 1.5rem 1.75rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0;
+    }
+  }
+}
+
+.footer__top {
+  padding: $padding-md;
+
+  @include breakpoint($bp-md) {
+    padding: $padding-lg $padding-md;
+  }
+}
+
+.footer__title,
+.block__title {
+  color: $color-white !important; // sass-lint:disable-line no-important
+}
+
+.block--mailchimp-signup-newsletter-subscribe {
+  float: none;
+
+  @include breakpoint($bp-sm) {
+    float: right;
+    max-width: 275px;
+  }
+
+  @include breakpoint($bp-md) {
+    max-width: 100%;
+  }
+}
+
+/* Credits and social */
+.footer__credits {
+  background: $color-black;
+  color: $color-white;
+  text-align: center;
+  padding: 0;
+
+  @include breakpoint($bp-md) {
+    text-align: left;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: $padding-md $padding-md 0;
+  text-align: center;
+  margin-bottom: -$padding-sm;
+
+  @include breakpoint($bp-md) {
+    padding: $padding-md;
+    margin-bottom: 0;
+  }
+}
+
+.l-region--footer-bottom {
+  width: 100%;
+}
+
+.footer .l-center {
+  @include clearfix;
+  padding: 0 $padding-sm $padding-md-lg;
+  max-width: 700px;
+  margin: 0 auto;
+
+  @include breakpoint($bp-xsm) {
+    padding: 0 $padding-md $padding-md-lg;
+  }
+
+  @include breakpoint($bp-md) {
+    padding: 0 $padding-md-lg;
+  }
+}
+
+.footer__flex {
+  flex-direction: column;
+  display: flex;
+
+  @include breakpoint($bp-md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__left {
+  width: 100%;
+  float: left;
+  padding-top: 3rem;
+
+  @include breakpoint($bp-sm) {
+    width: 50%;
+    padding-right: 0;
+  }
+}
+
+.footer__right {
+  width: 100%;
+  max-width: 300px;
+  float: left;
+  padding-top: 3rem;
+
+  @include breakpoint($bp-sm) {
+    width: 50%;
+    padding-right: 0;
+    float: right;
+  }
+
+  ul {
+    float: left;
+    clear: right;
+    position: relative;
+    width: 50%;
+  }
+}
+
+.footer__left-social {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+
+  @include breakpoint($bp-md) {
+    width: 50%;
+    padding-right: $padding-md;
+  }
+}
+
+.footer__right-search {
+  width: 100%;
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+
+  @include breakpoint($bp-md) {
+    width: 50%;
+    padding-right: 0;
+    text-align: left;
+  }
+}
