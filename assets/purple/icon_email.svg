@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 15 11.25"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="icon_email_purple.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>icon_email</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="20.977778"
+     inkscape:cx="-6.9200211"
+     inkscape:cy="5.6250001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.a{fill:#eb2227;}</style>
+  </defs>
+  <title
+     id="title6">icon_email</title>
+  <path
+     class="a"
+     d="M15.42,12.12a1.86,1.86,0,0,1-.24.9l-4.74-5.3,4.68-4.1a1.86,1.86,0,0,1,.29,1v7.5h0ZM7.92,8.68L14.44,3a1.85,1.85,0,0,0-.89-0.24H2.29A1.85,1.85,0,0,0,1.4,3Zm1.82-.35L8.23,9.66a0.47,0.47,0,0,1-.62,0L6.1,8.34,1.3,13.7a1.85,1.85,0,0,0,1,.29H13.54a1.85,1.85,0,0,0,1-.29Zm-9-4.72a1.86,1.86,0,0,0-.29,1v7.5a1.85,1.85,0,0,0,.24.9l4.74-5.3Z"
+     transform="translate(-0.42 -2.74)"
+     id="path8"
+     style="fill:#77408e;fill-opacity:1"
+     inkscape:export-xdpi="89"
+     inkscape:export-ydpi="89" />
+</svg>
