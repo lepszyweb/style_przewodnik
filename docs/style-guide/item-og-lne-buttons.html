@@ -101,37 +101,83 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-og-lne-buttons" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-og-lne-buttons">
+                    Przyciski
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Znacznik <code>&lt;button&gt;</code> nie potrzebuje niczego specjalnego do pracy. Użyj <code>&lt;button&gt;</code>, kiedy możesz, ale możliwe jest użycie innych elementów pod warunkiem, że dodasz im atrybut <code>role=&quot;button&quot;</code>oraz JavaScript, aby odtworzyć funkcjonalność przycisku.</li>
+<li>Tak jak w przypadku łączy, możesz dodać <code>class=&quot;visuallyhidden&quot;</code> z tekstem opisowym, aby nadać przyciskowi więcej kontekstu o jego przeznaczeniu.</li>
+<li>Jeśli przycisk zawiera element <code>&lt;img&gt;</code>, upewnij się, że ustawiłeś jego atrybut <code>alt</code>. Jeśli zawiera ikonę, użyj <code>aria-label</code>, aby ją opisać.</li>
+<li>Możesz użyć <code>&lt;input type=&quot;image&quot;&gt;</code> aby utworzyć przycisk graficzny. Przyjmuje on atrybut <code>src</code> i <code>alt</code>, tak jak tradycyjne obrazki.</li>
+<li>Ważne są także stany, nie tylko stylizacja przycisków! Jeśli przełączasz klasy tylko do wizualnego zarządzania stanem swoich komponentów, prawdopodobnie nie przekazujesz tego stanu odpowiednio użytkownikom technologii wspomagających.</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Zasoby</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/accessible-aria-buttons" lang="en" hreflang="en" target="_blank">Building Accessible Buttons with ARIA</a>(Tworzenie dostępnych przycisków z ARIA)</li><li><a href="https://css-tricks.com/user-facing-state/" lang="en" hreflang="en" target="_blank">User Facing State</a> (Powiadamianie użytkownika o stanie)</li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank" lang="en" hreflang="en">Using the button role</a> (stosowanie roli przycisku)</li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" lang="en" hreflang="en" target="_blank">W3C Button Examples</a> (W3C: Przykłady przycisków)</li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_guide">Wytyczne WCAG 2.1</a></h3><div id="button_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><strong>Uwaga:</strong> Jeśli zawartość nietekstowa jest czystą dekoracją, jest używana tylko do formatowania wizualnego, lub nie jest prezentowana użytkownikom, to nie potrzebuje alternatyw tekstowych.<br><br><a href="https://wcag.lepszyweb.pl/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="buttons-section">
+  <h3>Rodzaje przycisków</h3>
+  <button class="button" id="button_state" aria-pressed="false" aria-describedby="button-example">Przycisk</button>
+  <span id="button-example" class="visuallyhidden">Przykładowe znakowanie przycisków</span>
+  <button type="button" class="button-icon heart button--outline" id="button_like" aria-pressed="false" aria-describedby="like-button-example" aria-label="heart icon">Lubię to</button>
+  <span id="like-button-example" class="visuallyhidden">Przykładowe znakowanie przycisku Lubię to</span>
+  <button class="button-icon wheelchair" id="button_all" aria-pressed="false" aria-describedby="a11y-button-example" aria-label="wheelchair icon">A11Y<span class="visuallyhidden">wszystkich rzeczy.</span><span id="a11y-button-example" class="visuallyhidden">Przykładowe znakowanie przycisku A11y</span></button>
+  <input type="image" class="magnifyingglass" id="button_search" aria-pressed="false" src="../assets/searchicon.png" alt="Szukaj" /><br><br>
+  <h3>Stany przycisków</h3>
+  <button class="button">Domyślny</button>
+  <button class="button-hover">Hover</button>
+  <button class="button-active">Focus/Active</button>
+  <button class="button-disabled" disabled>Wyłączony</button>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
+  &lt;h3&gt;Rodzaje przycisków&lt;/h3&gt;
+  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;button-example&quot;&gt;Przycisk&lt;/button&gt;
+  &lt;span id=&quot;button-example&quot; class=&quot;visuallyhidden&quot;&gt;Przykładowe znakowanie przycisków&lt;/span&gt;
+  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot; id=&quot;button_like&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;like-button-example&quot; aria-label=&quot;heart icon&quot;&gt;Lubię to&lt;/button&gt;
+  &lt;span id=&quot;like-button-example&quot; class=&quot;visuallyhidden&quot;&gt;Przykładowe znakowanie przycisku Lubię to&lt;/span&gt;
+  &lt;button class=&quot;button-icon wheelchair&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;a11y-button-example&quot; aria-label=&quot;wheelchair icon&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;wszystkich rzeczy.&lt;/span&gt;&lt;span id=&quot;a11y-button-example&quot; class=&quot;visuallyhidden&quot;&gt;Przykładowe znakowanie przycisku A11y&lt;/span&gt;&lt;/button&gt;
+  &lt;input type=&quot;image&quot; class=&quot;magnifyingglass&quot; id=&quot;button_search&quot; aria-pressed=&quot;false&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Szukaj&quot; /&gt;&lt;br&gt;&lt;br&gt;
+  &lt;h3&gt;Stany przycisków&lt;/h3&gt;
+  &lt;button class=&quot;button&quot;&gt;Domyślny&lt;/button&gt;
+  &lt;button class=&quot;button-hover&quot;&gt;Hover&lt;/button&gt;
+  &lt;button class=&quot;button-active&quot;&gt;Focus/Active&lt;/button&gt;
+  &lt;button class=&quot;button-disabled&quot; disabled&gt;Wyłączony&lt;/button&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

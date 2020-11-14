@@ -101,37 +101,395 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-nawigacja-pagination" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-nawigacja-pagination">
+                    Paginacja
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Umieść paginację w elemencie <code>&lt;nav&gt;</code> , jeśli możesz.</li>
+<li>Jeśli musisz użyć bardziej ogólnego elementu, takiego jak <code>&lt;div&gt;</code>, dodaj <code>role=&quot;navigation&quot;</code> do każdego paska nawigacyjnego, aby wyraźnie zidentyfikować go jako punkt orientacyjny dla użytkowników technologii wspomagających.</li>
+<li>Znacznik zawiera <code>aria-label=&quot;pagination&quot;</code> do opisania typu nawigacji.</li>
+<li>Dodaj <code>aria-current=&quot;page&quot;</code> do łącza, które wskazuje na bieżącą stronę. To powie AT, że zaznaczone łącze wskazuje na bieżącą stronę.</li>
+<li>Dodaj <code>aria-disabled=&quot;true&quot;</code> do łącza, gdy łącze jest wyłączone.</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_res">Zasoby</a></h3><div id="pagination_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_guide">Wytyczne WCAG 2.1</a></h3><div id="pagination_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik (Poziom AAA)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="pagination-section">
+  <h3>Stan domyślny</h3>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--previous-group">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Początek
+            <span>zestawu stron</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Poprzednia
+            <span>sttrona</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>2
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page"><span class="visuallyhidden">strona</span>3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>4
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Następna
+            <span>strona</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-group">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Koniec
+            <span>zestawu stron</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="break"></div>
+  <h3>Stan wyłączonych grup łączy Poprzednia/Następna grupa łączy</h3>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--previous-group">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Początek
+            <span>zestawu stron</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Poprzednia
+            <span>strona</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>2
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#"><span class="visuallyhidden">strona</span>3</a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page">
+          <span class="visuallyhidden">strona </span>4
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Następna
+            <span>strona</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-group">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Koniec
+            <span>zestawu stron</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="break"></div>
+  <h3>Stan wyłączonych grup łączy Poprzednia/Następna grupa łączy</h3>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Poprzednia
+            <span>strona</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>2
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#"><span class="visuallyhidden">strona</span>3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">strona </span>4
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page">
+          <span class="visuallyhidden">strona </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Następna
+            <span>strona</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;pagination-section&quot;&gt;
+  &lt;h3&gt;Stan domyślny&lt;/h3&gt;
+  &lt;nav aria-label=&quot;pagination&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-group&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Początek
+            &lt;span&gt;zestawu stron&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Poprzednia
+            &lt;span&gt;sttrona&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;1
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;2
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--is-active&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;strona&lt;/span&gt;3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;4
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;5
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Następna
+            &lt;span&gt;strona&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-group&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Koniec
+            &lt;span&gt;zestawu stron&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Stan wyłączonych grup łączy Poprzednia/Następna grupa łączy&lt;/h3&gt;
+  &lt;nav aria-label=&quot;pagination&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-group&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Początek
+            &lt;span&gt;zestawu stron&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Poprzednia
+            &lt;span&gt;strona&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;1
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;2
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;strona&lt;/span&gt;3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--is-active&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;4
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;5
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Następna
+            &lt;span&gt;strona&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-group&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Koniec
+            &lt;span&gt;zestawu stron&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Stan wyłączonych grup łączy Poprzednia/Następna grupa łączy&lt;/h3&gt;
+  &lt;nav aria-label=&quot;pagination&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-page&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Poprzednia
+            &lt;span&gt;strona&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;1
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;2
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;strona&lt;/span&gt;3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;4
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--is-active&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;strona &lt;/span&gt;5
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-page&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Następna
+            &lt;span&gt;strona&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

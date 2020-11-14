@@ -101,37 +101,180 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-og-lne-colors-podstawowe" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-og-lne-colors-podstawowe">
+                    Kolory
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Unikaj używania koloru <em>tylko</em> do przekazywania informacji. W przypadku łączy użyj innego identyfikatora, takiego jak pogrubienie lub podkreślenie, aby wskazać tekst łącza za pomocą samego koloru.</li>
+<li>Niektórzy użytkownicy mają trudności z odczytaniem tekstu, jeśli kontrast między pierwszym planem a tłem jest zbyt mały. Aby zachować zgodność z poziomem AA, tekst musi mieć współczynnik kontrastu co najmniej 4,5:1 (lub 3:1 w przypadku dużego tekstu). Aby spełnić wytyczne na bardziej rygorystycznym poziomie AAA, współczynnik kontrastu musi wynosić co najmniej 7:1 (lub 4,5:1 w przypadku dużego tekstu).</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#color_res">Zasoby</a></h3><div id="color_res" class="atblock__panel"><ul><li><a href="https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en" target="_blank">Dodatek do Chrome: Color Contrast Analyzer</a> - najlepszy sposób na identyfikację gradientów i obrazów tła w witrynie</li><li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator" target="_blank">Color Blindness Simulator</a> - zobacz, jak Twoja witryna wygląda dla osoby z jedną z różnych form ślepoty barw</li><li><a href="http://colorsafe.co" target="_blank">Color Safe</a> -  dostępne palety kolorów oparte na wytycznych WCAG </li><li><a href="http://contrastchecker.com" target="_blank">Contrast Checker</a> - przetestuj kombinacje kontrastu kolorów w oparciu o wytyczne WCAG</li><li><a href="https://addons.mozilla.org/en-us/firefox/addon/wcag-contrast-checker/" target="_blank">Dodatek do Firefoksa WCAG Contrast Checker</a> - najłatwiejszy sposób na szybkie przetestowanie witryny i wyświetlenie listy problemów CSS</li><li><a href="https://randoma11y.com" target="_blank">Losowe palety kolorów A11y</a> - spróbu wybrać piękną, losową paletę kolorów, które jest w pełni przyjazne</li><li><a href="http://kontrast.lepszyweb.pl/" target="_blank">Wyszukiwarka kolorów</a> - najlepszy sposób na znalezienie zbliżonych kolorów zgodnych z WCAG 2.1</li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#color_guide">Wytyczne WCAG 2.1</a></h3><div id="color_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" target="_blank">1.4.1. Użycie koloru</a> - Kolor nie jest wykorzystywany jako jedyny wizualny sposób przekazywania informacji, wskazywania czynności do wykonania lub oczekiwania na odpowiedź, czy też wyróżniania elementów wizualnych. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl//#visual-audio-contrast-contrast" target="_blank">1.4.3 Kontrast (Minimum)</a> - Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1, poza kilkoma wyjątkami. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#non-text-contrast" target="_blank">1.4.11 Kontrast elementów nietekstowych</a> - Wizualna prezentacja komponentów interfejsu użytkownika oraz części obiektów graficznych wymaganych do zrozumienia tresci ma współczynnik kontrastu co najmniej 3:1 względem sąsiednich kolorów. (Poziom AA)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <h3>Podstawowe</h3>
+<div class="kss-swatch" style="background-color: #77408e">
+  <div class="kss-swatch__hex">$color-primary<br>#77408e</div>
+</div>
+<div class="kss-swatch" style="background-color: #df1465" >
+  <div class="kss-swatch__hex">$color-secondary<br>#df1465</div>
+</div>
+<div class="kss-swatch" style="background-color: #e00000">
+  <div class="kss-swatch__hex">$color-cherry<br>#e00000</div>
+</div>
+<div class="kss-swatch" style="background-color: #a51323">
+  <div class="kss-swatch__hex">$color-ruby<br>#a51323</div>
+</div>
+<div class="kss-swatch" style="background-color: #7fffd4">
+  <div class="kss-swatch__hex">$color-sea-glass<br>#7fffd4</div>
+</div>
+<div class="kss-swatch" style="background-color: #42dc42">
+  <div class="kss-swatch__hex">$color-grass<br>#42dc42</div>
+</div>
+<div class="kss-swatch" style="background-color: #4083ae">
+  <div class="kss-swatch__hex">$color-cornflower<br>#4083ae</div>
+</div>
+<div class="kss-swatch" style="background-color: #0a3055">
+  <div class="kss-swatch__hex">$color-navy<br>#0a3055</div>
+</div>
+<div class="kss-swatch" style="background-color: #ffa0e5">
+  <div class="kss-swatch__hex">$color-ballet-slipper<br>#ffa0e5</div>
+</div>
+<div class="kss-swatch" style="background-color: #550055">
+  <div class="kss-swatch__hex">$color-eggplant<br>#550055</div>
+</div>
+<div class="break"></div>
+<h3>Czarne, białe, szarości</h3>
+<div class="kss-swatch" style="background-color: #000000">
+  <div class="kss-swatch__hex">$color-black<br>#000000</div>
+</div>
+<div class="kss-swatch" style="background-color: #464646">
+  <div class="kss-swatch__hex">$color-midnight<br>#464646</div>
+</div>
+<div class="kss-swatch" style="background-color: #888b8d">
+  <div class="kss-swatch__hex">$color-manatee<br>#888b8d</div>
+</div>
+<div class="kss-swatch" style="background-color: #bbbbbb">
+  <div class="kss-swatch__hex">$color-silver<br>#bbbbbb</div>
+</div>
+<div class="kss-swatch" style="background-color: #dddddd">
+  <div class="kss-swatch__hex">$color-alto<br>#dddddd</div>
+</div>
+<div class="kss-swatch" style="background-color: #f4f4f4">
+  <div class="kss-swatch__hex">$color-gallery<br>#f4f4f4</div>
+</div>
+<div class="kss-swatch" style="background-color: #f7f7f7">
+  <div class="kss-swatch__hex">$color-alabaster<br>#f7f7f7</div>
+</div>
+<div class="kss-swatch" style="background-color: #ffffff">
+  <div class="kss-swatch__hex">$color-white<br>#ffffff</div>
+</div>
+<div class="break"></div>
+<h3>Powiadomienia</h3>
+<div class="kss-swatch" style="background-color: #e00000">
+  <div class="kss-swatch__hex">$notification-color-error<br>#e00000</div>
+</div>
+<div class="kss-swatch" style="background-color: #218003">
+  <div class="kss-swatch__hex">$notification-color-success<br>#218003</div>
+</div>
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;h3&gt;Podstawowe&lt;/h3&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #77408e&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-primary&lt;br&gt;#77408e&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #df1465&quot; &gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-secondary&lt;br&gt;#df1465&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #e00000&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-cherry&lt;br&gt;#e00000&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #a51323&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-ruby&lt;br&gt;#a51323&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #7fffd4&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-sea-glass&lt;br&gt;#7fffd4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #42dc42&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-grass&lt;br&gt;#42dc42&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #4083ae&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-cornflower&lt;br&gt;#4083ae&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #0a3055&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-navy&lt;br&gt;#0a3055&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #ffa0e5&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-ballet-slipper&lt;br&gt;#ffa0e5&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #550055&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-eggplant&lt;br&gt;#550055&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Czarne, białe, szarości&lt;/h3&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #000000&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-black&lt;br&gt;#000000&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #464646&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-midnight&lt;br&gt;#464646&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #888b8d&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-manatee&lt;br&gt;#888b8d&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #bbbbbb&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-silver&lt;br&gt;#bbbbbb&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #dddddd&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-alto&lt;br&gt;#dddddd&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #f4f4f4&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-gallery&lt;br&gt;#f4f4f4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #f7f7f7&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-alabaster&lt;br&gt;#f7f7f7&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #ffffff&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-white&lt;br&gt;#ffffff&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Powiadomienia&lt;/h3&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #e00000&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$notification-color-error&lt;br&gt;#e00000&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #218003&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$notification-color-success&lt;br&gt;#218003&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

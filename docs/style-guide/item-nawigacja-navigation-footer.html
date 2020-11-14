@@ -101,37 +101,180 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
+                     <div id="kssref-nawigacja-navigation-footer" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-nawigacja-navigation-footer">
+                    Nawigacja w stopce
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Wszystkie elementy nawigacyjne powinny mieć znacznik <code>&lt;nav&gt;</code>.</li>
+<li>Jeśli musisz użyć bardziej ogólnego elementu, takiego jak <code>&lt;div&gt;</code>, dodaj <code>role=&quot;navigation&quot;</code> do każdego paska nawigacyjnego, aby wyraźnie zidentyfikować go jako punkt orientacyjny dla użytkowników technologii wspomagających.</li>
+<li>Menu powinno być oznaczone zgodnie z ich indywidualną funkcją. Użyj <code>class=&quot;visuallyhidden&quot;&gt;</code>, <code>aria-label=&quot;&quot;</code>, lub <code>aria-labelledby=&quot;&quot;</code>, aby łatwo dodać kontekst do różnych menu na Twojej stronie.</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbar-footer_guide">Wytyczne WCAG 2.1</a></h3><div id="navbar-footer_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Kolejność fokusu</a> - Jeśli strona internetowa może być nawigowana sekwencyjnie, a kolejność nawigacji wpływa na zrozumienie lub funkcjonalność strony, komponenty przyjmują fokus w kolejności, dzięki której zachowany jest sens i funkcjonalność treści. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Wiele dróg</a> - Istnieje więcej niż jeden sposób umożliwiający zlokalizowanie strony internetowej w zestawie stron internetowych, z wyjątkiem sytuacji, kiedy dana strona jest wynikiem jakiejś procedury lub jednym z jej etapów. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Widoczny fokus</a> - Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Lokalizacja</a> - Zapewniona jest informacja, w którym miejscu w zestawie stron internetowych znajduje się użytkownik. (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl/#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających (Poziom A)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <footer class="footer">
+  <div>
+    <div class="l-center">
+      <div class="footer__left">
+        <div class="footer__contact">
+          <div aria-labelledby="footer-contact" class="footer__header">
+            <h2 class="footer__title" id="footer-contact">Kontakt</h2>
+            <div class="footer__content">
+              <ul>
+                <li class="icon--phone">+48 (32) 555-5555</li>
+                <li><a class="icon--email" href="#">szkolenia@lepszyweb.pl</a></li>
+                <li class="icon--address">Ulica <br>00-000 Miasto</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="footer__right">
+        <nav aria-labelledby="footer-resources" class="footer__header">
+          <h2 class="footer__title" id="footer-resources">Zasoby</h2>
+          <ul>
+            <li><a href="#">Dla mediów</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Praca</a></li>
+            <li><a href="#">Dobroczynność</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Prywatność</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">O nas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="l-center">
+    <div class="footer__flex">
+      <div class="footer__left-social">
+        <div class="footer__social">
+          <nav aria-labelledby="footer-social-links" class="navigation navigation--social">
+            <h2 class="visuallyhidden" id="footer-scoial-links">Media spolecznościowe</h2>
+            <ul class="navigation__menu menu" id="footer-social-links">
+              <li class="navigation__link navigation__link--icon first"><a href="#" class="icon icon--facebook">Facebook</a></li>
+              <li class="navigation__link navigation__link--icon"><a href="#" class="icon icon--instagram">Instagram</a></li>
+              <li class="navigation__link navigation__link--icon"><a href="#" class="icon icon--twitter">Twitter</a></li>
+              <li class="navigation__link navigation__link--icon last"><a href="#" class="icon icon--youtube">YouTube</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__right-search">
+        <div role="search">
+          <input type="search" name="search" aria-label="Szukaj">
+          <button type="submit">Szukaj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__credits">
+    <div class="l-center">
+      <p class="footer__copyright">Wszystkie prawa zastzreżone LepszyWeb.pl Przewodnik stylów ©2020</p>
+    </div>
+  </div>
+</footer>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;footer class=&quot;footer&quot;&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;l-center&quot;&gt;
+      &lt;div class=&quot;footer__left&quot;&gt;
+        &lt;div class=&quot;footer__contact&quot;&gt;
+          &lt;div aria-labelledby=&quot;footer-contact&quot; class=&quot;footer__header&quot;&gt;
+            &lt;h2 class=&quot;footer__title&quot; id=&quot;footer-contact&quot;&gt;Kontakt&lt;/h2&gt;
+            &lt;div class=&quot;footer__content&quot;&gt;
+              &lt;ul&gt;
+                &lt;li class=&quot;icon--phone&quot;&gt;+48 (32) 555-5555&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;icon--email&quot; href=&quot;#&quot;&gt;szkolenia@lepszyweb.pl&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;icon--address&quot;&gt;Ulica &lt;br&gt;00-000 Miasto&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;footer__right&quot;&gt;
+        &lt;nav aria-labelledby=&quot;footer-resources&quot; class=&quot;footer__header&quot;&gt;
+          &lt;h2 class=&quot;footer__title&quot; id=&quot;footer-resources&quot;&gt;Zasoby&lt;/h2&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dla mediów&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Praca&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dobroczynność&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Prywatność&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;O nas&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;l-center&quot;&gt;
+    &lt;div class=&quot;footer__flex&quot;&gt;
+      &lt;div class=&quot;footer__left-social&quot;&gt;
+        &lt;div class=&quot;footer__social&quot;&gt;
+          &lt;nav aria-labelledby=&quot;footer-social-links&quot; class=&quot;navigation navigation--social&quot;&gt;
+            &lt;h2 class=&quot;visuallyhidden&quot; id=&quot;footer-scoial-links&quot;&gt;Media spolecznościowe&lt;/h2&gt;
+            &lt;ul class=&quot;navigation__menu menu&quot; id=&quot;footer-social-links&quot;&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon first&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--instagram&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--twitter&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon last&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--youtube&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;footer__right-search&quot;&gt;
+        &lt;div role=&quot;search&quot;&gt;
+          &lt;input type=&quot;search&quot; name=&quot;search&quot; aria-label=&quot;Szukaj&quot;&gt;
+          &lt;button type=&quot;submit&quot;&gt;Szukaj&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;footer__credits&quot;&gt;
+    &lt;div class=&quot;l-center&quot;&gt;
+      &lt;p class=&quot;footer__copyright&quot;&gt;Wszystkie prawa zastzreżone LepszyWeb.pl Przewodnik stylów ©2020&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

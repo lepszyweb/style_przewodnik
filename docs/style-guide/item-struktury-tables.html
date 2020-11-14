@@ -108,25 +108,22 @@
             <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
           </div>
 
-                     <div id="kssref-media-videos" class="kss-section kss-depth-2">
+                     <div id="kssref-struktury-tables" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-media-videos">
-                    Wideo
+                <a class="kss-title__permalink" href="#kssref-struktury-tables">
+                    Tabele
                   </a>
               </h2>
 
                             <div class="kss-description">
                 <ul>
-<li>Zbuduj swoje media z myślą o dostępności! O wiele łatwiej jest pracować z dostępnością na początku, niż próbować włączyć ją później. Odnosi się to do wszystkich komponentów, ale szczególnie do komponentów multimedialnych.</li>
-<li>Upewnij się, że twój odtwarzacz jest dostępny i zawiera kontrolki do wstrzymywania, zatrzymywania i odtwarzania mediów.</li>
-<li>Nie odtwarzaj automatycznie plików multimedialnych. Może to powodować zarówno zamieszanie, jak i irytację.</li>
-<li>Upewnij się, że Twoje media mają alternatywne metody dotarcia do treści. Na przykład, dodaj napisy do swoich filmów i/lub przygotuj transkrypcję do przeczytania przez użytkowników.</li>
-<li>Upewnij się, że twoje media nie powodują ataków! Przed dodaniem mediów do witryny internetowej należy skorzystać z fotoczułego narzędzia do analizy padaczki (Photosensitive Epilepsy Analysis Tool - PEAT), aby sprawdzić media.</li>
+<li>Tabele z jednym nagłówkiem i prostymi danymi są w miarę dostępne od razu po wyjęciu z pudełka i mogą nie wymagać dodatkowych aktualizacji dostępności. Zawsze używaj najprostszej możliwej konfiguracji tabeli.</li>
+<li>Kiedy twoje tabele stają się bardziej złożone, użyj elementu <code>&lt;th&gt;</code> do identyfikacji komórek nagłówka poprzez dodanie atrybutu <code>scope</code>. Dla wierszy nagłówka użyj <code>&lt;th scope=&quot;row&quot;&gt;</code>. Dla kolumn nagłówka użyj <code>&lt;th scope=&quot;col&quot;&gt;</code>.</li>
+<li>Dodaj opcjonalny element <code>&lt;caption&gt;</code> przed treścią tabeli, aby dać użytkownikom więcej informacji na temat treści tabeli. Pomyśl o tym jako o nagłówku tabeli.</li>
 </ul>
-<blockquote>Nie bez powodu jest mnóstwo wytycznych WCAG dotyczących mediów na stronach internetowych... jest wiele czynników, które należy wziąć pod uwagę. Nie daj się jednak przestraszyć, jest też kilka łatwych zwycięstw. Samo uwzględnienie alternatyw dla prezentowanych mediów (np. transkrypcja filmu) to połowa sukcesu.</blockquote>
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_res">Zasoby</a></h3><div id="video_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/accessible-video" target="_blank">8 Steps to Creating Accessible Video</a></li><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li><li><a href="http://trace.umd.edu/peat" target="_blank">Photosensitive Epilepsy Analysis Tool</a> - tests your visual media to see if it will trigger seizures or other light disorder issues in viewers</li></ul></div></section>
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_guide">Wytyczne WCAG 2.1</a></h3><div id="video_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-av-only-alt" target="_blank">1.2.1 Tylko audio lub tylko wideo (nagranie)</a> - Alternatywa dla wideo: Zapewniona jest alternatywa tekstowa albo audiodeskrypcja dla nagrań zawierających tylko wideo przedstawiająca tę samą treść, co nagranie wideo. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-captions" target="_blank">1.2.2 Napisy rozszerzone</a> - Do wszystkich nagrań audio w multimediach zsynchronizowanych (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one alternatywami dla tekstu i w taki sposób są oznaczone, zapewnione są napisy rozszerzone. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-audio-desc" target="_blank">1.2.3 Audiodeskrypcja lub alternatywa tekstowa dla mediów (nagranie)</a> - Zapewniona jest alternatywa dla multimediów lub audiodeskrypcja dla nagrań wideo w multimediach zsynchronizowanych (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one alternatywami dla tekstu i w taki sposób są oznaczone. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-audio-desc-only" target="_blank">1.2.5 Audiodeskrypcja (nagranie)</a> - Zapewniona jest audiodeskrypcja dla wszystkich nagrań wideo w multimediach zsynchronizowanych (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-sign" target="_blank">1.2.6 Język migowy (nagranie)</a> - Zapewnione jest tłumaczenie w języku migowym wszystkich nagrań audio w multimediach zsynchronizowanych (dźwięk i obraz). (Poziom AAA)<br><br><a href="https://wcag.lepszyweb.pl#media-equiv-text-doc" target="_blank">1.2.8 Alternatywa dla mediów (nagranie)</a> - Zapewniona jest alternatywa dla wszystkich — nagrań w multimediach zsynchronizowanych (dźwięk i obraz) oraz dla wszystkich nagrań tylko wideo (sam obraz). (Poziom AAA)</p></div><div class="markup"></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Zasoby</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_guide">Wytyczne WCAG 2.1</a></h3><div id="tables_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)</p></div><div class="markup"></div></section>
 
               </div>
                            </div>
@@ -134,57 +131,189 @@
 
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <section class="videos-section">
-  <figure class="videos">
-    <div class="px-video-container" id="myvid">
-    	<div class="px-video-img-captions-container">
-    		<div class="px-video-captions hide"></div>
-    		<video width="640" height="360" poster="../assets/videos/read-more.png" controls>
-    			<!-- video files -->
-    			<source src="../assets/videos/read-more.mp4" type="video/mp4" />
-    			<source src="../assets/videos/read-more.webm" type="video/webm" />
-
-    			<!-- text track file -->
-    			<track kind="captions" label="Napisy angielskie" src="../assets/videos/read-more.vtt" srclang="en" default />
-
-    			<!-- fallback for browsers that don't support the video element -->
-    			<div>
-    				<a href="../assets/videos/read-more.mp4">
-    					<img src="../assets/videos/read-more.png" width="640" height="360" alt="Pobierz wideo" />
-    				</a>
-    			</div>
-    		</video>
-    	</div><!-- end container for captions and video -->
-    	<div class="px-video-controls"></div>
-    </div><!-- end video container -->
-
-    <p><a href="https://github.com/paypal/accessible-html5-video-player" target="_blank">Accessible HTML5 Video Player GitHub</a></p>
-
-    </div><!-- end page wrapper container -->
-    <script src="js/strings.js"></script>
-    <script src="js/px-video.js"></script>
-
-    <script>
-
-    // Initialize
-    new InitPxVideo({
-    	"videoId": "myvid",
-    	"captionsOnDefault": true,
-    	"seekInterval": 20,
-    	"videoTitle": "Demonstracyjny film wideo z sekcji Read More przy użyciu narzędzia Mac Voice Over",
-    	"debug": true
-    });
-
-    </script>
-    <figcaption>
-      <p class="videos__transcript">
-        <a href="../assets/videos/read-more.txt">Transkrypcja</a>
-      </p>
-      <p class="videos__alt-audio">
-        <a href="../assets/videos/read-more.m4a">Alternatywna ścieżka dźwiękowa</a>
-      </p>
-    </figcaption>
-  </figure>
+                  <section class="tables-section">
+  <h3>Opcja #1: Tabela z jednym wierszem nagłówków</h3>
+  <table class="tables" cellspacing="0" summary="Informacja o imprezie niespodziance">
+  	<tr>
+  		<th>Data</th>
+  		<th>Wydarzenie</th>
+  		<th>MIejsce</th>
+  	</tr>
+  	<tr>
+  		<td>3 lutego</td>
+  		<td>Impreza niespodzianka</td>
+  		<td>Miasto Imprez</td>
+  	</tr>
+  </table>
+</section>
+<section class="tables-section2">
+  <div class="break"></div>
+  <h3>Opcja #2: Tabela z dwoma nagłówkami i podpisem</h3>
+  <table class="tables" cellspacing="0">
+    <caption>Nazwy kolorów w wielu językach</caption>
+    <tr class="headers">
+      <th scope="col">Kolor</th>
+      <th scope="col">Francuski</th>
+      <th scope="col">Niemiecki</th>
+      <th scope="col">Włoski</th>
+      <th scope="col">Portugalski</th>
+      <th scope="col">Hiszpański</th>
+    </tr>
+    <tr>
+      <th scope="row">Czerwony</th>
+      <td>rouge</td>
+      <td>rot</td>
+      <td>rosso</td>
+      <td>vermelho</td>
+      <td>rojo</td>
+    </tr>
+    <tr>
+      <th scope="row">Pomarańczowy</th>
+      <td>orange</td>
+      <td>orange</td>
+      <td>arancione</td>
+      <td>laranja</td>
+      <td>anaranjado</td>
+    </tr>
+    <tr>
+      <th scope="row">Żółty</th>
+      <td>jaune</td>
+      <td>gelb</td>
+      <td>giallo</td>
+      <td>amarelo</td>
+      <td>amarillo</td>
+    </tr>
+    <tr>
+      <th scope="row">Zielony</th>
+      <td>vert</td>
+      <td>grün</td>
+      <td>verde</td>
+      <td>verde</td>
+      <td>verde</td>
+    </tr>
+    <tr>
+      <th scope="row">Niebieski</th>
+      <td>bleu</td>
+      <td>blau</td>
+      <td>blu</td>
+      <td>azul</td>
+      <td>azul</td>
+    </tr>
+    <tr>
+      <th scope="row">Purpurowy</th>
+      <td>pourpre</td>
+      <td>lila</td>
+      <td>porpora</td>
+      <td>roxo</td>
+      <td>morado</td>
+    </tr>
+  </table>
+</section>
+<section class="tables-section3">
+  <div class="break"></div>
+  <h3>Opcja #3: Tabela złożona</h3>
+  <table class="tables" cellspacing="0">
+  	<tbody>
+  		<tr class="headers">
+  			<th id="co1" headers="blank">Królestwo</th>
+  			<th id="co2" headers="blank">Gromada</th>
+  			<th id="co3" headers="blank">Klasa</th>
+  			<th id="co4" headers="blank">Rząd</th>
+  		</tr>
+  		<tr>
+  			<td headers="co1">Zwierzęta</td>
+  			<td headers="co2">Strunowce</td>
+  			<td headers="co3">Saki</td>
+  			<td headers="co4">Drapieżne</td>
+  		</tr>
+  		<tr>
+  			<td headers="co1">Zwierzęta</td>
+  			<td headers="co2">Arthropoda</td>
+  			<td headers="co3">Insekty</td>
+  			<td headers="co4">Lepidoptera</td>
+  		</tr>
+  		<tr>
+  			<td headers="co1">Zwierzęta</td>
+  			<td headers="co2">Szkarłupnie</td>
+  			<td headers="co3">Rozgwiazdy</td>
+  			<td headers="co4">Forcipulatida</td>
+  		</tr>
+		  <tr class="headers">
+        <th id="co5" headers="blank">Rodzina</th>
+  			<th id="co6" headers="blank">Rodzaj</th>
+  			<th id="co7" headers="blank">Gatunek</th>
+  			<th id="co8" headers="blank">Odmiana</th>
+  		</tr>
+  		<tr>
+  			<td headers="co5">Kotowate</td>
+  			<td headers="co6">Pantery</td>
+  			<td headers="co7">Tygrys azjatycki</td>
+  			<td headers="co8">Tygrys</td>
+  		</tr>
+  		<tr>
+  			<td headers="co5">Danaidowate</td>
+  			<td headers="co6">Dannaus</td>
+  			<td headers="co7">Wędrowne</td>
+  			<td headers="co8">Danaid wędrowny</td>
+  		</tr>
+  		<tr>
+  			<td headers="co5">Asteridae</td>
+  			<td headers="co6">Rozgwiazdy</td>
+  			<td headers="co7">Rozgwiazda</td>
+  			<td headers="co8">Gwiazda morska<br>północnego Pacyfiku</td>
+  		</tr>
+  	</tbody>
+  </table>
+</section>
+<section>
+  <div class="break"></div>
+  <h3>Opcja #4: Tabela responsywna</h3>
+  <table class="responsive-table" id="responsive-tableID">
+    <thead>
+      <tr align="center">
+        <th class="responsive">House Side</th>
+        <th class="responsive">House Address</th>
+        <th class="responsive">Other</th>
+        <th class="responsive">Other Address</th>
+        <th class="responsive">Senate Side</th>
+        <th class="responsive">Senate Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="responsive">Rayburn House Office Building</td>
+        <td class="responsive">50 Independence Ave, SW Washington, DC 20515</td>
+        <td class="responsive">Library of Congress</td>
+        <td class="responsive">101 Independence Ave SE, Washington, DC 20540</td>
+        <td class="responsive">Russell Senate Office Building</td>
+        <td class="responsive">2 Constitution Ave NE, Washington, DC 20002</td>
+      </tr>
+      <tr>
+        <td class="responsive">Longworth House Office Building</td>
+        <td class="responsive">15 Independence Ave, SW Washington, DC 20515</td>
+        <td class="responsive">Supreme Court</td>
+        <td class="responsive">1 First Street, NE Washington, DC 20543</td>
+        <td class="responsive">Dirksen Senate Office Building</td>
+        <td class="responsive">100 Constitution Ave NE Washington, DC 20002</td>
+      </tr>
+      <tr>
+        <td class="responsive">Cannon House Office Building</td>
+        <td class="responsive">25 Independence Ave, SE Washington, DC 20003</td>
+        <td class="responsive">Capitol Visitors Center</td>
+        <td class="responsive">First &amp; East Capitol St SE, Washington, DC 20004</td>
+        <td class="responsive">Hart Senate Office Building</td>
+        <td class="responsive">150 Constitution Ave NE Washington, DC 20510</td>
+      </tr>
+      <tr>
+        <td class="responsive">Capitol South Metro</td>
+        <td class="responsive">307 First Street SE Washington, DC 20003</td>
+        <td class="responsive">Federal Center Metro</td>
+        <td class="responsive">401 3rd Street SW Washington, DC 20024</td>
+        <td class="responsive">Union Station Metro</td>
+        <td class="responsive">701 First St. NE Washington, DC 20002</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
                 </div>
@@ -195,57 +324,189 @@
                       Pokaż przykładowy kod
                     </button>
                 <template>
-                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;videos-section&quot;&gt;
-  &lt;figure class=&quot;videos&quot;&gt;
-    &lt;div class=&quot;px-video-container&quot; id=&quot;myvid&quot;&gt;
-    	&lt;div class=&quot;px-video-img-captions-container&quot;&gt;
-    		&lt;div class=&quot;px-video-captions hide&quot;&gt;&lt;/div&gt;
-    		&lt;video width=&quot;640&quot; height=&quot;360&quot; poster=&quot;../assets/videos/read-more.png&quot; controls&gt;
-    			&lt;!-- video files --&gt;
-    			&lt;source src=&quot;../assets/videos/read-more.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-    			&lt;source src=&quot;../assets/videos/read-more.webm&quot; type=&quot;video/webm&quot; /&gt;
-
-    			&lt;!-- text track file --&gt;
-    			&lt;track kind=&quot;captions&quot; label=&quot;Napisy angielskie&quot; src=&quot;../assets/videos/read-more.vtt&quot; srclang=&quot;en&quot; default /&gt;
-
-    			&lt;!-- fallback for browsers that don&#039;t support the video element --&gt;
-    			&lt;div&gt;
-    				&lt;a href=&quot;../assets/videos/read-more.mp4&quot;&gt;
-    					&lt;img src=&quot;../assets/videos/read-more.png&quot; width=&quot;640&quot; height=&quot;360&quot; alt=&quot;Pobierz wideo&quot; /&gt;
-    				&lt;/a&gt;
-    			&lt;/div&gt;
-    		&lt;/video&gt;
-    	&lt;/div&gt;&lt;!-- end container for captions and video --&gt;
-    	&lt;div class=&quot;px-video-controls&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;&lt;!-- end video container --&gt;
-
-    &lt;p&gt;&lt;a href=&quot;https://github.com/paypal/accessible-html5-video-player&quot; target=&quot;_blank&quot;&gt;Accessible HTML5 Video Player GitHub&lt;/a&gt;&lt;/p&gt;
-
-    &lt;/div&gt;&lt;!-- end page wrapper container --&gt;
-    &lt;script src=&quot;js/strings.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;js/px-video.js&quot;&gt;&lt;/script&gt;
-
-    &lt;script&gt;
-
-    // Initialize
-    new InitPxVideo({
-    	&quot;videoId&quot;: &quot;myvid&quot;,
-    	&quot;captionsOnDefault&quot;: true,
-    	&quot;seekInterval&quot;: 20,
-    	&quot;videoTitle&quot;: &quot;Demonstracyjny film wideo z sekcji Read More przy użyciu narzędzia Mac Voice Over&quot;,
-    	&quot;debug&quot;: true
-    });
-
-    &lt;/script&gt;
-    &lt;figcaption&gt;
-      &lt;p class=&quot;videos__transcript&quot;&gt;
-        &lt;a href=&quot;../assets/videos/read-more.txt&quot;&gt;Transkrypcja&lt;/a&gt;
-      &lt;/p&gt;
-      &lt;p class=&quot;videos__alt-audio&quot;&gt;
-        &lt;a href=&quot;../assets/videos/read-more.m4a&quot;&gt;Alternatywna ścieżka dźwiękowa&lt;/a&gt;
-      &lt;/p&gt;
-    &lt;/figcaption&gt;
-  &lt;/figure&gt;
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tables-section&quot;&gt;
+  &lt;h3&gt;Opcja #1: Tabela z jednym wierszem nagłówków&lt;/h3&gt;
+  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Informacja o imprezie niespodziance&quot;&gt;
+  	&lt;tr&gt;
+  		&lt;th&gt;Data&lt;/th&gt;
+  		&lt;th&gt;Wydarzenie&lt;/th&gt;
+  		&lt;th&gt;MIejsce&lt;/th&gt;
+  	&lt;/tr&gt;
+  	&lt;tr&gt;
+  		&lt;td&gt;3 lutego&lt;/td&gt;
+  		&lt;td&gt;Impreza niespodzianka&lt;/td&gt;
+  		&lt;td&gt;Miasto Imprez&lt;/td&gt;
+  	&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/section&gt;
+&lt;section class=&quot;tables-section2&quot;&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Opcja #2: Tabela z dwoma nagłówkami i podpisem&lt;/h3&gt;
+  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;caption&gt;Nazwy kolorów w wielu językach&lt;/caption&gt;
+    &lt;tr class=&quot;headers&quot;&gt;
+      &lt;th scope=&quot;col&quot;&gt;Kolor&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Francuski&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Niemiecki&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Włoski&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Portugalski&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Hiszpański&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Czerwony&lt;/th&gt;
+      &lt;td&gt;rouge&lt;/td&gt;
+      &lt;td&gt;rot&lt;/td&gt;
+      &lt;td&gt;rosso&lt;/td&gt;
+      &lt;td&gt;vermelho&lt;/td&gt;
+      &lt;td&gt;rojo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Pomarańczowy&lt;/th&gt;
+      &lt;td&gt;orange&lt;/td&gt;
+      &lt;td&gt;orange&lt;/td&gt;
+      &lt;td&gt;arancione&lt;/td&gt;
+      &lt;td&gt;laranja&lt;/td&gt;
+      &lt;td&gt;anaranjado&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Żółty&lt;/th&gt;
+      &lt;td&gt;jaune&lt;/td&gt;
+      &lt;td&gt;gelb&lt;/td&gt;
+      &lt;td&gt;giallo&lt;/td&gt;
+      &lt;td&gt;amarelo&lt;/td&gt;
+      &lt;td&gt;amarillo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Zielony&lt;/th&gt;
+      &lt;td&gt;vert&lt;/td&gt;
+      &lt;td&gt;grün&lt;/td&gt;
+      &lt;td&gt;verde&lt;/td&gt;
+      &lt;td&gt;verde&lt;/td&gt;
+      &lt;td&gt;verde&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Niebieski&lt;/th&gt;
+      &lt;td&gt;bleu&lt;/td&gt;
+      &lt;td&gt;blau&lt;/td&gt;
+      &lt;td&gt;blu&lt;/td&gt;
+      &lt;td&gt;azul&lt;/td&gt;
+      &lt;td&gt;azul&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Purpurowy&lt;/th&gt;
+      &lt;td&gt;pourpre&lt;/td&gt;
+      &lt;td&gt;lila&lt;/td&gt;
+      &lt;td&gt;porpora&lt;/td&gt;
+      &lt;td&gt;roxo&lt;/td&gt;
+      &lt;td&gt;morado&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/section&gt;
+&lt;section class=&quot;tables-section3&quot;&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Opcja #3: Tabela złożona&lt;/h3&gt;
+  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot;&gt;
+  	&lt;tbody&gt;
+  		&lt;tr class=&quot;headers&quot;&gt;
+  			&lt;th id=&quot;co1&quot; headers=&quot;blank&quot;&gt;Królestwo&lt;/th&gt;
+  			&lt;th id=&quot;co2&quot; headers=&quot;blank&quot;&gt;Gromada&lt;/th&gt;
+  			&lt;th id=&quot;co3&quot; headers=&quot;blank&quot;&gt;Klasa&lt;/th&gt;
+  			&lt;th id=&quot;co4&quot; headers=&quot;blank&quot;&gt;Rząd&lt;/th&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co1&quot;&gt;Zwierzęta&lt;/td&gt;
+  			&lt;td headers=&quot;co2&quot;&gt;Strunowce&lt;/td&gt;
+  			&lt;td headers=&quot;co3&quot;&gt;Saki&lt;/td&gt;
+  			&lt;td headers=&quot;co4&quot;&gt;Drapieżne&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co1&quot;&gt;Zwierzęta&lt;/td&gt;
+  			&lt;td headers=&quot;co2&quot;&gt;Arthropoda&lt;/td&gt;
+  			&lt;td headers=&quot;co3&quot;&gt;Insekty&lt;/td&gt;
+  			&lt;td headers=&quot;co4&quot;&gt;Lepidoptera&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co1&quot;&gt;Zwierzęta&lt;/td&gt;
+  			&lt;td headers=&quot;co2&quot;&gt;Szkarłupnie&lt;/td&gt;
+  			&lt;td headers=&quot;co3&quot;&gt;Rozgwiazdy&lt;/td&gt;
+  			&lt;td headers=&quot;co4&quot;&gt;Forcipulatida&lt;/td&gt;
+  		&lt;/tr&gt;
+		  &lt;tr class=&quot;headers&quot;&gt;
+        &lt;th id=&quot;co5&quot; headers=&quot;blank&quot;&gt;Rodzina&lt;/th&gt;
+  			&lt;th id=&quot;co6&quot; headers=&quot;blank&quot;&gt;Rodzaj&lt;/th&gt;
+  			&lt;th id=&quot;co7&quot; headers=&quot;blank&quot;&gt;Gatunek&lt;/th&gt;
+  			&lt;th id=&quot;co8&quot; headers=&quot;blank&quot;&gt;Odmiana&lt;/th&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co5&quot;&gt;Kotowate&lt;/td&gt;
+  			&lt;td headers=&quot;co6&quot;&gt;Pantery&lt;/td&gt;
+  			&lt;td headers=&quot;co7&quot;&gt;Tygrys azjatycki&lt;/td&gt;
+  			&lt;td headers=&quot;co8&quot;&gt;Tygrys&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co5&quot;&gt;Danaidowate&lt;/td&gt;
+  			&lt;td headers=&quot;co6&quot;&gt;Dannaus&lt;/td&gt;
+  			&lt;td headers=&quot;co7&quot;&gt;Wędrowne&lt;/td&gt;
+  			&lt;td headers=&quot;co8&quot;&gt;Danaid wędrowny&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co5&quot;&gt;Asteridae&lt;/td&gt;
+  			&lt;td headers=&quot;co6&quot;&gt;Rozgwiazdy&lt;/td&gt;
+  			&lt;td headers=&quot;co7&quot;&gt;Rozgwiazda&lt;/td&gt;
+  			&lt;td headers=&quot;co8&quot;&gt;Gwiazda morska&lt;br&gt;północnego Pacyfiku&lt;/td&gt;
+  		&lt;/tr&gt;
+  	&lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Opcja #4: Tabela responsywna&lt;/h3&gt;
+  &lt;table class=&quot;responsive-table&quot; id=&quot;responsive-tableID&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr align=&quot;center&quot;&gt;
+        &lt;th class=&quot;responsive&quot;&gt;House Side&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;House Address&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Other&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Other Address&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Senate Side&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Senate Address&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Rayburn House Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;50 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Library of Congress&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;101 Independence Ave SE, Washington, DC 20540&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Russell Senate Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;2 Constitution Ave NE, Washington, DC 20002&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Longworth House Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;15 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Supreme Court&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;1 First Street, NE Washington, DC 20543&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Dirksen Senate Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;100 Constitution Ave NE Washington, DC 20002&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Cannon House Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;25 Independence Ave, SE Washington, DC 20003&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Capitol Visitors Center&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;First &amp;amp; East Capitol St SE, Washington, DC 20004&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Hart Senate Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;150 Constitution Ave NE Washington, DC 20510&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Capitol South Metro&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;307 First Street SE Washington, DC 20003&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Federal Center Metro&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;401 3rd Street SW Washington, DC 20024&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Union Station Metro&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;701 First St. NE Washington, DC 20002&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
 &lt;/section&gt;
 </code></pre>
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>

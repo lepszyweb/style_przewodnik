@@ -101,37 +101,103 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-og-lne-typography" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-og-lne-typography">
+                    Typografia
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Unikaj małych rozmiarów fontów.</li>
+<li>Użyj jednostek względnych dla rozmiaru czcionki, takich jak ems lub rems.
+Chociaż nowoczesne przeglądarki internetowe mogą płynnie powiększać układy oparte na pikselach, stosowanie jednostek względnych zapewnia skalowanie całego układu w górę lub w dół poprzez prostą aktualizację rozmiaru czcionki elementu body.</li>
+<li>Projekt powinien umożliwiać powiększenie typografii nawet do 200% przez użytkownika bez przycinania lub zniekształcania treści.</li>
+<li>Wybieraj podstawowe, proste, łatwe do odczytania czcionki i używaj ograniczonej liczby czcionek.</li>
+<li>Unikaj małych rozmiarów czcionek i używaj względnych jednostek rozmiarów czcionek (ems lub rems).</li>
+<li>Ograniczaj stosowanie odmian czcionek, takich jak pogrubiona czcionka, kursywa i WSZYSTKIE WIELKIE LITERY (stosowanie CAPS jest podobne do krzyków czytników ekranu).</li>
+<li>Nie polegaj tylko na wyglądzie czcionki (kolor, kształt, odmiana czcionki, lokalizacja, itp.), aby przekazać znaczenie.</li>
+<li>Unikaj mrugania i przesuwania tekstu.</li>
+<li>W grafice używaj prawdziwego tekstu, a nie tekstu.</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#type_guide">Wytyczne WCAG 2.1</a></h3><div id="type_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" target="_blank">1.4.1. Użycie koloru</a> - Kolor nie jest wykorzystywany jako jedyny wizualny sposób przekazywania informacji, wskazywania czynności do wykonania lub oczekiwania na odpowiedź, czy też wyróżniania elementów wizualnych. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl//#visual-audio-contrast-contrast" target="_blank">1.4.3 Kontrast (Minimum)</a> - Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1, poza kilkoma wyjątkami. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" target="_blank">1.4.4 Zmiana rozmiaru tekstu</a> - Oprócz napisów rozszerzonych oraz obrazów tekstu, rozmiar tekstu może zostać powiększony do 200% bez użycia technologii wspomagających oraz bez utraty treści lub funkcjonalności. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Obrazy tekstu</a> - Jeśli wykorzystywane technologie mogą przedstawiać treść wizualnie, do przekazywania informacji wykorzystuje się tekst, a nie obraz tekstu, z kilkoma wyjątkiem. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-visual-presentation" target="_blank">1.4.8 Prezentacja wizualna</a> - Dla wizualnego przedstawienia bloków tekstu, istnieje mechanizm, za pomocą którego można osiągnąć, co następuje... (szczegóły zobacz w WCAG). (Poziom AAA)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <h2>Family: Open Sans</h2>
+<div style="font: 20px/2 'Open Sans'">Regular</div>
+<div style="font: italic 20px/2 'Open Sans'">Italic</div>
+<div style="font: bold 20px/2 'Open Sans'">Bold</div>
+<div style="font: bold italic 20px/2 'Open Sans'">Bold Italic</div>
+<div class="break"></div>
+<h2 style="font: 20px/2 'Verdana'">Family: Verdana </h2>
+<div style="font: 20px/2 'Verdana'">Regular</div>
+<div style="font: italic 20px/2 'Verdana'">Italic</div>
+<div style="font: bold 20px/2 'Verdana'">Bold</div>
+<div style="font: bold italic 20px/2 'Verdana'">Bold Italic</div>
+<div class="break"></div>
+<h2 style="font: 20px/2 'Tahoma'">Family: Tahoma </h2>
+<div style="font: 20px/2 'Tahoma'">Regular</div>
+<div style="font: italic 20px/2 'Tahoma'">Italic</div>
+<div style="font: bold 20px/2 'Tahoma'">Bold</div>
+<div style="font: bold italic 20px/2 'Tahoma'">Bold Italic</div>
+<div class="break"></div>
+<h2 style="font: 20px/2 'Georgia'">Family: Georgia </h2>
+<div style="font: 20px/2 'Georgia'">Regular</div>
+<div style="font: italic 20px/2 'Georgia'">Italic</div>
+<div style="font: bold 20px/2 'Georgia'">Bold</div>
+<div style="font: bold italic 20px/2 'Georgia'">Bold Italic</div>
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;h2&gt;Family: Open Sans&lt;/h2&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Open Sans&#039;&quot;&gt;Regular&lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Open Sans&#039;&quot;&gt;Italic&lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Open Sans&#039;&quot;&gt;Bold&lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Open Sans&#039;&quot;&gt;Bold Italic&lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h2 style=&quot;font: 20px/2 &#039;Verdana&#039;&quot;&gt;Family: Verdana &lt;/h2&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Verdana&#039;&quot;&gt;Regular&lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Verdana&#039;&quot;&gt;Italic&lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Verdana&#039;&quot;&gt;Bold&lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Verdana&#039;&quot;&gt;Bold Italic&lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h2 style=&quot;font: 20px/2 &#039;Tahoma&#039;&quot;&gt;Family: Tahoma &lt;/h2&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Tahoma&#039;&quot;&gt;Regular&lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Tahoma&#039;&quot;&gt;Italic&lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Tahoma&#039;&quot;&gt;Bold&lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Tahoma&#039;&quot;&gt;Bold Italic&lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h2 style=&quot;font: 20px/2 &#039;Georgia&#039;&quot;&gt;Family: Georgia &lt;/h2&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Georgia&#039;&quot;&gt;Regular&lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Georgia&#039;&quot;&gt;Italic&lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Georgia&#039;&quot;&gt;Bold&lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Georgia&#039;&quot;&gt;Bold Italic&lt;/div&gt;</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

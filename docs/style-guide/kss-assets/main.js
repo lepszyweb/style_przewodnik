@@ -73,7 +73,7 @@
 
           if ($self.hasClass('js-show-markup--is-visible')) {
             // Toggle button label
-            $self.text(buttonLabel.replace('Show', 'Hide'));
+            $self.text(buttonLabel.replace('Pokaż', 'Ukryj'));
             // Grab the inner html of the next available template tag.
             var markup = $self.next('template').html();
 
@@ -85,7 +85,7 @@
             Rainbow.color();
           } else {
             // Toggle button label
-            $self.text(buttonLabel.replace('Hide', 'Show'));
+            $self.text(buttonLabel.replace('Pokaż', 'Ukryj'));
             $self.next('.js-markup-container').fadeOut(function(){
               $(this).remove();
             });

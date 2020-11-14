@@ -101,37 +101,89 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-formularze-text-fields-import-site-utilities" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-formularze-text-fields-import-site-utilities">
+                    Pole tekstowe i obszar tekstowy
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Zachowaj prostotę - nie wszystkie przeglądarki poprawnie eksponują wiele etykiet, które są powiązane z tym samym elementem formularza.</li>
+<li>Użyj etykiet dla każdego pola i sprawdź, czy wartości <code>for=&quot;&quot;</code> i <code>id=&quot;&quot;</code> są zgodne. Identyfikatory muszą być unikalne na każdej stronie, tylko jedna etykieta może być powiązana z każdym unikalnym elementem formularza.</li>
+<li>Wymagane pola należy uwidocznić za pomocą wskaźnika - zmiana koloru obramowania, gwiazdka, tekst opisu, itp.</li>
+<li>Pola z walidacją błędów powinny mieć <code>aria-describedby</code>, aby zapewnić, że powiązany komunikat o błędzie na poziomie pola jest odczytywany przez technologię wspomagającą. Jeżeli komunikat o błędzie ma <code>id=&quot;my-komunikat-bledu&quot;</code>, wówczas pole danych powinno mieć <code>aria-describedby=&quot;my-komunikat-bledu&quot;</code>.</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#text_guide">Wytyczne WCAG 2.1</a></h3><div id="text_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="text-inputs-section">
+  <form>
+    <label for="first-name">Imię</label>
+    <input id="first-name" type="text" name="textfield">
+    <label for="last-name" class="required-field">Nazwisko</label>
+    <input id="last-name" type="text" name="textfield" aria-describedby="required-message" required>
+    <div id="required-message" class="visuallyhidden">To pole jest wymagane.</div>
+    <label for="username">Nazwa użytkownika</label>
+    <input id="username" type="text" name="textfield" aria-describedby="username-help-text" aria-invalid="true">
+    <span id="username-help-text">W polu powyżej wystapił błąd</span>
+    <label for="city">Miasto</label>
+    <input id="city" type="text" name="textfield" aria-describedby="city-help-text" aria-invalid="false">
+    <span id="city-help-text">Dane powyżej zostały wprowadzone poprawnie.</span>
+    <label for="address">Wpisz nazwę ulicy</label>
+    <textarea id="address" name="addresstext"></textarea>
+    <input type="submit" value="Wyślij">
+  </form>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;text-inputs-section&quot;&gt;
+  &lt;form&gt;
+    &lt;label for=&quot;first-name&quot;&gt;Imię&lt;/label&gt;
+    &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+    &lt;label for=&quot;last-name&quot; class=&quot;required-field&quot;&gt;Nazwisko&lt;/label&gt;
+    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;required-message&quot; required&gt;
+    &lt;div id=&quot;required-message&quot; class=&quot;visuallyhidden&quot;&gt;To pole jest wymagane.&lt;/div&gt;
+    &lt;label for=&quot;username&quot;&gt;Nazwa użytkownika&lt;/label&gt;
+    &lt;input id=&quot;username&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;username-help-text&quot; aria-invalid=&quot;true&quot;&gt;
+    &lt;span id=&quot;username-help-text&quot;&gt;W polu powyżej wystapił błąd&lt;/span&gt;
+    &lt;label for=&quot;city&quot;&gt;Miasto&lt;/label&gt;
+    &lt;input id=&quot;city&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;city-help-text&quot; aria-invalid=&quot;false&quot;&gt;
+    &lt;span id=&quot;city-help-text&quot;&gt;Dane powyżej zostały wprowadzone poprawnie.&lt;/span&gt;
+    &lt;label for=&quot;address&quot;&gt;Wpisz nazwę ulicy&lt;/label&gt;
+    &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Wyślij&quot;&gt;
+  &lt;/form&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

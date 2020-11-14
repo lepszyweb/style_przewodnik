@@ -101,37 +101,103 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-formularze-search-import-site-utilities" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-formularze-search-import-site-utilities">
+                    Szukaj
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Owiń komponent wyszukiwania w element z <code>role=&quot;search&quot;</code>, aby zwiększyć jego wykrywalność w technologiach wspomagających.</li>
+<li>Gdy tylko jest to możliwe, użyj elementu <code>label</code>, aby wyraźnie powiązać etykiety z polami formularza. Atrybut <code>for</code> elementu <code>label</code> musi być dokładnie zgodny z identyfikatorem pola formularza.</li>
+<li>Niekiedy pola formularza nie potrzebują jawnego elementu <code>label</code>, gdy znajdują się obok przycisku z opisowym  tekstem. Np. pole wyszukiwania obok przycisku z etykietą wyszukiwania. W tych przypadkach powinieneś nadal zapewnić element <code>label</code>, ale możesz go wizualnie ukryć.</li>
+<li>Należy pamiętać, że oznaczenia zastępcze (<code>placeholder</code>) nie są rozpoznawane przez wszystkie technologie wspomagające, a tym samym nie są odpowiednimi zamiennikami dla etykiet. Dodatkowo, technologie wspomagające, które <b > ogłaszają</b > symbole zastępcze, najpierw odczytają je, potem etykietę pola, a następnie typ pola. Należy więc pamiętać, aby nie powtarzać etykiety pola jako jej symbolu zastępczego, w przeciwnym razie zostanie ona ogłoszona wielokrotnie.</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#search_guide">Wytyczne WCAG 2.1</a></h3><div id="search_guide" class="atblock__panel guidelines"><p><p><a href="https://wcag.lepszyweb.pl#text-equiv-all" target="_blank">1.1.1 Treść nietekstowa</a> - Wszelkie treści nietekstowe przedstawione użytkownikowi posiadają swoją tekstową alternatywę, która pełni tę samą funkcję, z kilkoma wyjątkami. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="search-section">
+  <h3>Opcja #1: Pole wyszukiwania z widoczną etykietą</h3>
+  <div role="search">
+    <label for="search_1" style="display: block;">Szukaj w serwisie:</label>
+    <input type="search" name="search" id="search_1" class="search-form__input" />
+    <button type="submit"><span class="visuallyhidden">Wykonaj</span>Szukaj</button>
+  </div>
+
+  <div class="break"></div>
+
+  <h3>Opcja #2: Ukryta etykieta</h3>
+  <div role="search">
+    <label for="search_2" class="visuallyhidden">Szukaj w serwisie:</label>
+    <input type="search" name="search" id="search_2" class="search-form__input" placeholder="szukaj..." />
+    <button type="submit"><span class="visuallyhidden">Wykonaj</span>Szukaj</button>
+  </div>
+
+  <div class="break"></div>
+
+  <h3>Opcja #3: Zastosowanie aria-label</h3>
+  <div role="search">
+    <input type="search" name="search" aria-label="Szukaj">
+    <button type="submit"><span class="visuallyhidden">Wykonaj</span>Szukaj</button>
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;search-section&quot;&gt;
+  &lt;h3&gt;Opcja #1: Pole wyszukiwania z widoczną etykietą&lt;/h3&gt;
+  &lt;div role=&quot;search&quot;&gt;
+    &lt;label for=&quot;search_1&quot; style=&quot;display: block;&quot;&gt;Szukaj w serwisie:&lt;/label&gt;
+    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;search_1&quot; class=&quot;search-form__input&quot; /&gt;
+    &lt;button type=&quot;submit&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;Wykonaj&lt;/span&gt;Szukaj&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Opcja #2: Ukryta etykieta&lt;/h3&gt;
+  &lt;div role=&quot;search&quot;&gt;
+    &lt;label for=&quot;search_2&quot; class=&quot;visuallyhidden&quot;&gt;Szukaj w serwisie:&lt;/label&gt;
+    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;search_2&quot; class=&quot;search-form__input&quot; placeholder=&quot;szukaj...&quot; /&gt;
+    &lt;button type=&quot;submit&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;Wykonaj&lt;/span&gt;Szukaj&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Opcja #3: Zastosowanie aria-label&lt;/h3&gt;
+  &lt;div role=&quot;search&quot;&gt;
+    &lt;input type=&quot;search&quot; name=&quot;search&quot; aria-label=&quot;Szukaj&quot;&gt;
+    &lt;button type=&quot;submit&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;Wykonaj&lt;/span&gt;Szukaj&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

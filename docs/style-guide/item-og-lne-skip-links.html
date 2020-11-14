@@ -101,37 +101,70 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-og-lne-skip-links" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-og-lne-skip-links">
+                    Łącza pomijające
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Zapewnij użytkownikom możliwość przejścia do ważnych sekcji Twojej strony. Pomoże to użytkownikom korzystającym z czytników ekranu i osobom, które nie mogą posłużyć się myszą łatwiej i efektywniej poruszać się po Twojej stronie.</li>
+<li>Nie ma prawdziwej reguły tematycznej, jeśli chodzi o stylizację linków do stron, ponieważ wiele stron internetowych ma tendencję do ukrywania ich za pomocą <code>class=&quot;visuallyhidden&quot;</code> (lub podobnej) ze specjalnym atrybutem <code>focus</code>, tak aby widzieli je tylko użytkownicy widzący.</li>
+<li>Ważne jest, aby zobaczyć, że łącze wskazuje na poprawne ID elementu HTML, ponieważ często jest to pomijane w implementacji.</li>
+<li>Na tej stronie zastosowaliśmy 'Przejdź do treści głównej', ale inne ważne przykłady &quot;łączy pomijania&quot; obejmują:</li>
+</ul>
+ <pre>Przejdź do treści<br>Przejdź do głównej treści<br>Przejdź do wyszukiwania<br>Przejdź do dolnej nawigacji<br>Przejdź do głównej nawigacji</pre>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#skip_guide">Wytyczne WCAG 2.1</a></h3><div id="skip_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip" target="_blank">2.4.1 Możliwość pominięcia bloków</a> - Istnieje mechanizm, który umożliwia pominięcie bloków treści powtarzanych na wielu stronach internetowych. (Poziom A)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="skip-links-section">
+  <div class="skip-links" tabindex="-1">
+    <a href="#maincontent">Do treści głównej</a>
+    <div class="hodor">Hodor hodor; hodor hodor; hodor hodor?! Hodor. Hodor hodor, hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor hodor - hodor, hodor. Hodor hodor? Hodor! Hodor hodor, hodor hodor hodor... Hodor hodor hodor?!</div>
+    <h1><a name="maincontent" id="maincontent"></a> Nagłówek</h1>
+    <p>To jest pierwszy prawdziwy akapit. Wszystkie inne rzeczy są zwykłą bzdurą.</p>
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;skip-links-section&quot;&gt;
+  &lt;div class=&quot;skip-links&quot; tabindex=&quot;-1&quot;&gt;
+    &lt;a href=&quot;#maincontent&quot;&gt;Do treści głównej&lt;/a&gt;
+    &lt;div class=&quot;hodor&quot;&gt;Hodor hodor; hodor hodor; hodor hodor?! Hodor. Hodor hodor, hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor hodor - hodor, hodor. Hodor hodor? Hodor! Hodor hodor, hodor hodor hodor... Hodor hodor hodor?!&lt;/div&gt;
+    &lt;h1&gt;&lt;a name=&quot;maincontent&quot; id=&quot;maincontent&quot;&gt;&lt;/a&gt; Nagłówek&lt;/h1&gt;
+    &lt;p&gt;To jest pierwszy prawdziwy akapit. Wszystkie inne rzeczy są zwykłą bzdurą.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 

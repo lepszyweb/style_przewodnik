@@ -101,37 +101,152 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-                <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-          <div><h1>Przewodnik po stylach</h1>
-<div class="social-link-out">
-  <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
-  <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
-</div>
-<p><strong>Przewodnik po stylach</strong> jest biblioteką wzorców projektowych wygenerowaną za pomocą metodologii <abbr title="Knyle Style Sheets">KSS</abbr>. KSS to - najkrócej mowiąc - specyfikacja dokumentacji i format przewodnika stylów, które są ze sobą nierozerwalnie powiązane. Z <a href="https://github.com/kneath/kss">KSS</a> możesz budować przewodniki stylów do swoich projektów i swoje biblioteki stylów, które mogą być fundamenttem przyszłych projektów.</p>
-<div class="break"></div>
-<h2>Po co jest to narzędzie?</h2>
-<p>Gdy kilka pierwszych razy zetknąłem się z KSS, czułem, że to jest to, co może być bardzo dobrym narzędziem promowania rozwiązań projektowych tworzonych od podstaw z myślą o dostępności.  Odpowiedzi na pytanie, jak to zrobić, dostarczyła mi <a href="https://twitter.com/cariefisher">Carie Fisher</a> - <span lang="en">Senior Accessibility Consultant</span> w Deque, twórczyni <a href="https://a11y-style-guide.com/style-guide/">A11y Styleguide</a>, który dał podwaliny pod ten przewodnik stylu.</p>
-<p><strong>Carie Fisher</strong> napisała we wstępie do swojego projektu:</p>   
-<div class="break"></div>
-<div>
-<h2>Jak używać tego narzędzia?</h2>
-<ul>
-<li>Jako odniesienia.</li>
-<li>Jako podstawy do własnego przewodnika stylu.</li>
-<li>Jako podstawy do tworzenia własnych dostępnych komponentów.</li>
-<li>Jako podstawy dla nowego dostępnego motywu.</li>
-</ul>
-<p>A że oryginał jest w języku angielskim i nie został skonfigurowany do obsługi wielojęzyczności, przetłumaczyliśmy go na język polski, uzupełniając odniesienia do WCAG o&nbsp;odniesienia do nowych kryteriów sukcesu zdefiniowanych w WCAG 2.1, zastępując - gdzie to możliwe - łącza do zasobów anglojęzycznych łączami do zasobów polskich i&nbsp;dostosowując co nieco projekt do stylistyki stosowanej w&nbsp;serwisach Pracowni Dostepności Cyfrowej LepszyWeb. </p>
-<p>Może z czasem przewodnik będzie autentyczną dokumentacją rozwiazań stosowanych na naszych witrynach.</p>
-<p>Ale naszym głównym celem jest zaprezentowanie zestawu dostępnych komponentów stron i&nbsp;powiązannych z nimi wskazówek z&nbsp;zakresu dostępności polskiemu poszukiwaczowi wzorów dostępnego projektowania, czyli Tobie - kimkolwiek jesteś, programistą, projektantem, webmasterem, testerem, administratorem, początkującym czy doświadczonym specjalistą dostępności.</p>
-<p>Możesz czerpać z tego, jak zechcesz: podglądać, jak to działa i jak jest zrobione, kopiować kod i&nbsp;wykorzystywać go w swoich projektach, tworzyć na tej podstawie własne rozwiązania, czy prezentować przedstawione tu wzory podczas szkoleń, warsztatów. Cokolwiek z tym zrobisz, dobrze zrobisz, a&nbsp;jeśli posłuży to sprawie dostępności cyfrowej, zrobisz bardzo dobrze.</p>
-</div>
-<div class="break"></div>
-<div><h2>Podziękowania!</h2>
-<p>Przede wszystkim dla <a href="https://twitter.com/cariefisher">Carie Fisher</a>, a&nbsp;równocześnie dla wszystkich, którzy swoją myślą, mową i&nbsp;uczynkiem wnieśli jakikolwiek wkład w opracownie tych wzorców, przede wszystkim dla <strong>współtwórcy</strong> i <strong>współopiekuna</strong> oryginalnego projektu, którym jest znamienity <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a>. Im głównie zawdzięczasz ten zasób.</p>
-</div>  
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://www.facebook.com/lepszyweb" target="_blank" class="social-link-facebook"><span class="visuallyhidden">LepszyWeb na Facebooku</span></a>
+            <a href="https://github.com/lepszyweb" target="_blank" class="social-link-github"><span class="visuallyhidden">LepszyWeb na GitHub</span></a>
+          </div>
 
-        </div>
+                     <div id="kssref-formularze-tooltips-import-site-utilities" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-formularze-tooltips-import-site-utilities">
+                    Podpowiedzi
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+<li>Element podpowiedzi (Tooltips) nie powinien otrzymywać fokusu. Fokus powinien pozostać na polu, przycisku lub łączu, o którym mowa w etykiecie.</li>
+<li>Podowiedzi  nie powinny być ujawniane przed upływem krótkiego czasu (~1-5 sekund).</li>
+<li>Zależnie od wybranej opcji Tooltip, może istnieć dodatkowe oznakowanie ARIA, które należy zastosować. Dodaj <code>aria-describedby=&quot;przyklad1&quot;</code> na polu danych i połącz je z powiązaną sekcją o odpowiadającym ID selektora <code>id=&quot;przyklad1&quot;</code>.</li>
+<li>Jeśli to możliwe, użyj opisowego tekstu na polach formularza, który musi być aktywowany przez zdarzenie <code>focus</code> lub <code>hover</code>. Podpowiedzi mogą być problematyczne dla niektórych urządzeń technologii wspomagających.</li>
+</ul>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_res">Zasoby</a></h3><div id="tooltips_res" class="atblock__panel"><ul><li><a href="http://heydonworks.com/practical_aria_examples/#input-tooltip" target="_blank">ARIA Examples - Tooltips</a></li><li><a href="https://github.com/scottaohara/a11y_tooltips" target="_blank">ARIA Tooltips</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices/#tooltip" target="_blank">Tooltip Widget</a></li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_guide">Wytyczne WCAG 2.1</a></h3><div id="tooltips_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="tooltips">
+  <h3>Opcja #1: Prosta podpowiedź bez JS</h3>
+    <form action="#" class="no-js-tooltip">
+    <fieldset>
+      <legend>Logowanie</legend>
+      <div>
+        <label for="username">Użytkownik</label>
+  	  <input type="text" id="username" aria-describedby="username-tip" required />
+  	  <div role="tooltip" id="username-tip">Wypróbuj swój adres e-mail</div>
+  	</div>
+  	<div>
+  	  <label for="password">Hasło</label>
+  	  <input type="text" id="password" aria-describedby="password-tip" required />
+  	  <div role="tooltip" id="password-tip">Jest to najprawdopodobniej 1234</div>
+  	</div>
+    </fieldset>
+  </form>
+  <div class="break"></div>
+  <h3>Opcja #2: Podpowiedź z łączem</h3>
+  <span class="a11y-tip a11y-tip--no-delay">
+  	<a href="#" class="a11y-tip__trigger">
+  		Jaki jest ulubiony owoc Beethovena?
+  	</a>
+  	<span role="tooltip" class="a11y-tip__help a11y-tip__help--top">
+  		A ba-na-na-na.
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Opcja #3: Podpowiedź z przyciskiem</h3>
+  <span class="a11y-tip">
+  	<button type="button" class="a11y-tip__trigger" aria-describedby="tt_id">
+  		Nie ufaj atomom
+  	</button>
+  	<span id="tt_id" role="tooltip" class="a11y-tip__help a11y-tip__help--bottom">
+  		Składają się one na wszystko.!
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Opcja #4: Pole z podpowiedzią po prawej</h3>
+  <label for="test">
+  	Dlaczego niewidzialny człowiek odrzucił ofertę pracy?
+  </label>
+  <span class="a11y-tip">
+  	<input id="test" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
+  	<span id="test_desc" role="tooltip" class="a11y-tip__help a11y-tip__help--right">
+  		Nie mógł zobaczyć, jak to robi.
+  	</span>
+  </span>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Pokaż przykładowy kod
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tooltips&quot;&gt;
+  &lt;h3&gt;Opcja #1: Prosta podpowiedź bez JS&lt;/h3&gt;
+    &lt;form action=&quot;#&quot; class=&quot;no-js-tooltip&quot;&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;Logowanie&lt;/legend&gt;
+      &lt;div&gt;
+        &lt;label for=&quot;username&quot;&gt;Użytkownik&lt;/label&gt;
+  	  &lt;input type=&quot;text&quot; id=&quot;username&quot; aria-describedby=&quot;username-tip&quot; required /&gt;
+  	  &lt;div role=&quot;tooltip&quot; id=&quot;username-tip&quot;&gt;Wypróbuj swój adres e-mail&lt;/div&gt;
+  	&lt;/div&gt;
+  	&lt;div&gt;
+  	  &lt;label for=&quot;password&quot;&gt;Hasło&lt;/label&gt;
+  	  &lt;input type=&quot;text&quot; id=&quot;password&quot; aria-describedby=&quot;password-tip&quot; required /&gt;
+  	  &lt;div role=&quot;tooltip&quot; id=&quot;password-tip&quot;&gt;Jest to najprawdopodobniej 1234&lt;/div&gt;
+  	&lt;/div&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Opcja #2: Podpowiedź z łączem&lt;/h3&gt;
+  &lt;span class=&quot;a11y-tip a11y-tip--no-delay&quot;&gt;
+  	&lt;a href=&quot;#&quot; class=&quot;a11y-tip__trigger&quot;&gt;
+  		Jaki jest ulubiony owoc Beethovena?
+  	&lt;/a&gt;
+  	&lt;span role=&quot;tooltip&quot; class=&quot;a11y-tip__help a11y-tip__help--top&quot;&gt;
+  		A ba-na-na-na.
+  	&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Opcja #3: Podpowiedź z przyciskiem&lt;/h3&gt;
+  &lt;span class=&quot;a11y-tip&quot;&gt;
+  	&lt;button type=&quot;button&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;tt_id&quot;&gt;
+  		Nie ufaj atomom
+  	&lt;/button&gt;
+  	&lt;span id=&quot;tt_id&quot; role=&quot;tooltip&quot; class=&quot;a11y-tip__help a11y-tip__help--bottom&quot;&gt;
+  		Składają się one na wszystko.!
+  	&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Opcja #4: Pole z podpowiedzią po prawej&lt;/h3&gt;
+  &lt;label for=&quot;test&quot;&gt;
+  	Dlaczego niewidzialny człowiek odrzucił ofertę pracy?
+  &lt;/label&gt;
+  &lt;span class=&quot;a11y-tip&quot;&gt;
+  	&lt;input id=&quot;test&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;test_desc&quot; type=&quot;text&quot;&gt;
+  	&lt;span id=&quot;test_desc&quot; role=&quot;tooltip&quot; class=&quot;a11y-tip__help a11y-tip__help--right&quot;&gt;
+  		Nie mógł zobaczyć, jak to robi.
+  	&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Kopiuj</button>
+                      <p>&nbsp;<span class="copied" aria-label="kod skopiowany pomyślnie">Skopiowane!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
               </article>
     </main>
 
