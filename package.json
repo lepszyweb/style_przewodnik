@@ -1,10 +1,10 @@
 {
-  "name": "lw_style_przewodnik",
+  "name": "a11y_style_guide",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lepszyweb/lw_style_przewodnik.git"
+    "url": "https://github.com/cehfisher/a11y-style-guide.git"
   },
   "scripts": {
     "build": "gulp",
@@ -57,5 +57,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "kss": "^3.0.1",
     "run-sequence": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash.template": "^4.5.0"
   }
 }
