@@ -27,7 +27,7 @@ jobs:
       - run: mkdir ${{ github.workspace }}/dist
       - run: npm ci
       - run: npm run build
-      - run: mkdir -p ${{ github.workspace }}/dist/favicons && cp ${{ github.workspace }}/docs/favicons/* ${{ github.workspace }}/dist/favicons && mkdir -p ${{ github.workspace }}/dist/assets && echo 'mkdir' && cp -r ./docs/assets/* ./dist/assets && echo 'cp'
+      - run: mkdir -p ${{ github.workspace }}/dist/favicons && cp ${{ github.workspace }}/docs/favicons/* ${{ github.workspace }}/dist/favicons && mkdir -p ${{ github.workspace }}/dist/assets && cp -r ./docs/assets/* ./dist/assets
       - run: cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
       
       - name: Deploy
