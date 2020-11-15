@@ -24,6 +24,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - run: mkdir ./dist
       - run: npm ci
       - run: npm run build
       - run: mkdir ./dist/favicons && cp ./docs/favicons/* ./dist/favicons
