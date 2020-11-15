@@ -32,8 +32,8 @@ module.exports = {
       // keep adding the file here everytime you add a new component.
       css: [
         path.relative(
-          //dirname + '/style-guide/',
-          //dirname + '/all/all.css'
+          dirname + '/style-guide/',
+          dirname + '/all/all.css'
         )
       ],
       js: [
