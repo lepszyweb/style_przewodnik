@@ -28,7 +28,6 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: mkdir -p ./dist/favicons && cp ./docs/favicons/* ./dist/favicons
-      - run: mkdir -p ./dist/assets && cp ./docs/assets/* ./dist/assets
       - run: cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
       
       - name: Deploy
