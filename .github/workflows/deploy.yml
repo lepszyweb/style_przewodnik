@@ -26,6 +26,8 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm ci
       - run: npm run build
+      
+      - name: Create symlink
       - run: cd ./dist && ln -s ./style-guide/index.html ../index.html && cd ../
 
       - name: Deploy
