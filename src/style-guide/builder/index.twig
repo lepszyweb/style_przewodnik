@@ -74,7 +74,7 @@
             </button>
           </div>
           <ul id="kss-nav-list" class="kss-menu">
-            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Przegląd</span></a></li>
+            <li class="kss-menu-item"><a href="./index.html"><span class="kss-ref">0</span><span class="kss-name">Przegląd</span></a></li>
             {% for menu_item in menu %}
             <li class="kss-menu-item">
               <a href="section-{{ menu_item.referenceURI }}.html"><span class="kss-ref">{{ menu_item.referenceNumber }}</span><span class="kss-name">{{ menu_item.header }}</span></a> {% if menu_item.isActive and menu_item.children is not empty %}

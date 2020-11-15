@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -73,7 +74,7 @@
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -152,7 +153,7 @@
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -174,7 +175,7 @@
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -284,7 +285,7 @@
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -330,7 +331,7 @@
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -351,8 +352,8 @@
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -452,7 +453,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -470,7 +471,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -505,7 +506,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -521,6 +522,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -553,7 +564,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -599,7 +610,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -607,10 +618,10 @@ a[target='_blank']::after {
 /* Document
    ========================================================================== */
 /**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
+ * 1. Zmień domyślną rodzinę czcionek we wszystkich przeglądarkach (rozpatrywanych).
+ * 2. Skoryguj wysokość linii we wszystkich przeglądarkach.
+ * 3. Zapobiegaj zmianie rozmiaru czcionki po zmianie orientacji
+ *    w IE w Windows Phone oraz w iOS.
  */
 html {
   -webkit-box-sizing: border-box;
@@ -631,10 +642,10 @@ html {
     -webkit-box-sizing: inherit;
     box-sizing: inherit; }
 
-/* Sections
+/* Sekcje
    ========================================================================== */
 /**
- * Remove the margin in all browsers (opinionated).
+ * Usuń margines we wszystkich przeglądarkach (rozpatrywanych).
  */
 body {
   margin: 0;
@@ -643,7 +654,7 @@ body {
   letter-spacing: 0.02em; }
 
 /**
- * Add the correct display in IE 9-.
+ * Dodaj prawidłowe wyświetlanie w IE 9-.
  */
 article,
 aside,
@@ -654,8 +665,8 @@ section {
   display: block; }
 
 /**
- * Headings are always 'just a bit bigger' than body copy.
- * See: http://csswizardry.com/2016/02/managing-typography-on-large-apps/
+ * Nagłówki są zawsze "tylko trochę większe" niż kopia body.
+ * Zobacz: http://csswizardry.com/2016/02/managing-typography-on-large-apps/
  */
 h1,
 h2,
@@ -693,7 +704,7 @@ h3 > a,
 a {
   text-align: left;
   margin-bottom: 0;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: normal; }
   h1 > a:hover, h1 > a:focus, h1 > a:active,
@@ -706,14 +717,14 @@ a {
   a:hover,
   a:focus,
   a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
-/* Grouping content
+/* Grupowanie treści
    ========================================================================== */
 /**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
+ * Dodaj prawidłowe wyświetlanie w IE 9-.
+ * 1. Dodaj prawidłowe wyświetlanie w IE.
  */
 figcaption,
 figure,
@@ -722,8 +733,8 @@ main {
   display: block; }
 
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
+ * 1. Dodaj prawidłowe  box sizing w Firefox.
+ * 2. Pokaż przelewanie (overflow) w Edge oraz IE.
  */
 hr {
   -webkit-box-sizing: content-box;
@@ -735,8 +746,9 @@ hr {
   /* 2 */ }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Popraw dziedziczenie i skalowanie rozmiaru czcionki
+ *    we wszystkich przeglądarkach.
+ * 2. Skoryguj nieparzyste (odd) rozmiary czcionek `em` we wszystkich przeglądarkach.
  */
 pre {
   font-family: monospace, monospace;
@@ -744,29 +756,29 @@ pre {
   font-size: 1rem;
   /* 2 */ }
 
-/* Text-level semantics
+/* Semantyka na poziomie tekstu
    ========================================================================== */
 /**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * 1. Usuń szare tło na aktywnych linkach w IE 10.
+ * 2. Usuń luki w  podkreślonych łączach w iOS 8+ oraz Safari 8+.
  */
 a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
   /* 2 */
-  color: #e00000;
+  color: #77408e;
   text-decoration: none; }
   a:hover, a:focus, a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 p {
   margin: 0; }
 
 /**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * 1. Usuń dolny kontur (border) w Firefox 39-.
+ * 2. Dodaj właściwą dekorację tekstu w Chrome, Edge, IE, Opera oraz Safari.
  */
 abbr[title] {
   border-bottom: 0;
@@ -778,8 +790,8 @@ abbr[title] {
   /* 2 */ }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Popraw dziedziczenie i skalowanie czcionek we wszystkich przeglądarkach.
+ * 2. Skoryguj nieparzyste rozmiary czcionek `em` we wszystkich przeglądarkach.
  */
 code,
 kbd,
@@ -790,27 +802,27 @@ samp {
   /* 2 */ }
 
 /**
- * Add the correct font style in Android 4.3-.
+ * Dodaj prawidłowy styl czcionki w Android 4.3-.
  */
 dfn {
   font-style: italic; }
 
 /**
- * Add the correct background and color in IE 9-.
+ * Dodaj prawidłowe tło i kolor w IE 9-.
  */
 mark {
   background-color: #ff0;
   color: #000; }
 
 /**
- * Add the correct font size in all browsers.
+ * Dodaj prawidłowy rozmiar czcionki we wszystkich przeglądarkach.
  */
 small {
   font-size: 80%; }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
+ * Zapobieganie wpływowi `sub` i `sup` na wysokość linii 
+ * we wszystkich przeglądarkach.
  */
 sub,
 sup {
@@ -825,24 +837,24 @@ sub {
 sup {
   top: -0.5em; }
 
-/* Embedded content
+/* Wbudowana treść
    ========================================================================== */
 /**
- * Add the correct display in IE 9-.
+ * Dodaj prawidłowe wyświetlanie w IE 9-.
  */
 audio,
 video {
   display: inline-block; }
 
 /**
- * Add the correct display in iOS 4-7.
+ * Dodaj prawidłowe wyświetlanie w iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
 /**
- * Remove the border on images inside links in IE 10-.
+ * Usuń obramowanie na zdjęciach wewnątrz łączy in IE 10-.
  */
 img {
   border: 0;
@@ -850,17 +862,17 @@ img {
   max-width: 100%; }
 
 /**
- * Hide the overflow in IE.
+ * Ukrycie wypływania w IE.
  */
 svg:not(:root) {
   overflow: hidden;
   padding: 1px; }
 
-/* Forms
+/* Formularze
    ========================================================================== */
 /**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
+ * 1. Zmiana stylów czcionki we wszystkich przeglądarkach (rozpatrywanych).
+ * 2. Usuń margines w Firefox i Safari.
  */
 button,
 input,
@@ -873,8 +885,8 @@ textarea {
   /* 2 */ }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
+ * Pokaż wypłynięcie w IE.
+ * 1. Pokaż wypłynięcie w Edge.
  */
 button,
 input {
@@ -882,8 +894,8 @@ input {
   overflow: visible; }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
+ * Usuń dziedziczenie przekształcenia tekstu w Edge, Firefox, i IE.
+ * 1. Usuń dziedziczenie przekształcenia tekstu w Firefox.
  */
 button,
 select {
@@ -891,9 +903,9 @@ select {
   text-transform: none; }
 
 /**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
+ * 1. Zapobiega błędom WebKit, gdy (2) niszczą natywną kontrolę audio` i `video`
+ *    w Android 4.
+ * 2. Skoryguj brak możliwości stylizowania klikalnych typów w iOS i Safari.
  */
 button,
 html [type='button'],
@@ -903,7 +915,7 @@ html [type='button'],
   /* 2 */ }
 
 /**
- * Remove the inner border and padding in Firefox.
+ * Usuń wewnętrzne obramowanie i wyśpełnienie w Firefox.
  */
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
@@ -913,7 +925,7 @@ button::-moz-focus-inner,
   padding: 0; }
 
 /**
- * Restore the focus styles unset by the previous rule.
+ * Przywrócenie stylów fokusu niezgodnych z poprzednią zasadą.
  */
 button:-moz-focusring,
 [type='button']:-moz-focusring,
@@ -922,7 +934,7 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText; }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Zmiana obraowań, marginesu i wypełnienia we wszystkich przeglądarkach (rozpatrywanych).
  */
 fieldset {
   border: 1px solid #c0c0c0;
@@ -1142,7 +1154,7 @@ li {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -1221,7 +1233,7 @@ li {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -1243,7 +1255,7 @@ li {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -1353,7 +1365,7 @@ li {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -1399,7 +1411,7 @@ li {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -1420,8 +1432,8 @@ li {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -1521,7 +1533,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -1539,7 +1551,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -1574,7 +1586,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -1590,6 +1602,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -1622,7 +1644,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -1668,7 +1690,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -1793,7 +1815,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -1872,7 +1894,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -1894,7 +1916,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -2004,7 +2026,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -2050,7 +2072,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -2071,8 +2093,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -2172,7 +2194,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -2190,7 +2212,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -2225,7 +2247,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -2241,6 +2263,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -2273,7 +2305,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -2319,7 +2351,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -2399,7 +2431,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -2478,7 +2510,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -2500,7 +2532,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -2610,7 +2642,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -2656,7 +2688,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -2677,8 +2709,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -2778,7 +2810,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -2796,7 +2828,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -2831,7 +2863,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -2847,6 +2879,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -2879,7 +2921,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -2925,7 +2967,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -3025,7 +3067,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -3104,7 +3146,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -3126,7 +3168,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -3236,7 +3278,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -3282,7 +3324,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -3303,8 +3345,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -3404,7 +3446,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -3422,7 +3464,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -3457,7 +3499,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -3473,6 +3515,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -3505,7 +3557,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -3551,20 +3603,20 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
 button {
   display: inline-block;
-  background-color: #e00000;
+  background-color: #77408e;
   color: #ffffff;
   padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  border: 3px solid #e00000;
+  border: 3px solid #77408e;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -3574,9 +3626,9 @@ button {
   margin: 0.5rem 0;
   -webkit-appearance: inherit; }
   button:hover {
-    background-color: #a51323;
+    background-color: #5f3372;
     color: #ffffff;
-    border: 3px solid #a51323;
+    border: 3px solid #5f3372;
     text-decoration: underline;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
@@ -3595,13 +3647,13 @@ button {
 [type='submit'],
 [role='button'] {
   display: inline-block;
-  background-color: #e00000;
+  background-color: #77408e;
   color: #ffffff;
   padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  border: 3px solid #e00000;
+  border: 3px solid #77408e;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -3612,9 +3664,9 @@ button {
   min-height: inherit; }
   [type='submit']:hover,
   [role='button']:hover {
-    background-color: #a51323;
+    background-color: #5f3372;
     color: #ffffff;
-    border: 3px solid #a51323;
+    border: 3px solid #5f3372;
     text-decoration: underline;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
@@ -3638,13 +3690,13 @@ html [type='button'],
 
 .button {
   display: inline-block;
-  background-color: #e00000;
+  background-color: #77408e;
   color: #ffffff;
   padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  border: 3px solid #e00000;
+  border: 3px solid #77408e;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -3654,9 +3706,9 @@ html [type='button'],
   margin: 0.5rem 0;
   line-height: 0.9; }
   .button:hover {
-    background-color: #a51323;
+    background-color: #5f3372;
     color: #ffffff;
-    border: 3px solid #a51323;
+    border: 3px solid #5f3372;
     text-decoration: underline;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
@@ -3671,13 +3723,13 @@ html [type='button'],
 
 .button--outline {
   display: inline-block;
-  background-color: #e00000;
+  background-color: #77408e;
   color: #ffffff;
   padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  border: 3px solid #e00000;
+  border: 3px solid #77408e;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -3686,13 +3738,13 @@ html [type='button'],
   position: relative;
   margin: 0.5rem 0;
   height: 50px;
-  color: #e00000;
+  color: #77408e;
   background-color: transparent;
-  border: 3px solid #e00000; }
+  border: 3px solid #77408e; }
   .button--outline:hover {
-    background-color: #a51323;
+    background-color: #5f3372;
     color: #ffffff;
-    border: 3px solid #a51323;
+    border: 3px solid #5f3372;
     text-decoration: underline;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
@@ -3706,7 +3758,7 @@ html [type='button'],
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button--outline:hover, .button--outline:focus {
     background-color: transparent;
-    color: #a51323;
+    color: #5f3372;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button--outline.magnifyingglass {
@@ -3726,13 +3778,13 @@ html [type='button'],
 
 .button-icon {
   display: inline-block;
-  background-color: #e00000;
+  background-color: #77408e;
   color: #ffffff;
   padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  border: 3px solid #e00000;
+  border: 3px solid #77408e;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -3744,9 +3796,9 @@ html [type='button'],
   padding: 0.8rem 2rem 0.8rem 2.5rem;
   height: 48px; }
   .button-icon:hover {
-    background-color: #a51323;
+    background-color: #5f3372;
     color: #ffffff;
-    border: 3px solid #a51323;
+    border: 3px solid #5f3372;
     text-decoration: underline;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
@@ -3767,13 +3819,13 @@ html [type='button'],
     pointer-events: none; }
   .button-icon.button--outline {
     display: inline-block;
-    background-color: #e00000;
+    background-color: #77408e;
     color: #ffffff;
     padding: 0.8rem 1rem;
     text-align: center;
     text-decoration: none;
     line-height: 1;
-    border: 3px solid #e00000;
+    border: 3px solid #77408e;
     border-radius: 4px;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -3782,15 +3834,15 @@ html [type='button'],
     position: relative;
     margin: 0.5rem 0;
     height: 50px;
-    color: #e00000;
+    color: #77408e;
     background-color: transparent;
-    border: 3px solid #e00000;
+    border: 3px solid #77408e;
     line-height: 1.3;
     padding: 0.8rem 2rem 0.8rem 2.5rem; }
     .button-icon.button--outline:hover {
-      background-color: #a51323;
+      background-color: #5f3372;
       color: #ffffff;
-      border: 3px solid #a51323;
+      border: 3px solid #5f3372;
       text-decoration: underline;
       -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
@@ -3804,7 +3856,7 @@ html [type='button'],
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
     .button-icon.button--outline:hover, .button-icon.button--outline:focus {
       background-color: transparent;
-      color: #a51323;
+      color: #5f3372;
       -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button-icon.heart::before {
@@ -3924,7 +3976,7 @@ button[disabled],
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -4003,7 +4055,7 @@ button[disabled],
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -4025,7 +4077,7 @@ button[disabled],
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -4135,7 +4187,7 @@ button[disabled],
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -4181,7 +4233,7 @@ button[disabled],
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -4202,8 +4254,8 @@ button[disabled],
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -4303,7 +4355,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -4321,7 +4373,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -4356,7 +4408,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -4372,6 +4424,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -4404,7 +4466,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -4450,7 +4512,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -4540,7 +4602,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -4619,7 +4681,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -4641,7 +4703,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -4751,7 +4813,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -4797,7 +4859,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -4818,8 +4880,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -4919,7 +4981,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -4937,7 +4999,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -4972,7 +5034,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -4988,6 +5050,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -5020,7 +5092,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -5066,7 +5138,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -5173,7 +5245,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -5252,7 +5324,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -5274,7 +5346,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -5384,7 +5456,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -5430,7 +5502,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -5451,8 +5523,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -5552,7 +5624,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -5570,7 +5642,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -5605,7 +5677,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -5621,6 +5693,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -5653,7 +5735,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -5699,7 +5781,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -5903,7 +5985,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -5982,7 +6064,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -6004,7 +6086,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -6114,7 +6196,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -6160,7 +6242,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -6181,8 +6263,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -6282,7 +6364,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -6300,7 +6382,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -6335,7 +6417,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -6351,6 +6433,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -6383,7 +6475,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -6429,7 +6521,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -6596,7 +6688,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -6675,7 +6767,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -6697,7 +6789,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -6807,7 +6899,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -6853,7 +6945,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -6874,8 +6966,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -6975,7 +7067,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -6993,7 +7085,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -7028,7 +7120,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -7044,6 +7136,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -7076,7 +7178,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -7122,7 +7224,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -7273,7 +7375,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -7352,7 +7454,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -7374,7 +7476,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -7484,7 +7586,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -7530,7 +7632,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -7551,8 +7653,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -7652,7 +7754,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -7670,7 +7772,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -7705,7 +7807,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -7721,6 +7823,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -7753,7 +7865,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -7799,7 +7911,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -8060,7 +8172,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -8139,7 +8251,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -8161,7 +8273,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -8271,7 +8383,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -8317,7 +8429,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -8338,8 +8450,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -8439,7 +8551,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -8457,7 +8569,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -8492,7 +8604,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -8508,6 +8620,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -8540,7 +8662,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -8586,7 +8708,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -8934,7 +9056,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -9013,7 +9135,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -9035,7 +9157,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -9145,7 +9267,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -9191,7 +9313,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -9212,8 +9334,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -9313,7 +9435,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -9331,7 +9453,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -9366,7 +9488,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -9382,6 +9504,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -9414,7 +9546,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -9460,7 +9592,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -9830,7 +9962,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -9909,7 +10041,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -9931,7 +10063,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -10041,7 +10173,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -10087,7 +10219,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -10108,8 +10240,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -10209,7 +10341,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -10227,7 +10359,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -10262,7 +10394,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -10278,6 +10410,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -10310,7 +10452,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -10356,7 +10498,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -10493,7 +10635,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -10572,7 +10714,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -10594,7 +10736,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -10704,7 +10846,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -10750,7 +10892,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -10771,8 +10913,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -10872,7 +11014,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -10890,7 +11032,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -10925,7 +11067,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -10941,6 +11083,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -10973,7 +11125,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -11019,7 +11171,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -11099,7 +11251,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -11178,7 +11330,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -11200,7 +11352,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -11310,7 +11462,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -11356,7 +11508,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -11377,8 +11529,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -11478,7 +11630,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -11496,7 +11648,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -11531,7 +11683,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -11547,6 +11699,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -11579,7 +11741,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -11625,7 +11787,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -11767,7 +11929,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -11846,7 +12008,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -11868,7 +12030,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -11978,7 +12140,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -12024,7 +12186,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -12045,8 +12207,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -12146,7 +12308,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -12164,7 +12326,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -12199,7 +12361,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -12215,6 +12377,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -12247,7 +12419,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -12293,7 +12465,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -12403,7 +12575,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -12482,7 +12654,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -12504,7 +12676,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -12614,7 +12786,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -12660,7 +12832,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -12681,8 +12853,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -12782,7 +12954,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -12800,7 +12972,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -12835,7 +13007,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -12851,6 +13023,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -12883,7 +13065,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -12929,7 +13111,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -13018,7 +13200,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -13097,7 +13279,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -13119,7 +13301,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -13229,7 +13411,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -13275,7 +13457,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -13296,8 +13478,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -13397,7 +13579,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -13415,7 +13597,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -13450,7 +13632,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -13466,6 +13648,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -13498,7 +13690,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -13544,7 +13736,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -13629,7 +13821,7 @@ a:focus,
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -13708,7 +13900,7 @@ a:focus,
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -13730,7 +13922,7 @@ a:focus,
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -13840,7 +14032,7 @@ a:focus,
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -13886,7 +14078,7 @@ a:focus,
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -13907,8 +14099,8 @@ a:focus,
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -14008,7 +14200,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -14026,7 +14218,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -14061,7 +14253,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -14077,6 +14269,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -14109,7 +14311,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -14155,7 +14357,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -14235,7 +14437,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -14314,7 +14516,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -14336,7 +14538,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -14446,7 +14648,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -14492,7 +14694,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -14513,8 +14715,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -14614,7 +14816,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -14632,7 +14834,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -14667,7 +14869,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -14683,6 +14885,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -14715,7 +14927,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -14761,7 +14973,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -14876,7 +15088,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -14955,7 +15167,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -14977,7 +15189,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -15087,7 +15299,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -15133,7 +15345,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -15154,8 +15366,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -15255,7 +15467,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -15273,7 +15485,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -15308,7 +15520,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -15324,6 +15536,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -15356,7 +15578,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -15402,7 +15624,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -15577,7 +15799,7 @@ ul.show-menu {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -15656,7 +15878,7 @@ ul.show-menu {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -15678,7 +15900,7 @@ ul.show-menu {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -15788,7 +16010,7 @@ ul.show-menu {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -15834,7 +16056,7 @@ ul.show-menu {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -15855,8 +16077,8 @@ ul.show-menu {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -15956,7 +16178,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -15974,7 +16196,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -16009,7 +16231,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -16025,6 +16247,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -16057,7 +16289,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -16103,7 +16335,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -16148,13 +16380,13 @@ a[target='_blank']::after {
         text-align: left; } }
   .footer .button {
     display: inline-block;
-    background-color: #e00000;
+    background-color: #77408e;
     color: #ffffff;
     padding: 0.8rem 1rem;
     text-align: center;
     text-decoration: none;
     line-height: 1;
-    border: 3px solid #e00000;
+    border: 3px solid #77408e;
     border-radius: 4px;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -16164,9 +16396,9 @@ a[target='_blank']::after {
     margin: 0.5rem 0;
     width: 175px; }
     .footer .button:hover {
-      background-color: #a51323;
+      background-color: #5f3372;
       color: #ffffff;
-      border: 3px solid #a51323;
+      border: 3px solid #5f3372;
       text-decoration: underline;
       -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
@@ -16460,7 +16692,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -16539,7 +16771,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -16561,7 +16793,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -16671,7 +16903,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -16717,7 +16949,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -16738,8 +16970,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -16839,7 +17071,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -16857,7 +17089,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -16892,7 +17124,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -16908,6 +17140,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -16940,7 +17182,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -16986,7 +17228,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -17135,7 +17377,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -17214,7 +17456,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -17236,7 +17478,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -17346,7 +17588,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -17392,7 +17634,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -17413,8 +17655,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -17514,7 +17756,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -17532,7 +17774,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -17567,7 +17809,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -17583,6 +17825,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -17615,7 +17867,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -17661,7 +17913,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -17917,7 +18169,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -17996,7 +18248,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -18018,7 +18270,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -18128,7 +18380,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -18174,7 +18426,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -18195,8 +18447,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -18296,7 +18548,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -18314,7 +18566,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -18349,7 +18601,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -18365,6 +18617,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -18397,7 +18659,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -18443,7 +18705,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -18573,7 +18835,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -18652,7 +18914,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -18674,7 +18936,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -18784,7 +19046,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -18830,7 +19092,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -18851,8 +19113,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -18952,7 +19214,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -18970,7 +19232,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -19005,7 +19267,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -19021,6 +19283,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -19053,7 +19325,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -19099,7 +19371,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -19189,7 +19461,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -19268,7 +19540,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -19290,7 +19562,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -19400,7 +19672,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -19446,7 +19718,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -19467,8 +19739,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -19568,7 +19840,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -19586,7 +19858,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -19621,7 +19893,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -19637,6 +19909,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -19669,7 +19951,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -19715,7 +19997,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -19795,7 +20077,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -19874,7 +20156,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -19896,7 +20178,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -20006,7 +20288,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -20052,7 +20334,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -20073,8 +20355,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -20174,7 +20456,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -20192,7 +20474,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -20227,7 +20509,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -20243,6 +20525,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -20275,7 +20567,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -20321,7 +20613,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -20416,7 +20708,7 @@ input[type='search'] {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -20495,7 +20787,7 @@ input[type='search'] {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -20517,7 +20809,7 @@ input[type='search'] {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -20627,7 +20919,7 @@ input[type='search'] {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -20673,7 +20965,7 @@ input[type='search'] {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -20694,8 +20986,8 @@ input[type='search'] {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -20795,7 +21087,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -20813,7 +21105,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -20848,7 +21140,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -20864,6 +21156,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -20896,7 +21198,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -20942,7 +21244,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -21065,7 +21367,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -21144,7 +21446,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -21166,7 +21468,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -21276,7 +21578,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -21322,7 +21624,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -21343,8 +21645,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -21444,7 +21746,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -21462,7 +21764,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -21497,7 +21799,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -21513,6 +21815,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -21545,7 +21857,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -21591,7 +21903,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -21686,7 +21998,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -21765,7 +22077,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -21787,7 +22099,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -21897,7 +22209,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -21943,7 +22255,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -21964,8 +22276,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -22065,7 +22377,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -22083,7 +22395,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -22118,7 +22430,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -22134,6 +22446,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -22166,7 +22488,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -22212,7 +22534,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -22292,7 +22614,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -22371,7 +22693,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -22393,7 +22715,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -22503,7 +22825,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -22549,7 +22871,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -22570,8 +22892,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -22671,7 +22993,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -22689,7 +23011,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -22724,7 +23046,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -22740,6 +23062,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -22772,7 +23104,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -22818,7 +23150,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -22898,7 +23230,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -22977,7 +23309,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -22999,7 +23331,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -23109,7 +23441,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -23155,7 +23487,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -23176,8 +23508,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -23277,7 +23609,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -23295,7 +23627,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -23330,7 +23662,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -23346,6 +23678,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -23378,7 +23720,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -23424,7 +23766,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -23585,7 +23927,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -23664,7 +24006,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -23686,7 +24028,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -23796,7 +24138,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -23842,7 +24184,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -23863,8 +24205,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -23964,7 +24306,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -23982,7 +24324,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -24017,7 +24359,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -24033,6 +24375,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -24065,7 +24417,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -24111,7 +24463,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -24229,7 +24581,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -24308,7 +24660,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -24330,7 +24682,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -24440,7 +24792,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -24486,7 +24838,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -24507,8 +24859,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -24608,7 +24960,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -24626,7 +24978,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -24661,7 +25013,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -24677,6 +25029,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -24709,7 +25071,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -24755,7 +25117,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -24784,10 +25146,10 @@ textarea[aria-invalid] {
 
 input[aria-invalid='true'],
 textarea[aria-invalid='true'] {
-  border-color: #e00000; }
+  border-color: #df1465; }
   input[aria-invalid='true']:focus,
   textarea[aria-invalid='true']:focus {
-    outline-color: #e00000; }
+    outline-color: #df1465; }
   input[aria-invalid='true'] + span,
   textarea[aria-invalid='true'] + span {
     color: #e00000; }
@@ -24818,6 +25180,7 @@ legend {
   color: #e00000;
   display: inline-block; }
 
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -24893,7 +25256,7 @@ legend {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -24972,7 +25335,7 @@ legend {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -24994,7 +25357,7 @@ legend {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -25104,7 +25467,7 @@ legend {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -25150,7 +25513,7 @@ legend {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -25171,8 +25534,8 @@ legend {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -25272,7 +25635,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -25290,7 +25653,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -25325,7 +25688,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -25341,6 +25704,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -25373,7 +25746,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -25419,7 +25792,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -25476,14 +25849,14 @@ a[target='_blank']::after {
   [data-action='aria-switch'][aria-checked='true'] {
     background: #42dc42; }
   [data-action='aria-switch'].text[aria-checked='false'] span::after {
-    content: 'OFF';
+    content: 'NIE';
     display: block;
     color: #464646;
     position: absolute;
     right: -36px;
     top: 7px; }
   [data-action='aria-switch'].text[aria-checked='true'] span::before {
-    content: 'ON';
+    content: 'TAK';
     display: block;
     color: #464646;
     position: absolute;
@@ -25563,10 +25936,10 @@ a[target='_blank']::after {
       background: #42dc42;
       border-color: #dddddd; }
   [data-action='aria-switch'].flip[aria-checked='false'] span::after {
-    content: 'No way!';
+    content: 'To nie tak!';
     color: #ffffff; }
   [data-action='aria-switch'].flip[aria-checked='true'] span::before {
-    content: 'Heck Yes!';
+    content: 'Dokładnie, tak!';
     color: #464646; }
 
 .optional-label {
@@ -25660,7 +26033,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -25739,7 +26112,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -25761,7 +26134,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -25871,7 +26244,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -25917,7 +26290,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -25938,8 +26311,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -26039,7 +26412,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -26057,7 +26430,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -26092,7 +26465,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -26108,6 +26481,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -26140,7 +26523,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -26186,7 +26569,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
@@ -26476,7 +26859,7 @@ a[target='_blank']::after {
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #e00000; }
+  border-left: 5px solid #77408e; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -26555,7 +26938,7 @@ a[target='_blank']::after {
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #77408e;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -26577,7 +26960,7 @@ a[target='_blank']::after {
   #kss-node .kss-description a:hover,
   #kss-node .kss-description a:focus,
   #kss-node .kss-description a:active {
-    color: #a51323;
+    color: #df1465;
     text-decoration: underline; }
 
 #kss-node .kss-doc-title {
@@ -26687,7 +27070,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left_round_red.png") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -26733,7 +27116,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -26754,8 +27137,8 @@ a[target='_blank']::after {
     border-radius: 75%; }
 
 .kss-skip-link {
-  background: #e00000;
-  border: 3px solid #a51323;
+  background: #77408e;
+  border: 3px solid #df1465;
   color: #ffffff;
   display: inline-block;
   left: 0;
@@ -26855,7 +27238,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -26873,7 +27256,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -26908,7 +27291,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.png");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -26924,6 +27307,16 @@ a[target='_blank']::after {
   padding: 0.5rem 1rem;
   margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
+    display: none; }
+
+.social-link-facebook {
+  content: '';
+  background: url("../assets/icon_facebook.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
+  .social-link-facebook[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -26956,7 +27349,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up_round_red.png");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -27002,7 +27395,7 @@ a[target='_blank']::after {
   .kss-nav .navbar-mobile-icon {
     display: block; }
     .kss-nav .navbar-mobile-icon button {
-      background: #e00000; }
+      background: #77408e; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
