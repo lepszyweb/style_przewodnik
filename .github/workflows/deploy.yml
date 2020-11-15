@@ -27,7 +27,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
-      - run: cp ./docs/favicons/ ./dist/favicons/
+      - run: cp ./docs/favicons ./dist/favicons
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
