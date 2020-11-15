@@ -24,10 +24,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: mkdir ./dist
+      - run: mkdir ${{ github.workspace }}/dist
       - run: npm ci
       - run: npm run build
-      - run: mkdir -p ./dist/favicons && cp ./docs/favicons/* ./dist/favicons && mkdir -p ./dist/assets && cp ./docs/assets/* ./dist/assets
+      - run: mkdir -p ${{ github.workspace }}/dist/favicons && cp ${{ github.workspace }}/docs/favicons/* ${{ github.workspace }}/dist/favicons && mkdir -p ${{ github.workspace }}/dist/assets && echo 'mkdir'&& cp ./docs/assets/* ./dist/assets && echo 'cp'
       - run: cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
       
       - name: Deploy
