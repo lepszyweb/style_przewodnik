@@ -26,7 +26,7 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm ci
       - run: npm run build
-      - run: cd ./dist && ln -s ./style-guide/index.html ../index.html & cd ../
+      - run: cd ./dist && ln -s ./style-guide/index.html ../index.html && cd ../
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
