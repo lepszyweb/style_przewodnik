@@ -23,7 +23,7 @@ module.exports = {
         dirname + '/src/global',
         dirname + '/src/components'
       ],
-      destination: dirname + '/dist/style-guide',
+      destination: dirname + '/dist',
       builder: dirname + '/src/style-guide/builder',
       namespace: 'a11y_style_guide:' + dirname + '/src/components/',
       // The css and js paths are URLs, like '/misc/jquery.js'.
