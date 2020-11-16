@@ -26,12 +26,11 @@ jobs:
             ${{ runner.os }}-node-
             
       - name: Prepare site
-        run: |
-              mkdir ${{ github.workspace }}/dist
-              npm ci
-              npm run build
-              mkdir -p ${{ github.workspace }}/dist/favicons && cp ${{ github.workspace }}/docs/favicons/* ${{ github.workspace }}/dist/favicons && mkdir -p ${{ github.workspace }}/dist/assets && cp -r ./docs/assets/* ./dist/assets
-              cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
+      - run: mkdir ${{ github.workspace }}/dist && 
+      - run: npm ci
+      - run: npm run build
+      - run: mkdir -p ${{ github.workspace }}/dist/favicons && cp ${{ github.workspace }}/docs/favicons/* ${{ github.workspace }}/dist/favicons && mkdir -p ${{ github.workspace }}/dist/assets && cp -r ./docs/assets/* ./dist/assets
+      - run: cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
       
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
