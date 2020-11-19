@@ -615,10 +615,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 /* Document
    ========================================================================== */
 /**
@@ -1699,10 +1695,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .accordion__heading {
   margin: 0; }
 
@@ -2364,10 +2356,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -2983,10 +2971,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .breadcrumb {
   padding: 1rem;
@@ -3623,10 +3607,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 button {
   display: inline-block;
@@ -4537,10 +4517,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .card-grid .card {
   margin: 0 0.5rem 1rem; }
 
@@ -5166,10 +5142,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .card {
   position: relative;
@@ -5813,10 +5785,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .cards-bio__content-section {
   margin-bottom: 2rem; }
@@ -6558,10 +6526,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .cards-bio-grid__item-wrapper.photo-grid-names {
   background-color: #f4f4f4;
   margin: 0 auto;
@@ -7265,10 +7229,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .toggleflip {
   font-family: 'Open Sans', 'Arial', sans-serif;
   position: relative;
@@ -7955,10 +7915,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .color-overlay-cards .three-photos {
   margin: 0 auto;
@@ -8756,10 +8712,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .highlight {
   position: relative;
@@ -9644,10 +9596,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .cards {
   margin: 0 auto;
@@ -10555,10 +10503,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .checkbox.row label {
   display: block;
   float: left;
@@ -11232,10 +11176,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -11851,10 +11791,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .icon {
   text-indent: 99999999%;
@@ -12534,10 +12470,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .image-gallery {
   position: relative;
   font-size: 0;
@@ -13184,10 +13116,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .images {
   position: relative;
   margin: 0 auto;
@@ -13813,10 +13741,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 a:focus,
 .button-icon:focus {
   outline: auto 2px Highlight;
@@ -14438,10 +14362,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -15057,10 +14977,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .navbar {
   position: relative;
@@ -15712,10 +15628,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .nav,
 .nav ul {
@@ -16427,10 +16339,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .footer {
   float: left;
@@ -17325,10 +17233,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .navbar-mobile-icon {
   /* Menu toggle styles. */
   /* Text meant only for screen readers. */ }
@@ -18013,10 +17917,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .pagination {
   display: -webkit-box;
@@ -18810,10 +18710,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .radio.row label {
   display: block;
   float: left; }
@@ -19480,10 +19376,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .read-more::after {
   content: ' ';
   height: 0;
@@ -20110,10 +20002,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -20729,10 +20617,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 input[type='search'] {
   background-color: #ffffff;
@@ -21364,10 +21248,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .select {
   position: relative;
@@ -22028,10 +21908,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .site-logo a {
   display: inline-block;
   overflow: hidden; }
@@ -22663,10 +22539,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -23283,10 +23155,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
@@ -23902,10 +23770,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .tables-section,
 .tables-section2,
@@ -24604,10 +24468,6 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
-
 .tabs .tabs__navlist {
   position: relative;
   margin: 0;
@@ -25261,10 +25121,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 [type='text'],
 textarea {
@@ -25940,10 +25796,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 [data-action='aria-switch'] {
   background: #f4f4f4;
@@ -26721,10 +26573,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .a11y-tip {
   display: table;
@@ -27551,10 +27399,6 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
-
-button[class*="video"] {
-  min-height: 24px;
-  padding: 12 px; }
 
 .videos {
   margin: 0; }
