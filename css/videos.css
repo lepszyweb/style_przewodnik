@@ -8,7 +8,7 @@
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("assets/hr.png") repeat-x 0 0;
+  background: url("../assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -284,7 +284,7 @@
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("assets/chevron_left.svg") no-repeat;
+      background: url("../assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -330,7 +330,7 @@
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("assets/chevron_right.svg") no-repeat;
+  background: url("../assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -452,7 +452,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("assets/icon_plus.svg");
+  background-image: url("../assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -470,7 +470,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("assets/icon_minus.svg");
+    background: url("../assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -489,7 +489,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("assets/w3c.png");
+    background: url("../assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -505,7 +505,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("assets/icon_new-tab.svg");
+  background: url("../assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -515,7 +515,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("assets/icon_twitter.png");
+  background: url("../assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -525,7 +525,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("assets/icon_facebook.png");
+  background: url("../assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -535,7 +535,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("assets/icon_github.png");
+  background: url("../assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -563,7 +563,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("assets/chevron_up.svg");
+  background-image: url("../assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -690,7 +690,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   overflow: hidden;
-  background: no-repeat url("assets/px-video-sprite.png"); }
+  background: no-repeat url("../assets/px-video-sprite.png"); }
 
 .px-video-controls button:focus {
   border: 1px #999 dotted;
@@ -745,7 +745,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   margin-left: 10px;
-  background: no-repeat url("assets/px-video-sprite.png");
+  background: no-repeat url("../assets/px-video-sprite.png");
   background-position: -6px -907px; }
 
 .px-video-fullscreen-btn-container input[type="checkbox"]:focus + label {
@@ -772,7 +772,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   margin-left: 10px;
-  background: no-repeat url("assets/px-video-sprite.png");
+  background: no-repeat url("../assets/px-video-sprite.png");
   background-position: -6px -835px; }
 
 .px-video-captions-btn-container input[type="checkbox"]:focus + label {
@@ -797,7 +797,7 @@ a[target='_blank']::after {
   height: 20px;
   margin-left: 240px;
   margin-top: 2px;
-  background: no-repeat url("assets/px-video-sprite.png");
+  background: no-repeat url("../assets/px-video-sprite.png");
   background-position: -6px -476px; }
 
 .px-video-mute-btn-container input[type="checkbox"]:focus + label {
