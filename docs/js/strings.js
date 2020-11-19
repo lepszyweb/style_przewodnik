@@ -1,10 +1,10 @@
 var GLOBAL_STRINGS = {
-    "PLAY": "Play",
-    "PAUSE": "Pause",
-    "TOGGLE_FULL_SCREEN": "Toggle full screen",
-    "MUTE": "Mute",
+    "PLAY": "Graj",
+    "PAUSE": "Pauza",
+    "TOGGLE_FULL_SCREEN": "Przełącz cały ekran",
+    "MUTE": "Wycisz",
     "RESTART": "Restart",
-    "CAPTIONS": "Closed captions",
-    "REWIND": "Rewind",
-    "FORWARD": "Forward"
+    "CAPTIONS": "Napisy zamknięte",
+    "REWIND": "W tył",
+    "FORWARD": "W przód"
 }
