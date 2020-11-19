@@ -717,5 +717,5 @@ a[target='_blank']::after {
   }
 }
 
-button[class=px-video*] {
+button[class*="video"] {
 min-height:24px; padding: 12 px;} 
