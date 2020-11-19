@@ -613,3 +613,7 @@ a[target='_blank']::after {
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
+
+button[class*="video"] {
+  min-height: 24px;
+  padding: 12px; }

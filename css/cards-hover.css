@@ -614,6 +614,10 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
+button[class*="video"] {
+  min-height: 24px;
+  padding: 12px; }
+
 .cards {
   margin: 0 auto;
   padding: 0 3rem; }
