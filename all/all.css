@@ -9,7 +9,7 @@
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -285,7 +285,7 @@
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -331,7 +331,7 @@
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -453,7 +453,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -471,7 +471,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -490,7 +490,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -506,7 +506,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -516,7 +516,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -526,7 +526,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -536,7 +536,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -564,7 +564,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -1089,7 +1089,7 @@ li {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -1365,7 +1365,7 @@ li {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -1411,7 +1411,7 @@ li {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -1533,7 +1533,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -1551,7 +1551,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -1570,7 +1570,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -1586,7 +1586,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -1596,7 +1596,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -1606,7 +1606,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -1616,7 +1616,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -1644,7 +1644,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -1700,7 +1700,7 @@ a[target='_blank']::after {
 
 .accordion__trigger {
   background-repeat: no-repeat;
-  background-image: url("../assets/plus_round_red.png");
+  background-image: url("assets/plus_round_red.png");
   background-size: 28px;
   background-position: 97% 50%;
   -webkit-box-shadow: none;
@@ -1723,7 +1723,7 @@ a[target='_blank']::after {
       background-position: 98% 50%; } }
   .accordion__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/minus_round_red.png");
+    background: url("assets/minus_round_red.png");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 50%;
@@ -1750,7 +1750,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -2026,7 +2026,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -2072,7 +2072,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -2194,7 +2194,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -2212,7 +2212,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -2231,7 +2231,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -2247,7 +2247,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -2257,7 +2257,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -2267,7 +2267,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -2277,7 +2277,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -2305,7 +2305,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -2366,7 +2366,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -2642,7 +2642,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -2688,7 +2688,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -2810,7 +2810,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -2828,7 +2828,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -2847,7 +2847,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -2863,7 +2863,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -2873,7 +2873,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -2883,7 +2883,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -2893,7 +2893,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -2921,7 +2921,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -3002,7 +3002,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -3278,7 +3278,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -3324,7 +3324,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -3446,7 +3446,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -3464,7 +3464,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -3483,7 +3483,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -3499,7 +3499,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -3509,7 +3509,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -3519,7 +3519,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -3529,7 +3529,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -3557,7 +3557,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -3911,7 +3911,7 @@ button[disabled],
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -4187,7 +4187,7 @@ button[disabled],
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -4233,7 +4233,7 @@ button[disabled],
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -4355,7 +4355,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -4373,7 +4373,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -4392,7 +4392,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -4408,7 +4408,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -4418,7 +4418,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -4428,7 +4428,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -4438,7 +4438,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -4466,7 +4466,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -4537,7 +4537,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -4813,7 +4813,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -4859,7 +4859,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -4981,7 +4981,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -4999,7 +4999,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -5018,7 +5018,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -5034,7 +5034,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -5044,7 +5044,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -5054,7 +5054,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -5064,7 +5064,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -5092,7 +5092,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -5180,7 +5180,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -5456,7 +5456,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -5502,7 +5502,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -5624,7 +5624,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -5642,7 +5642,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -5661,7 +5661,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -5677,7 +5677,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -5687,7 +5687,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -5697,7 +5697,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -5707,7 +5707,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -5735,7 +5735,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -5920,7 +5920,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -6196,7 +6196,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -6242,7 +6242,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -6364,7 +6364,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -6382,7 +6382,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -6401,7 +6401,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -6417,7 +6417,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -6427,7 +6427,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -6437,7 +6437,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -6447,7 +6447,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -6475,7 +6475,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -6623,7 +6623,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -6899,7 +6899,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -6945,7 +6945,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -7067,7 +7067,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -7085,7 +7085,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -7104,7 +7104,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -7120,7 +7120,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -7130,7 +7130,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -7140,7 +7140,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -7150,7 +7150,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -7178,7 +7178,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -7310,7 +7310,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -7586,7 +7586,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -7632,7 +7632,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -7754,7 +7754,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -7772,7 +7772,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -7791,7 +7791,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -7807,7 +7807,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -7817,7 +7817,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -7827,7 +7827,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -7837,7 +7837,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -7865,7 +7865,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -8107,7 +8107,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -8383,7 +8383,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -8429,7 +8429,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -8551,7 +8551,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -8569,7 +8569,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -8588,7 +8588,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -8604,7 +8604,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -8614,7 +8614,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -8624,7 +8624,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -8634,7 +8634,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -8662,7 +8662,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -8939,7 +8939,7 @@ a[target='_blank']::after {
 
 /* Variants */
 .highlight--full {
-  background: url("../assets/snow.jpg") #e00000 center no-repeat;
+  background: url("assets/snow.jpg") #e00000 center no-repeat;
   background-size: cover !important;
   padding: 6rem 2rem; }
   @media (min-width: 40em) {
@@ -8991,7 +8991,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -9267,7 +9267,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -9313,7 +9313,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -9435,7 +9435,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -9453,7 +9453,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -9472,7 +9472,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -9488,7 +9488,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -9498,7 +9498,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -9508,7 +9508,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -9518,7 +9518,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -9546,7 +9546,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -9897,7 +9897,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -10173,7 +10173,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -10219,7 +10219,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -10341,7 +10341,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -10359,7 +10359,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -10378,7 +10378,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -10394,7 +10394,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -10404,7 +10404,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -10414,7 +10414,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -10424,7 +10424,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -10452,7 +10452,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -10570,7 +10570,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -10846,7 +10846,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -10892,7 +10892,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -11014,7 +11014,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -11032,7 +11032,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -11051,7 +11051,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -11067,7 +11067,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -11077,7 +11077,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -11087,7 +11087,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -11097,7 +11097,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -11125,7 +11125,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -11186,7 +11186,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -11462,7 +11462,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -11508,7 +11508,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -11630,7 +11630,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -11648,7 +11648,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -11667,7 +11667,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -11683,7 +11683,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -11693,7 +11693,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -11703,7 +11703,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -11713,7 +11713,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -11741,7 +11741,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -11807,48 +11807,48 @@ a[target='_blank']::after {
   background-repeat: no-repeat; }
 
 .icon--facebook {
-  background-image: url("../assets/icon_facebook_small.svg"); }
+  background-image: url("assets/icon_facebook_small.svg"); }
   .icon--facebook:hover, .icon--facebook:focus {
-    background-image: url("../assets/icon_facebook_small_hover.svg"); }
+    background-image: url("assets/icon_facebook_small_hover.svg"); }
 
 .icon--twitter {
-  background-image: url("../assets/icon_twitter_small.svg"); }
+  background-image: url("assets/icon_twitter_small.svg"); }
   .icon--twitter:hover, .icon--twitter:focus {
-    background-image: url("../assets/icon_twitter_small_hover.svg"); }
+    background-image: url("assets/icon_twitter_small_hover.svg"); }
 
 .icon--youtube {
-  background-image: url("../assets/icon_you-tube_small.svg");
+  background-image: url("assets/icon_you-tube_small.svg");
   width: 50px;
   max-width: 100%; }
   .icon--youtube:hover, .icon--youtube:focus {
-    background-image: url("../assets/icon_you-tube_small_hover.svg"); }
+    background-image: url("assets/icon_you-tube_small_hover.svg"); }
 
 .icon--instagram {
-  background-image: url("../assets/icon_instagram_small.svg"); }
+  background-image: url("assets/icon_instagram_small.svg"); }
   .icon--instagram:hover, .icon--instagram:focus {
-    background-image: url("../assets/icon_instagram_small_hover.svg"); }
+    background-image: url("assets/icon_instagram_small_hover.svg"); }
 
 .icon--snapchat {
-  background-image: url("../assets/icon_snapchat_small.svg"); }
+  background-image: url("assets/icon_snapchat_small.svg"); }
   .icon--snapchat:hover, .icon--snapchat:focus {
-    background-image: url("../assets/icon_snapchat_small_hover.svg"); }
+    background-image: url("assets/icon_snapchat_small_hover.svg"); }
 
 .icon--phone {
-  background-image: url("../assets/icon_phone.svg");
+  background-image: url("assets/icon_phone.svg");
   content: '';
   background-size: 15px 15px;
   background-repeat: no-repeat;
   padding: 0 4px 0 25px; }
 
 .icon--email {
-  background-image: url("../assets/icon_email.svg");
+  background-image: url("assets/icon_email.svg");
   content: '';
   background-size: 17px 21px;
   background-repeat: no-repeat;
   padding: 0 4px 0 25px; }
 
 .icon--address {
-  background-image: url("../assets/icon_address.svg");
+  background-image: url("assets/icon_address.svg");
   content: '';
   background-size: 17px 19px;
   background-repeat: no-repeat;
@@ -11864,7 +11864,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -12140,7 +12140,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -12186,7 +12186,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -12308,7 +12308,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -12326,7 +12326,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -12345,7 +12345,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -12361,7 +12361,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -12371,7 +12371,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -12381,7 +12381,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -12391,7 +12391,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -12419,7 +12419,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -12510,7 +12510,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -12786,7 +12786,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -12832,7 +12832,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -12954,7 +12954,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -12972,7 +12972,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -12991,7 +12991,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -13007,7 +13007,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -13017,7 +13017,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -13027,7 +13027,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -13037,7 +13037,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -13065,7 +13065,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -13135,7 +13135,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -13411,7 +13411,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -13457,7 +13457,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -13579,7 +13579,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -13597,7 +13597,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -13616,7 +13616,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -13632,7 +13632,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -13642,7 +13642,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -13652,7 +13652,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -13662,7 +13662,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -13690,7 +13690,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -13756,7 +13756,7 @@ a:focus,
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -14032,7 +14032,7 @@ a:focus,
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -14078,7 +14078,7 @@ a:focus,
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -14200,7 +14200,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -14218,7 +14218,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -14237,7 +14237,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -14253,7 +14253,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -14263,7 +14263,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -14273,7 +14273,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -14283,7 +14283,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -14311,7 +14311,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -14372,7 +14372,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -14648,7 +14648,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -14694,7 +14694,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -14816,7 +14816,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -14834,7 +14834,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -14853,7 +14853,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -14869,7 +14869,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -14879,7 +14879,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -14889,7 +14889,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -14899,7 +14899,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -14927,7 +14927,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -15023,7 +15023,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -15299,7 +15299,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -15345,7 +15345,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -15467,7 +15467,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -15485,7 +15485,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -15504,7 +15504,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -15520,7 +15520,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -15530,7 +15530,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -15540,7 +15540,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -15550,7 +15550,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -15578,7 +15578,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -15734,7 +15734,7 @@ ul.show-menu {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -16010,7 +16010,7 @@ ul.show-menu {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -16056,7 +16056,7 @@ ul.show-menu {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -16178,7 +16178,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -16196,7 +16196,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -16215,7 +16215,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -16231,7 +16231,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -16241,7 +16241,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -16251,7 +16251,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -16261,7 +16261,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -16289,7 +16289,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -16627,7 +16627,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -16903,7 +16903,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -16949,7 +16949,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -17071,7 +17071,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -17089,7 +17089,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -17108,7 +17108,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -17124,7 +17124,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -17134,7 +17134,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -17144,7 +17144,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -17154,7 +17154,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -17182,7 +17182,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -17312,7 +17312,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -17588,7 +17588,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -17634,7 +17634,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -17756,7 +17756,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -17774,7 +17774,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -17793,7 +17793,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -17809,7 +17809,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -17819,7 +17819,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -17829,7 +17829,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -17839,7 +17839,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -17867,7 +17867,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -18104,7 +18104,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -18380,7 +18380,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -18426,7 +18426,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -18548,7 +18548,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -18566,7 +18566,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -18585,7 +18585,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -18601,7 +18601,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -18611,7 +18611,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -18621,7 +18621,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -18631,7 +18631,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -18659,7 +18659,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -18770,7 +18770,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -19046,7 +19046,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -19092,7 +19092,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -19214,7 +19214,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -19232,7 +19232,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -19251,7 +19251,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -19267,7 +19267,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -19277,7 +19277,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -19287,7 +19287,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -19297,7 +19297,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -19325,7 +19325,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -19396,7 +19396,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -19672,7 +19672,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -19718,7 +19718,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -19840,7 +19840,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -19858,7 +19858,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -19877,7 +19877,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -19893,7 +19893,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -19903,7 +19903,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -19913,7 +19913,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -19923,7 +19923,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -19951,7 +19951,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -20012,7 +20012,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -20288,7 +20288,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -20334,7 +20334,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -20456,7 +20456,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -20474,7 +20474,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -20493,7 +20493,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -20509,7 +20509,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -20519,7 +20519,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -20529,7 +20529,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -20539,7 +20539,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -20567,7 +20567,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -20643,7 +20643,7 @@ input[type='search'] {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -20919,7 +20919,7 @@ input[type='search'] {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -20965,7 +20965,7 @@ input[type='search'] {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -21087,7 +21087,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -21105,7 +21105,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -21124,7 +21124,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -21140,7 +21140,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -21150,7 +21150,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -21160,7 +21160,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -21170,7 +21170,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -21198,7 +21198,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -21302,7 +21302,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -21578,7 +21578,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -21624,7 +21624,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -21746,7 +21746,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -21764,7 +21764,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -21783,7 +21783,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -21799,7 +21799,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -21809,7 +21809,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -21819,7 +21819,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -21829,7 +21829,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -21857,7 +21857,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -21933,7 +21933,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -22209,7 +22209,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -22255,7 +22255,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -22377,7 +22377,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -22395,7 +22395,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -22414,7 +22414,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -22430,7 +22430,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -22440,7 +22440,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -22450,7 +22450,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -22460,7 +22460,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -22488,7 +22488,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -22549,7 +22549,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -22825,7 +22825,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -22871,7 +22871,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -22993,7 +22993,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -23011,7 +23011,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -23030,7 +23030,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -23046,7 +23046,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -23056,7 +23056,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -23066,7 +23066,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -23076,7 +23076,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -23104,7 +23104,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -23165,7 +23165,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -23441,7 +23441,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -23487,7 +23487,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -23609,7 +23609,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -23627,7 +23627,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -23646,7 +23646,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -23662,7 +23662,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -23672,7 +23672,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -23682,7 +23682,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -23692,7 +23692,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -23720,7 +23720,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -23862,7 +23862,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -24138,7 +24138,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -24184,7 +24184,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -24306,7 +24306,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -24324,7 +24324,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -24343,7 +24343,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -24359,7 +24359,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -24369,7 +24369,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -24379,7 +24379,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -24389,7 +24389,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -24417,7 +24417,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -24516,7 +24516,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -24792,7 +24792,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -24838,7 +24838,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -24960,7 +24960,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -24978,7 +24978,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -24997,7 +24997,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -25013,7 +25013,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -25023,7 +25023,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -25033,7 +25033,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -25043,7 +25043,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -25071,7 +25071,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -25191,7 +25191,7 @@ legend {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -25467,7 +25467,7 @@ legend {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -25513,7 +25513,7 @@ legend {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -25635,7 +25635,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -25653,7 +25653,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -25672,7 +25672,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -25688,7 +25688,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -25698,7 +25698,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -25708,7 +25708,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -25718,7 +25718,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -25746,7 +25746,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -25968,7 +25968,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -26244,7 +26244,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -26290,7 +26290,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -26412,7 +26412,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -26430,7 +26430,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -26449,7 +26449,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -26465,7 +26465,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -26475,7 +26475,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -26485,7 +26485,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -26495,7 +26495,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -26523,7 +26523,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -26794,7 +26794,7 @@ a[target='_blank']::after {
 
 #kss-node .kss-depth-2 {
   margin: 0;
-  background: url("../assets/hr.png") repeat-x 0 0;
+  background: url("assets/hr.png") repeat-x 0 0;
   border: 0;
   float: left;
   clear: both;
@@ -27070,7 +27070,7 @@ a[target='_blank']::after {
       position: absolute;
       width: 32px;
       height: 32px;
-      background: url("../assets/chevron_left.svg") no-repeat;
+      background: url("assets/chevron_left.svg") no-repeat;
       right: 10px;
       top: 2px;
       background-size: 32px;
@@ -27116,7 +27116,7 @@ a[target='_blank']::after {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background: url("../assets/chevron_right.svg") no-repeat;
+  background: url("assets/chevron_right.svg") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 2px;
@@ -27238,7 +27238,7 @@ abbr[title] {
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
-  background-image: url("../assets/icon_plus.svg");
+  background-image: url("assets/icon_plus.svg");
   background-size: 28px;
   background-position: 97% 0%;
   border: 0;
@@ -27256,7 +27256,7 @@ abbr[title] {
       background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
-    background: url("../assets/icon_minus.svg");
+    background: url("assets/icon_minus.svg");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 97% 0%; }
@@ -27275,7 +27275,7 @@ abbr[title] {
   position: relative; }
   .guidelines::before {
     content: '';
-    background: url("../assets/w3c.png");
+    background: url("assets/w3c.png");
     background-size: 50px;
     float: left;
     clear: both;
@@ -27291,7 +27291,7 @@ abbr[title] {
 
 a[target='_blank']::after {
   content: '';
-  background: url("../assets/icon_new-tab.svg");
+  background: url("assets/icon_new-tab.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   margin: 0 0 -2px 5px;
@@ -27301,7 +27301,7 @@ a[target='_blank']::after {
 
 .social-link-twitter {
   content: '';
-  background: url("../assets/icon_twitter.png");
+  background: url("assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -27311,7 +27311,7 @@ a[target='_blank']::after {
 
 .social-link-facebook {
   content: '';
-  background: url("../assets/icon_facebook.png");
+  background: url("assets/icon_facebook.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -27321,7 +27321,7 @@ a[target='_blank']::after {
 
 .social-link-github {
   content: '';
-  background: url("../assets/icon_github.png");
+  background: url("assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 0.5rem 1rem;
@@ -27349,7 +27349,7 @@ a[target='_blank']::after {
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-image: url("../assets/chevron_up.svg");
+  background-image: url("assets/chevron_up.svg");
   background-repeat: no-repeat;
   background-size: 42px;
   border-radius: 50%;
@@ -27476,7 +27476,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   overflow: hidden;
-  background: no-repeat url("../assets/px-video-sprite.png"); }
+  background: no-repeat url("assets/px-video-sprite.png"); }
 
 .px-video-controls button:focus {
   border: 1px #999 dotted;
@@ -27531,7 +27531,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   margin-left: 10px;
-  background: no-repeat url("../assets/px-video-sprite.png");
+  background: no-repeat url("assets/px-video-sprite.png");
   background-position: -6px -907px; }
 
 .px-video-fullscreen-btn-container input[type="checkbox"]:focus + label {
@@ -27558,7 +27558,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   margin-left: 10px;
-  background: no-repeat url("../assets/px-video-sprite.png");
+  background: no-repeat url("assets/px-video-sprite.png");
   background-position: -6px -835px; }
 
 .px-video-captions-btn-container input[type="checkbox"]:focus + label {
@@ -27583,7 +27583,7 @@ a[target='_blank']::after {
   height: 20px;
   margin-left: 240px;
   margin-top: 2px;
-  background: no-repeat url("../assets/px-video-sprite.png");
+  background: no-repeat url("assets/px-video-sprite.png");
   background-position: -6px -476px; }
 
 .px-video-mute-btn-container input[type="checkbox"]:focus + label {
