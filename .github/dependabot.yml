@@ -4,16 +4,16 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
+
       interval: "daily"
-   reviewers:
+    reviewers:
       - "wojsmol"
       - "zwiastunsw"
-      
- - package-ecosystem: "npm"
+
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-   reviewers:
+    reviewers:
       - "wojsmol"
       - "zwiastunsw"
-      
