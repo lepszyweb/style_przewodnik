@@ -43,7 +43,7 @@
     "babel-preset-env": "^1.6.0",
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.26.14",
-    "del": "^3.0.0",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^6.1.2",
