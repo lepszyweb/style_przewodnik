@@ -147,9 +147,9 @@ fbq('track', 'PageView');
                             <div class="kss-description">
                 <ul>
 <li>Element podpowiedzi (Tooltips) nie powinien otrzymywać fokusu. Fokus powinien pozostać na polu, przycisku lub łączu, o którym mowa w etykiecie.</li>
-<li>Podowiedzi  nie powinny być ujawniane przed upływem krótkiego czasu (~1-5 sekund).</li>
-<li>Zależnie od wybranej opcji Tooltip, może istnieć dodatkowe oznakowanie ARIA, które należy zastosować. Dodaj <code>aria-describedby=&quot;przyklad1&quot;</code> na polu danych i połącz je z powiązaną sekcją o odpowiadającym ID selektora <code>id=&quot;przyklad1&quot;</code>.</li>
-<li>Jeśli to możliwe, użyj opisowego tekstu na polach formularza, który musi być aktywowany przez zdarzenie <code>focus</code> lub <code>hover</code>. Podpowiedzi mogą być problematyczne dla niektórych urządzeń technologii wspomagających.</li>
+<li>Podpowiedzi  nie powinny być ujawniane przed upływem krótkiego czasu (~1-5 sekund).</li>
+<li>Zależnie od wybranej opcji Tooltip, może istnieć dodatkowe oznakowanie ARIA, które należy zastosować. Dodaj <code>aria-describedby=&quot;przyklad1&quot;</code> dla polu danych i połącz je z powiązaną sekcją o odpowiadającym ID selektora <code>id=&quot;przyklad1&quot;</code>.</li>
+<li>Jeśli to możliwe, użyj opisowego tekstu na polach formularza, który musi być aktywowany przez zdarzenie <code>focus</code> lub <code>hover</code>. Podpowiedzi mogą być problematyczne dla niektórych technologii wspomagających.</li>
 </ul>
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_res">Zasoby</a></h3><div id="tooltips_res" class="atblock__panel"><ul><li><a href="http://heydonworks.com/practical_aria_examples/#input-tooltip" target="_blank">ARIA Examples - Tooltips</a></li><li><a href="https://github.com/scottaohara/a11y_tooltips" target="_blank">ARIA Tooltips</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices/#tooltip" target="_blank">Tooltip Widget</a></li></ul></div></section>
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_guide">Wytyczne WCAG 2.1</a></h3><div id="tooltips_guide" class="atblock__panel guidelines"><p><a href="https://wcag.lepszyweb.pl#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Informacje i relacje</a> - Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Nagłówki i etykiety</a> - Nagłówki i etykiety opisują temat lub cel treści. (Poziom AA)<br><br><a href="https://wcag.lepszyweb.pl#qr-minimize-error-cues" target="_blank">3.3.2 Etykiety lub instrukcje</a> - Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są etykiety lub instrukcje.. (Poziom A)<br><br><a href="https://wcag.lepszyweb.pl#qr-ensure-compat-rsv" target="_blank">4.1.2 Nazwa, rola, wartość</a> - Dla wszystkich komponentów interfejsu użytkownika (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) nazwa oraz rola mogą być określone programowo; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być ustawione programowo; powiadomienie o zmianach w tych elementach dostępne jest dla programów użytkownika, w tym technologii wspomagających. (Poziom A)</p></div><div class="markup"></div></section>
@@ -194,7 +194,7 @@ fbq('track', 'PageView');
   		Nie ufaj atomom
   	</button>
   	<span id="tt_id" role="tooltip" class="a11y-tip__help a11y-tip__help--bottom">
-  		Składają się one na wszystko.!
+  		Składają się one na wszystko!
   	</span>
   </span>
   <div class="break"></div>
@@ -252,7 +252,7 @@ fbq('track', 'PageView');
   		Nie ufaj atomom
   	&lt;/button&gt;
   	&lt;span id=&quot;tt_id&quot; role=&quot;tooltip&quot; class=&quot;a11y-tip__help a11y-tip__help--bottom&quot;&gt;
-  		Składają się one na wszystko.!
+  		Składają się one na wszystko!
   	&lt;/span&gt;
   &lt;/span&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
