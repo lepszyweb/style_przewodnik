@@ -1,9 +1,9 @@
 // Podpowiedzi
 //
 //  - Element podpowiedzi (Tooltips) nie powinien otrzymywać fokusu. Fokus powinien pozostać na polu, przycisku lub łączu, o którym mowa w etykiecie.
-//  - Podowiedzi  nie powinny być ujawniane przed upływem krótkiego czasu (~1-5 sekund).
-//  - Zależnie od wybranej opcji Tooltip, może istnieć dodatkowe oznakowanie ARIA, które należy zastosować. Dodaj `aria-describedby="przyklad1"` na polu danych i połącz je z powiązaną sekcją o odpowiadającym ID selektora `id="przyklad1"`.
-//  - Jeśli to możliwe, użyj opisowego tekstu na polach formularza, który musi być aktywowany przez zdarzenie `focus` lub `hover`. Podpowiedzi mogą być problematyczne dla niektórych urządzeń technologii wspomagających.
+//  - Podpowiedzi  nie powinny być ujawniane przed upływem krótkiego czasu (~1-5 sekund).
+//  - Zależnie od wybranej opcji Tooltip, może istnieć dodatkowe oznakowanie ARIA, które należy zastosować. Dodaj `aria-describedby="przyklad1"` dla polu danych i połącz je z powiązaną sekcją o odpowiadającym ID selektora `id="przyklad1"`.
+//  - Jeśli to możliwe, użyj opisowego tekstu na polach formularza, który musi być aktywowany przez zdarzenie `focus` lub `hover`. Podpowiedzi mogą być problematyczne dla niektórych technologii wspomagających.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_res">Zasoby</a></h3><div id="tooltips_res" class="atblock__panel"><ul><li><a href="http://heydonworks.com/practical_aria_examples/#input-tooltip" target="_blank">ARIA Examples - Tooltips</a></li><li><a href="https://github.com/scottaohara/a11y_tooltips" target="_blank">ARIA Tooltips</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices/#tooltip" target="_blank">Tooltip Widget</a></li></ul></div></section>
 //

@@ -1,8 +1,8 @@
 // Tabele
 //
-//  - Tabele z jednym nagłówkiem i prostymi danymi są w miarę dostępne od razu po wyjęciu z pudełka i mogą nie wymagać dodatkowych aktualizacji dostępności. Zawsze używaj najprostszej możliwej konfiguracji tabeli.
-//  - Kiedy twoje tabele stają się bardziej złożone, użyj elementu `<th>` do identyfikacji komórek nagłówka poprzez dodanie atrybutu `scope`. Dla wierszy nagłówka użyj `<th scope="row">`. Dla kolumn nagłówka użyj `<th scope="col">`.
-//  - Dodaj opcjonalny element `<caption>` przed treścią tabeli, aby dać użytkownikom więcej informacji na temat treści tabeli. Pomyśl o tym jako o nagłówku tabeli.
+//  - Tabele z jednym nagłówkiem i prostymi danymi są w miarę dostępne od razu po wyjęciu z pudełka i mogą nie wymagać dodatkowej poprawy dostępności. Zawsze używaj najprostszej możliwej konfiguracji tabeli.
+//  - Kiedy twoje tabele stają się bardziej złożone, użyj elementu `<th>` do identyfikacji komórek nagłówka poprzez dodanie atrybutu `scope`. Dla nagłówka wierszy użyj `<th scope="row">`. Dla  nagłówka kolumn użyj `<th scope="col">`.
+//  - Dodaj opcjonalny element `<caption>` przed treścią tabeli, aby dać użytkownikom więcej informacji na temat treści tabeli. Pomyśl o tym jako o tytule tabeli.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Zasoby</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
 //
