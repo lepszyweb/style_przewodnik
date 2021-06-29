@@ -9,7 +9,7 @@ var gulp = require('gulp');
 //=======================================================
 // Include Our Plugins
 //=======================================================
-var sass        = require('gulp-sass');
+var sass        = require('gulp-sass')(require('node-sass'));
 var prefix      = require('gulp-autoprefixer');
 var sourcemaps  = require('gulp-sourcemaps');
 var sync        = require('browser-sync');
