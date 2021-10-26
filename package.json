@@ -39,6 +39,8 @@
     "last 3 versions"
   ],
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "babel-preset-env": "^1.6.0",
     "breakpoint-sass": "^2.7.1",
