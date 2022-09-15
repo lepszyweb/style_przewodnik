@@ -40,7 +40,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.19.0",
-    "@babel/preset-env": "^7.19.0",
+    "@babel/preset-env": "^7.19.1",
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "babel-preset-env": "^1.6.0",
     "breakpoint-sass": "^2.7.1",
