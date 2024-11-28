@@ -9,7 +9,7 @@ var gulp = require('gulp');
 //=======================================================
 // Include Our Plugins
 //=======================================================
-var sass        = require('gulp-sass')(require('node-sass'));
+var sass        = require('gulp-sass/legacy')(require('node-sass'));
 var prefix      = require('gulp-autoprefixer');
 var sourcemaps  = require('gulp-sourcemaps');
 var sync        = require('browser-sync');
@@ -29,7 +29,7 @@ module.exports = {
   sass: function() {
     return gulp.src('./src/{global,layout,components}/**/*.scss')
       .pipe(
-        sass({ outputStyle: 'nested' })
+        sass({ Style: 'nested' })
           .on('error', handleError)
       )
       .pipe(prefix({
