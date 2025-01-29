@@ -4,7 +4,7 @@
 //=======================================================
 // Include Our Plugins
 //=======================================================
-var del = require('del');
+var del = import {deleteAsync} from 'del';
 
 // Export our tasks.
 module.exports = {
