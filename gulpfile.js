@@ -33,8 +33,8 @@ var taskConcat = require('./gulp-tasks/concat.js');
 //=======================================================
 
 gulp.task('compile:sass', async function() {
-  const prefix = (await prefixPromise).default;
-  return taskCompile.sass(prefix);
+  const prefix = (await prefixPromise).default; // Await the prefix import
+  return taskCompile.sass(prefix); // Use autoprefixer
 });
 
 gulp.task('compile:js', function() {
