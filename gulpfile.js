@@ -1,4 +1,3 @@
-/*eslint strict: ["error", "global"]*/
 'use strict';
 
 //=======================================================
@@ -19,27 +18,28 @@ var rename = require('gulp-rename');
 var prefixPromise = import('gulp-autoprefixer');
 
 //=======================================================
-// Dynamically Import .mjs Task Files
+// Include Our tasks (using dynamic import for .mjs files)
 //=======================================================
-var taskCompilePromise = import('./gulp-tasks/compile.mjs');
-var taskMove = require('./gulp-tasks/move.js');
-var taskLint = require('./gulp-tasks/lint.js');
-var taskCompress = require('./gulp-tasks/compress.js');
-var taskStyleGuide = require('./gulp-tasks/styleguide.js');
-var taskConcat = require('./gulp-tasks/concat.js');
+const taskCompilePromise = import('./gulp-tasks/compile.mjs');
+const taskCleanPromise = import('./gulp-tasks/clean.mjs');
+const taskMove = require('./gulp-tasks/move.js');
+const taskLint = require('./gulp-tasks/lint.js');
+const taskCompress = require('./gulp-tasks/compress.js');
+const taskStyleGuide = require('./gulp-tasks/styleguide.js');
+const taskConcat = require('./gulp-tasks/concat.js');
 
 //=======================================================
 // Compile Our Sass and JS
 //=======================================================
 
 gulp.task('compile:sass', async function() {
-  const prefix = (await prefixPromise).default; // Await the prefix import
-  const taskCompile = await taskCompilePromise; // Await the compile task import
-  return taskCompile.sass(prefix); // Use autoprefixer
+  const taskCompile = await taskCompilePromise;
+  const prefix = (await prefixPromise).default;
+  return taskCompile.sass(prefix);
 });
 
 gulp.task('compile:js', async function() {
-  const taskCompile = await taskCompilePromise; // Await the compile task import
+  const taskCompile = await taskCompilePromise;
   return taskCompile.js();
 });
 
@@ -91,27 +91,23 @@ gulp.task('concat', function() {
 //=======================================================
 // Clean all directories (dynamically load clean tasks)
 //=======================================================
-async function loadCleanTask() {
-  return import('./gulp-tasks/clean.mjs');
-}
-
 gulp.task('clean:styleguide', async function() {
-  const taskClean = await loadCleanTask();
+  const taskClean = await taskCleanPromise;
   return taskClean.styleguide();
 });
 
 gulp.task('clean:css', async function() {
-  const taskClean = await loadCleanTask();
+  const taskClean = await taskCleanPromise;
   return taskClean.css();
 });
 
 gulp.task('clean:js', async function() {
-  const taskClean = await loadCleanTask();
+  const taskClean = await taskCleanPromise;
   return taskClean.js();
 });
 
 gulp.task('clean:docs', async function() {
-  const taskClean = await loadCleanTask();
+  const taskClean = await taskCleanPromise;
   return taskClean.docs();
 });
 
