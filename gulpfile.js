@@ -14,7 +14,7 @@ var sync        = require('browser-sync');
 //=======================================================
 // Include Our tasks
 //=======================================================
-var taskCompile     = require('./gulp-tasks/compile.js');
+var taskCompile     = require('./gulp-tasks/compile.mjs');
 var taskMove        = require('./gulp-tasks/move.js');
 var taskLint        = require('./gulp-tasks/lint.js');
 var taskCompress    = require('./gulp-tasks/compress.js');
