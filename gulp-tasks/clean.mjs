@@ -1,42 +1,23 @@
-/*eslint strict: ["error", "global"]*/
-'use strict';
+import { deleteAsync } from 'del';
 
-//=======================================================
-// Include Our Plugins
-//=======================================================
-var del = import {deleteAsync} from 'del';
+export async function styleguide() {
+  return deleteAsync(['./dist/style-guide/*'], { force: true });
+}
 
-// Export our tasks.
-module.exports = {
+export async function css() {
+  return deleteAsync(['./dist/css/*'], { force: true });
+}
 
-  // Clean style guide files.
-  styleguide: function() {
-    // You can use multiple globbing patterns as you would with `gulp.src`
-    return del([
-      './dist/style-guide/*'
-    ], {force: true});
-  },
+export async function js() {
+  return deleteAsync(['./dist/js/*'], { force: true });
+}
 
-  // Clean CSS files.
-  css: function() {
-    return del([
-      './dist/css/*'
-    ], {force: true});
-  },
-
-  // Clean JS files.
-  js: function() {
-    return del([
-      './dist/js/*'
-    ], {force: true});
-  },
-   docs: function() {
-    return del([
-      './docs/style-guide/',
-      './docs/css/',
-      './docs/assets/',
-      './docs/all/',
-      './docs/js/'
-    ], {force: true});
-  }
-};
+export async function docs() {
+  return deleteAsync([
+    './docs/style-guide/',
+    './docs/css/',
+    './docs/assets/',
+    './docs/all/',
+    './docs/js/'
+  ], { force: true });
+}
