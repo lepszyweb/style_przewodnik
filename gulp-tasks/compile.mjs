@@ -1,11 +1,12 @@
 import gulp from 'gulp';
 import sassModule from 'gulp-sass';
+import sass from 'sass';  // Import the 'sass' package
 import sourcemaps from 'gulp-sourcemaps';
 import babel from 'gulp-babel';
 import rename from 'gulp-rename';
 
-// Dynamically load the Sass processor (sassModule)
-const sass = sassModule();
+// Set the Sass compiler explicitly
+const sass = sassModule(sass);
 
 // Error handling for gulp tasks
 async function handleError(err) {
