@@ -22,7 +22,7 @@ var taskCompile     = require('./gulp-tasks/compile.js');
 var taskMove        = require('./gulp-tasks/move.js');
 var taskLint        = require('./gulp-tasks/lint.js');
 var taskCompress    = require('./gulp-tasks/compress.js');
-var taskClean       = require('./gulp-tasks/clean.js');
+var taskClean       = require('./gulp-tasks/clean.mjs');
 
 var taskStyleGuide  = require('./gulp-tasks/styleguide.js');
 var taskConcat      = require('./gulp-tasks/concat.js');
