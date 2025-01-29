@@ -22,7 +22,7 @@ var taskCompile     = require('./gulp-tasks/compile.js');
 var taskMove        = require('./gulp-tasks/move.js');
 var taskLint        = require('./gulp-tasks/lint.js');
 var taskCompress    = require('./gulp-tasks/compress.js');
-var taskClean       = require('./gulp-tasks/clean.mjs');
+const taskCleanPromise = import('./gulp-tasks/clean.mjs');
 
 var taskStyleGuide  = require('./gulp-tasks/styleguide.js');
 var taskConcat      = require('./gulp-tasks/concat.js');
@@ -103,29 +103,34 @@ gulp.task('concat', function () {
 
 
 // Clean style guide files.
-gulp.task('clean:styleguide', function () {
+gulp.task('clean:styleguide', async function () {
+  const taskClean = await taskCleanPromise;
   return taskClean.styleguide();
 });
 
 // Clean CSS files.
-gulp.task('clean:css', function () {
+gulp.task('clean:css', async function () {
+  const taskClean = await taskCleanPromise;
   return taskClean.css();
 });
 
 // Clean JS files.
-gulp.task('clean:js', function () {
+gulp.task('clean:js', async function () {
+  const taskClean = await taskCleanPromise;
   return taskClean.js();
 });
 
 // Clean Docs folder for new fresh documents.
-gulp.task('clean:docs', function() {
+gulp.task('clean:docs', async function () {
+  const taskClean = await taskCleanPromise;
   return taskClean.docs();
 });
 
-gulp.task('clean', function(callback){
-  gulp.series(['clean:css', 'clean:js', 'clean:styleguide']);
-  callback();
-});
+gulp.task('clean', gulp.series(
+  'clean:css',
+  'clean:js',
+  'clean:styleguide'
+));
 
 //=======================================================
 // Watch and recompile sass.
