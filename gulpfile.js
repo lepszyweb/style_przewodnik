@@ -19,9 +19,9 @@ var rename = require('gulp-rename');
 var prefixPromise = import('gulp-autoprefixer');
 
 //=======================================================
-// Include Our tasks (using dynamic import for .mjs files)
+// Dynamically Import .mjs Task Files
 //=======================================================
-const taskCompile = require('./gulp-tasks/compile.mjs');
+var taskCompilePromise = import('./gulp-tasks/compile.mjs');
 var taskMove = require('./gulp-tasks/move.js');
 var taskLint = require('./gulp-tasks/lint.js');
 var taskCompress = require('./gulp-tasks/compress.js');
@@ -34,10 +34,12 @@ var taskConcat = require('./gulp-tasks/concat.js');
 
 gulp.task('compile:sass', async function() {
   const prefix = (await prefixPromise).default; // Await the prefix import
+  const taskCompile = await taskCompilePromise; // Await the compile task import
   return taskCompile.sass(prefix); // Use autoprefixer
 });
 
-gulp.task('compile:js', function() {
+gulp.task('compile:js', async function() {
+  const taskCompile = await taskCompilePromise; // Await the compile task import
   return taskCompile.js();
 });
 
