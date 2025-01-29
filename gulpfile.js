@@ -92,7 +92,7 @@ gulp.task('concat', function() {
 // Clean all directories (dynamically load clean tasks)
 //=======================================================
 async function loadCleanTask() {
-  return import('./gulp-tasks/clean.js');
+  return import('./gulp-tasks/clean.mjs');
 }
 
 gulp.task('clean:styleguide', async function() {
