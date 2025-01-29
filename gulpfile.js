@@ -21,7 +21,7 @@ var prefixPromise = import('gulp-autoprefixer');
 //=======================================================
 // Include Our tasks (using dynamic import for .mjs files)
 //=======================================================
-const taskCompile = require('./gulp-tasks/compile.js');
+const taskCompile = require('./gulp-tasks/compile.mjs');
 var taskMove = require('./gulp-tasks/move.js');
 var taskLint = require('./gulp-tasks/lint.js');
 var taskCompress = require('./gulp-tasks/compress.js');
