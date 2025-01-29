@@ -10,7 +10,6 @@ var gulp = require('gulp');
 // Include Our Plugins
 //=======================================================
 var sass        = require('gulp-sass/legacy')(require('node-sass'));
-var prefix      = require('gulp-autoprefixer');
 var sourcemaps  = require('gulp-sourcemaps');
 var sync        = require('browser-sync');
 var babel       = require('gulp-babel');
@@ -26,7 +25,9 @@ function handleError(err) {
 module.exports = {
 
   // Compile Sass.
-  sass: function() {
+  sass: async function() {
+    const { default: prefix } = await import('gulp-autoprefixer'); // Dynamically import autoprefixer
+
     return gulp.src('./src/{global,layout,components}/**/*.scss')
       .pipe(
         sass({ Style: 'nested' })
