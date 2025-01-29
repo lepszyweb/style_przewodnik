@@ -17,7 +17,7 @@ async function handleError(err) {
 // Renamed `sass` to avoid conflicts with the imported `gulp-sass` module
 export const compileSass = function(prefix) {
   return gulp.src('./src/{global,layout,components}/**/*.scss')
-    .pipe(sass({ style: 'nested' }).on('error', handleError))
+    .pipe(sass({ outputStyle: 'nested' }).on('error', handleError))
     .pipe(prefix())
     .pipe(rename(function (path) {
       path.dirname = '';
