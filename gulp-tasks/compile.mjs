@@ -1,15 +1,20 @@
 import gulp from 'gulp';
-import sass from 'gulp-sass';
+import sassModule from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import babel from 'gulp-babel';
 import rename from 'gulp-rename';
 
+// Dynamically load the Sass processor (sassModule)
+const sass = sassModule();
+
+// Error handling for gulp tasks
 async function handleError(err) {
   console.log(err.toString());
   this.emit('end');
 }
 
-export const sass = function(prefix) {
+// Renamed `sass` to avoid conflicts with the imported `gulp-sass` module
+export const compileSass = function(prefix) {
   return gulp.src('./src/{global,layout,components}/**/*.scss')
     .pipe(sass({ style: 'nested' }).on('error', handleError))
     .pipe(prefix())
@@ -20,7 +25,7 @@ export const sass = function(prefix) {
     .pipe(gulp.dest('./dist/css'));
 };
 
-export const js = function() {
+export const compileJs = function() {
   return gulp.src('./src/{global,layout,components}/**/*.es6.js')
     .pipe(sourcemaps.init())
     .pipe(babel())
