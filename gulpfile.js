@@ -35,12 +35,12 @@ const taskConcat = require('./gulp-tasks/concat.js');
 gulp.task('compile:sass', async function() {
   const taskCompile = await taskCompilePromise;
   const prefix = (await prefixPromise).default;
-  return taskCompile.sass(prefix);
+  return taskCompile.compileSass(prefix);
 });
 
 gulp.task('compile:js', async function() {
   const taskCompile = await taskCompilePromise;
-  return taskCompile.js();
+  return taskCompile.compileJs();
 });
 
 gulp.task('move:js', function() {
