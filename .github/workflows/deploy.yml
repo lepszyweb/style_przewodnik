@@ -30,8 +30,8 @@ jobs:
         run: |
               mkdir ${{ github.workspace }}/dist
               npm ci
+              mkdir -p ${{ github.workspace }}/dist/favicons && cp ${{ github.workspace }}/docs/favicons/* ${{ github.workspace }}/dist/favicons && mkdir -p ${{ github.workspace }}/dist/assets && cp -r ${{ github.workspace }}/docs/assets/* ${{ github.workspace }}/dist/assets
               npm run build
-              mkdir -p ${{ github.workspace }}/dist/favicons && cp ${{ github.workspace }}/docs/favicons/* ${{ github.workspace }}/dist/favicons && mkdir -p ${{ github.workspace }}/dist/assets && cp -r ./docs/assets/* ./dist/assets
               cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
       
       - name: Upload production-ready assets
