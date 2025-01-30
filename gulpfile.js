@@ -14,32 +14,29 @@ var sourcemaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
 var rename = require('gulp-rename');
 
-// Dynamically import gulp-autoprefixer (ESM module)
-var prefixPromise = import('gulp-autoprefixer');
+// Dynamically import gulp-imagemin (ESM module)
+const imageminPromise = import('gulp-imagemin');
 
 //=======================================================
-// Include Our tasks (using dynamic import for .mjs files)
+// Include Our Tasks
 //=======================================================
-const taskCompilePromise = import('./gulp-tasks/compile.mjs');
-const taskCleanPromise = import('./gulp-tasks/clean.mjs');
-const taskMove = require('./gulp-tasks/move.js');
-const taskLint = require('./gulp-tasks/lint.js');
-const taskCompress = require('./gulp-tasks/compress.js');
-const taskStyleGuide = require('./gulp-tasks/styleguide.js');
-const taskConcat = require('./gulp-tasks/concat.js');
+var taskCompile = require('./gulp-tasks/compile.mjs');
+var taskClean = require('./gulp-tasks/clean.js');
+var taskMove = require('./gulp-tasks/move.js');
+var taskLint = require('./gulp-tasks/lint.js');
+var taskCompress = require('./gulp-tasks/compress.js');
+var taskStyleGuide = require('./gulp-tasks/styleguide.js');
+var taskConcat = require('./gulp-tasks/concat.js');
 
 //=======================================================
 // Compile Our Sass and JS
 //=======================================================
 
-gulp.task('compile:sass', async function() {
-  const taskCompile = await taskCompilePromise;
-  const prefix = (await prefixPromise).default;
-  return taskCompile.compileSass(prefix);
+gulp.task('compile:sass', function() {
+  return taskCompile.compileSass();
 });
 
-gulp.task('compile:js', async function() {
-  const taskCompile = await taskCompilePromise;
+gulp.task('compile:js', function() {
   return taskCompile.compileJs();
 });
 
@@ -70,8 +67,9 @@ gulp.task('lint', gulp.series('lint:sass', 'lint:js'));
 //=======================================================
 // Compress Files
 //=======================================================
-gulp.task('compress', function() {
-  return taskCompress.assets();
+gulp.task('compress', async function() {
+  const imagemin = (await imageminPromise).default;
+  return taskCompress.assets(imagemin);
 });
 
 //=======================================================
@@ -89,32 +87,29 @@ gulp.task('concat', function() {
 });
 
 //=======================================================
-// Clean all directories (dynamically load clean tasks)
+// Clean all directories
 //=======================================================
-gulp.task('clean:styleguide', async function() {
-  const taskClean = await taskCleanPromise;
+
+gulp.task('clean:styleguide', function() {
   return taskClean.styleguide();
 });
 
-gulp.task('clean:css', async function() {
-  const taskClean = await taskCleanPromise;
+gulp.task('clean:css', function() {
   return taskClean.css();
 });
 
-gulp.task('clean:js', async function() {
-  const taskClean = await taskCleanPromise;
+gulp.task('clean:js', function() {
   return taskClean.js();
 });
 
-gulp.task('clean:docs', async function() {
-  const taskClean = await taskCleanPromise;
+gulp.task('clean:docs', function() {
   return taskClean.docs();
 });
 
 gulp.task('clean', gulp.series('clean:css', 'clean:js', 'clean:styleguide', 'clean:docs'));
 
 //=======================================================
-// Watch and recompile sass
+// Watch and recompile Sass
 //=======================================================
 
 gulp.task('watch:sass', gulp.series('lint:sass', 'compile:sass', 'concat'));

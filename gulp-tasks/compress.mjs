@@ -11,6 +11,8 @@ var gulp = require('gulp');
 //=======================================================
 var rename      = require('gulp-rename');
 var imagemin    = require('gulp-imagemin');
+var imageminPngquant = require('imagemin-pngquant');
+var imageminMozjpeg = require('imagemin-mozjpeg');
 
 // Export our tasks.
 module.exports = {
@@ -20,14 +22,16 @@ module.exports = {
     return gulp.src([
       './src/{global,components}/**/*{.png,.jpg,.svg}'
     ])
-      .pipe(imagemin({
-        progressive: true,
-        svgoPlugins: [{
-          removeViewBox: false
-        }]
-      }))
+      .pipe(imagemin([
+        // PNG compression
+        imageminPngquant({ quality: [0.6, 0.8] }), // Example PNG compression quality
+        // JPEG compression
+        imageminMozjpeg({ quality: 75, progressive: true }), // Example JPEG compression quality
+        // SVG optimization (new API)
+        imagemin.svgo({ plugins: [{ removeViewBox: false }] })
+      ]))
       .pipe(rename(function (path) {
-        path.dirname = '';
+        path.dirname = ''; // Flatten the folder structure
         return path;
       }))
       .pipe(gulp.dest('./dist/assets'));
