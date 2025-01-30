@@ -1,36 +1,24 @@
-'use strict';
-
-//=======================================================
-// Include gulp
-//=======================================================
-var gulp = require('gulp');
-
-//=======================================================
-// Include Our Plugins
-//=======================================================
-var sync = require('browser-sync');
-var sass = require('gulp-sass')(require('sass'));
-var sourcemaps = require('gulp-sourcemaps');
-var babel = require('gulp-babel');
-var rename = require('gulp-rename');
+// Importing necessary dependencies using ESM
+import gulp from 'gulp';
+import sync from 'browser-sync';
+import sass from 'gulp-sass';
+import sourcemaps from 'gulp-sourcemaps';
+import babel from 'gulp-babel';
+import rename from 'gulp-rename';
 
 // Dynamically import gulp-autoprefixer (ESM module)
-var prefixPromise = import('gulp-autoprefixer');
+const prefixPromise = import('gulp-autoprefixer');
 
-//=======================================================
-// Include Our tasks (using dynamic import for .mjs files)
-//=======================================================
+// Dynamically import other tasks
 const taskCompilePromise = import('./gulp-tasks/compile.mjs');
 const taskCleanPromise = import('./gulp-tasks/clean.mjs');
-const taskMove = require('./gulp-tasks/move.js');
-const taskLint = require('./gulp-tasks/lint.js');
+const taskMove = await import('./gulp-tasks/move.js');  // Use `await` because it's an async import
+const taskLint = await import('./gulp-tasks/lint.js');  // Use `await` because it's an async import
 const taskCompressPromise = import('./gulp-tasks/compress.mjs');  // Dynamic import for compress
-const taskStyleGuide = require('./gulp-tasks/styleguide.js');
-const taskConcat = require('./gulp-tasks/concat.js');
+const taskStyleGuide = await import('./gulp-tasks/styleguide.js');  // Use `await` because it's an async import
+const taskConcat = await import('./gulp-tasks/concat.js');  // Use `await` because it's an async import
 
-//=======================================================
-// Register tasks synchronously
-//=======================================================
+// Task definitions
 gulp.task('compile:sass', async function() {
   const taskCompile = await taskCompilePromise;
   const prefix = (await prefixPromise).default;
