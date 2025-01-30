@@ -1,15 +1,12 @@
-// Importing necessary dependencies using ESM
 import gulp from 'gulp';
-import imagemin from 'gulp-imagemin';
 import rename from 'gulp-rename';
+import imagemin from 'gulp-imagemin';
 
-//=======================================================
 // Compress svg/png/jpg files.
-//=======================================================
-export function assets() {
+export const assets = () => {
   return gulp.src([
-      './src/{global,components}/**/*{.png,.jpg,.svg}'
-    ])
+    './src/{global,components}/**/*{.png,.jpg,.svg}'
+  ])
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{
@@ -21,4 +18,4 @@ export function assets() {
       return path;
     }))
     .pipe(gulp.dest('./dist/assets'));
-}
+};
