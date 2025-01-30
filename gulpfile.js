@@ -17,26 +17,26 @@ var rename = require('gulp-rename');
 // Dynamically import gulp-imagemin (ESM module)
 const imageminPromise = import('gulp-imagemin');
 
-//=======================================================
-// Include Our Tasks
-//=======================================================
-var taskCompile = require('./gulp-tasks/compile.mjs');
-var taskClean = require('./gulp-tasks/clean.js');
-var taskMove = require('./gulp-tasks/move.js');
-var taskLint = require('./gulp-tasks/lint.js');
-var taskCompress = require('./gulp-tasks/compress.js');
-var taskStyleGuide = require('./gulp-tasks/styleguide.js');
-var taskConcat = require('./gulp-tasks/concat.js');
+// Dynamically import compile.mjs and other tasks
+const taskCompilePromise = import('./gulp-tasks/compile.mjs');
+const taskCleanPromise = import('./gulp-tasks/clean.mjs');
+const taskMove = require('./gulp-tasks/move.js');
+const taskLint = require('./gulp-tasks/lint.js');
+const taskCompress = require('./gulp-tasks/compress.js');
+const taskStyleGuide = require('./gulp-tasks/styleguide.js');
+const taskConcat = require('./gulp-tasks/concat.js');
 
 //=======================================================
 // Compile Our Sass and JS
 //=======================================================
 
-gulp.task('compile:sass', function() {
+gulp.task('compile:sass', async function() {
+  const taskCompile = await taskCompilePromise;
   return taskCompile.compileSass();
 });
 
-gulp.task('compile:js', function() {
+gulp.task('compile:js', async function() {
+  const taskCompile = await taskCompilePromise;
   return taskCompile.compileJs();
 });
 
@@ -90,19 +90,23 @@ gulp.task('concat', function() {
 // Clean all directories
 //=======================================================
 
-gulp.task('clean:styleguide', function() {
+gulp.task('clean:styleguide', async function() {
+  const taskClean = await taskCleanPromise;
   return taskClean.styleguide();
 });
 
-gulp.task('clean:css', function() {
+gulp.task('clean:css', async function() {
+  const taskClean = await taskCleanPromise;
   return taskClean.css();
 });
 
-gulp.task('clean:js', function() {
+gulp.task('clean:js', async function() {
+  const taskClean = await taskCleanPromise;
   return taskClean.js();
 });
 
-gulp.task('clean:docs', function() {
+gulp.task('clean:docs', async function() {
+  const taskClean = await taskCleanPromise;
   return taskClean.docs();
 });
 
