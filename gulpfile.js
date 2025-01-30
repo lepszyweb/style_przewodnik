@@ -34,7 +34,6 @@ async function initializeTasks() {
   //=======================================================
   // Compile Our Sass and JS
   //=======================================================
-
   gulp.task('compile:sass', async function() {
     const taskCompile = await taskCompilePromise;
     const prefix = (await prefixPromise).default;
@@ -59,7 +58,6 @@ async function initializeTasks() {
   //=======================================================
   // Lint Sass and JavaScript
   //=======================================================
-
   gulp.task('lint:sass', function() {
     return taskLint.sass();
   });
@@ -119,7 +117,6 @@ async function initializeTasks() {
   //=======================================================
   // Watch and recompile sass
   //=======================================================
-
   gulp.task('watch:sass', gulp.series('lint:sass', 'compile:sass', 'concat'));
 
   // Main watch task
@@ -133,7 +130,7 @@ async function initializeTasks() {
   gulp.task('watch:styleguide', gulp.series('styleguide', sync.reload));
 
   //=======================================================
-  // Default Task
+  // Default Task (Make sure this is the last task!)
   //=======================================================
   gulp.task('default', gulp.series('clean', gulp.parallel('compile', 'compress', 'styleguide'), 'concat'));
 }
