@@ -22,8 +22,7 @@ const taskCompilePromise = import('./gulp-tasks/compile.mjs');
 const taskCleanPromise = import('./gulp-tasks/clean.mjs');
 const taskMove = require('./gulp-tasks/move.js');
 const taskLint = require('./gulp-tasks/lint.js');
-const taskCompress = require('./gulp-tasks/compress.js');
-const taskStyleGuide = require('./gulp-tasks/styleguide.js');
+const taskCompress = await import('./gulp-tasks/compress.mjs');const taskStyleGuide = require('./gulp-tasks/styleguide.js');
 const taskConcat = require('./gulp-tasks/concat.js');
 
 //=======================================================
@@ -68,8 +67,8 @@ gulp.task('lint', gulp.series('lint:sass', 'lint:js'));
 // Compress Files
 //=======================================================
 gulp.task('compress', async function() {
-  const imagemin = (await imageminPromise).default;
-  return taskCompress.assets(imagemin);
+  const taskCompress = await import('./gulp-tasks/compress.mjs');
+  return taskCompress.assets();
 });
 
 //=======================================================
