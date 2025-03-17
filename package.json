@@ -42,7 +42,6 @@
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
-    "babel-preset-env": "^1.6.0",
     "breakpoint-sass": "^3.0.0",
     "browser-sync": "^3.0.3",
     "del": "^8.0.0",
