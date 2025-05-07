@@ -5,23 +5,13 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    reviewers:
-      - "wojsmol"
-      - "zwiastunsw"
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-    reviewers:
-      - "wojsmol"
-      - "zwiastunsw"
       
   - package-ecosystem: "npm"
     directory: "/src/style-guide/builder"
     schedule:
       interval: "daily"
-    reviewers:
-      - "wojsmol"
-      - "zwiastunsw"
-
