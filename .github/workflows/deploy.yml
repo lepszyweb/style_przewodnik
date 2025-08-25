@@ -35,7 +35,7 @@ jobs:
               cd ./dist && sed -i s@../all/all.css@all/all.css@g *.html
       
       - name: Upload production-ready assets
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
