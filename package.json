@@ -44,7 +44,7 @@
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "breakpoint-sass": "^3.0.0",
     "browser-sync": "^3.0.4",
-    "del": "^8.0.0",
+    "del": "^8.0.1",
     "gulp": "^5.0.1",
     "gulp-autoprefixer": "^10.0.0",
     "gulp-babel": "^8.0.0",
